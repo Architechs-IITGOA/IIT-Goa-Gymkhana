@@ -1,0 +1,17 @@
+body {
+  background-image: url("../images/preview.png");
+}
+
+.header-div{
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
+}
+
+.gymkhana-header {
+  position: relative;
+  font-size: 5rem;
+  padding: 2rem;
+  top: 50%;
+  bottom: 50%;
+}

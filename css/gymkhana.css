@@ -50,4 +50,13 @@ width: 50%;
 footer{
   text-align: center;
 }
+.about-us-header{
+  position: relative;
+  font-size: 7vw;
+  padding: 2vh 2vw;
+  top:10%;
+}
+.about-us-text{
+  text-align: center;
+}
 

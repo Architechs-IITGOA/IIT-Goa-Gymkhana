@@ -1,26 +1,21 @@
-html{
+html {
   scroll-behavior: smooth;
-}
-
-
-.header-div {
-  position: absolute;
-  top: 50%;
-  bottom: 50%;
 }
 
 .gymkhana-header {
   position: relative;
-  font-size: 7vw;
+  font-size: 9vw;
   padding: 2vh 2vw;
   top: 50%;
   bottom: 50%;
 }
 
 .iit-logo-img {
+  position: absolute;
+  top: 0%;
   padding: 2vh 2vw;
-  height: 25%;
-  width: 25%;
+  height: 100%;
+  width: 50%;
 }
 
 section {
@@ -29,34 +24,32 @@ section {
   background-image: url("../images/preview.png");
 }
 
-.clubs-div{
-  text-align: center;
+.club-logo-img {
+  height: 100%;
+  width: 75%;
 }
-.club-img-div{
+footer {
   text-align: center;
 }
 
-.clubs-header {
-  position: relative;
-  font-size: 7vw;
-  padding: 2vh 2vw;
-  top:10%;
+.center-text {
+  text-align: center;
+  padding: 0 5% 0 5%;
 }
 
-.club-logo-img{
-height: 100%;
-width: 50%;
-}
-footer{
-  text-align: center;
-}
-.about-us-header{
-  position: relative;
-  font-size: 7vw;
-  padding: 2vh 2vw;
-  top:10%;
-}
-.about-us-text{
-  text-align: center;
+@media screen and (max-width: 768px) {
+  .gymkhana-header {
+    font-size: 15vw;
+  }
+  .header-div {
+    text-align: center;
+  }
+  h3 {
+    font-size: 5vw;
+  }
+  /* .club-logo-img {
+    height: 100%;
+    width: 50%;
+  } */
 }
 

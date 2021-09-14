@@ -1,0 +1,81 @@
+.pimg1, .pimg2, .pimg3,.pimg4,.pimg5{
+  position:relative;
+  opacity:0.70;
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+
+  /*
+    fixed = parallax
+    scroll = normal
+  */
+  background-attachment:fixed;
+}
+
+.pimg1{
+  background-image:url('../images/Parralax/parrabout.jpg');
+  min-height:400px;
+}
+
+.pimg2{
+  background-image:url('../images/Parralax/parrfac4.jpg');
+  min-height:400px;
+}
+
+.pimg3{
+  background-image:url('../images/Parralax/parrevent.jpg');
+  min-height:400px;
+}
+.pimg4{
+  background-image:url('../images/Parralax/parrgallery.png');
+  min-height:400px;
+}
+.pimg5{
+  background-image:url('../images/Parralax/parrcouncil.jpg');
+  min-height:400px;
+}
+.section{
+  height: 100%;
+  text-align:center;
+  padding:50px 80px;
+}
+
+.section-light{
+  height: 100%;
+  background-color:#f4f4f4;
+  color:#666;
+}
+
+.section-dark{
+  height: 100%;
+  background-color:rgba(0,0,0,0);
+  color:#ddd;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.ptext{
+  position:absolute;
+  top:50%;
+  width:100%;
+  text-align:center;
+  color:#000;
+  font-size:27px;
+  letter-spacing:8px;
+  text-transform:uppercase;
+}
+
+.ptext .border{
+  background-color:#111;
+  color:#fff;
+  padding:20px;
+}
+
+.ptext .border.trans{
+  background-color:transparent;
+}
+
+@media(max-width:568px){
+  .pimg1, .pimg2, .pimg3,.pimg4,.pimg5{
+  min-height: 300px;
+  }
+}

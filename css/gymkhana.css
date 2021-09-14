@@ -1,7 +1,9 @@
 html {
   scroll-behavior: smooth;
 }
-
+body{
+  font-family: 'Quicksand', sans-serif;
+}
 .gymkhana-header {
   position: relative;
   font-size: 9vw;
@@ -43,10 +45,24 @@ html {
   padding-left: 5%;
 }
 
+.navbar-brand{
+  font-size: 3vw;
+}
+
+.nav-item{
+  font-size: 3vw;
+}
+
 @media screen and (max-width: 1024px){
   .about-text{
     padding-right: 5%;
     padding-left: 5%;
+  }
+  .navbar-brand{
+    font-size: 7vw;
+  }
+  .nav-item{
+    font-size: 5vw;
   }
 }
 
@@ -64,5 +80,12 @@ html {
   p{
     font-size: 4vw;
   }
+  .nav-item{
+    font-size: 5vw;
+  }
+  .navbar-brand{
+    font-size: 7vw;
+  }
+  
 }
 

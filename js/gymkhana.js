@@ -3,4 +3,5 @@ new fullpage("#fullpage", {
   
   autoScrolling: true,
   navigation: true,
+  anchors:['home','about-us','clubs','footer']
 });

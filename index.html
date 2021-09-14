@@ -3,10 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta content="width=device-width, initial-scale=1" name="viewport" />
-    <title>Gymkhana</title>
+    <title>Student Panchayat</title>
     <!--START-FAVICON-->
     <link rel="shortcut icon" href="iit-goa-logo.ico" />
     <!--END-FAVICON-->
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
     <!-- Bootstrap Css -->
     <link
       rel="stylesheet"
@@ -18,13 +20,40 @@
     <!---------CSS FOR REST ------------------->
     <link rel="stylesheet" href="./css/fullpage.min.css" />
     <link rel="stylesheet" href="./css/gymkhana.css" />
-    
+
     <!-- End CSS  -->
   </head>
   <body>
     <main>
+      <nav class="navbar navbar-expand-xl fixed-top navbar-dark bg-secondary navb">
+        <a class="navbar-brand" href="#">IIT Goa</a>
+        <button
+          class="navbar-toggler navbar-toggler-right "
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item" style="padding-right: 30px;">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item" style="padding-right: 30px;">
+              <a class="nav-link" href="#about-us">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#clubs">Clubs</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
       <div id="fullpage">
-        <section class="section active section-bg" id="section0">
+        <section class="section active section-bg" id="section0" data-anchor="home">
           <div class="logo-img-div">
             <!-- <img
               class="iit-logo-img"
@@ -33,10 +62,10 @@
             /> -->
           </div>
           <div class="header-div">
-            <h1 class="gymkhana-header">Gymkhana</h1>
+            <h1 class="gymkhana-header">Students Panchayat</h1>
           </div>
         </section>
-        <section class="section section-bg">
+        <section class="section section-bg" id="section1" data-anchor="about-us">
           <div class="center-text about-text">
             <h1 class="gymkhana-header">About Us</h1>
           </div>
@@ -68,12 +97,13 @@
             </p>
           </div>
         </section>
-        <section class="section section-bg" id="section2">
+        <section class="section section-bg" id="section2" data-anchor="clubs">
           <div class="center-text">
             <h1 class="gymkhana-header">Clubs</h1>
           </div>
           <div class="container">
             <div class="row justify-content-center">
+              <!---------hostel----------
               <div class="col-6 col-sm-6 col-md-6 col-lg-4 center-text">
                 <a href="#"
                   ><img
@@ -82,8 +112,9 @@
                     class="club-logo-img"
                 /></a>
               </div>
+              ----------------------->
               <div class="col-6 col-sm-6 col-md-6 col-lg-4 center-text">
-                <a href="#"
+                <a href="Clubs/Acads/Project-Acads/index.html"
                   ><img
                     src="./images/acad.png"
                     alt="academics-img"
@@ -91,7 +122,7 @@
                 /></a>
               </div>
               <div class="col-6 col-sm-6 col-md-6 col-lg-4 center-text">
-                <a href="#"
+                <a href="Clubs/Cultural/index.html"
                   ><img
                     src="./images/cult.png"
                     alt="culturals-img"
@@ -99,7 +130,7 @@
                 /></a>
               </div>
               <div class="col-6 col-sm-6 col-md-6 col-lg-4 center-text">
-                <a href="#"
+                <a href="Clubs/Sports/index.html"
                   ><img
                     src="./images/sports.png"
                     alt="sports-img"
@@ -107,7 +138,7 @@
                 /></a>
               </div>
               <div class="col-6 col-sm-6 col-md-6 col-lg-4 center-text">
-                <a href="#">
+                <a href="Clubs/STAB/STAB/index.html">
                   <img
                     src="./images/STAB.png"
                     alt="stab-img"
@@ -128,18 +159,18 @@
 
     <!-- Bootstrap JS -->
     <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
       crossorigin="anonymous"
     ></script>
     <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
       crossorigin="anonymous"
     ></script>
     <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
     <!-- Js for rest  -->

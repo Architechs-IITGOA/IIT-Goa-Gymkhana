@@ -1,0 +1,177 @@
+          .navbar
+        {   
+            position: fixed;
+            top: 0;
+            width: 100%;
+           
+            margin-top: 50px;
+            
+            z-index: 9999;
+             transition: all 0.7s ease;
+           padding: 8px;
+            background-color: rgba(248,249,250,0.7) !important; 
+            /* change 0.7 to adjust opacity and change colour accordingly */
+        }
+        /* if you give margintop to -20px it will start from top */
+       
+        .nav-header{
+            
+            text-align: center; 
+            font-family: 'Alice', serif;
+            font-size: 25px;
+        }
+       /* iit goa logo */
+        #logo 
+        {
+            
+            margin: 0;
+            transition: all 0.7s ease;
+            position: relative;
+            padding: 0px;  
+           
+        }
+
+        
+       .nav-link
+        {
+            position: relative;
+            font-size: 30px;
+            color: black !important;
+            /* opacity: 1 !important; */
+           left: -50px;
+        }
+        
+        .nav-headers
+        {
+            margin-left: 100px;
+            font-family: 'Montserrat', sans-serif;
+            
+        }
+        
+        .nav-headers:hover
+        {
+            
+        }
+        
+        .navbar{
+            margin-top: 0 !important;
+        }
+      
+        
+        .navbar-brand
+        {
+            margin: 0;
+            padding: 0;
+        }
+        
+        #iitgoalogotext
+        {
+            font-size: 45px;
+            transition: ease 0.7s all;
+            position: relative;
+            margin-left: 15px;
+            font-family: 'Alice', serif;
+            top: 10px;
+            
+        }
+        .nav-item{
+            float: left;
+        }
+        @media (max-width: 992px) 
+        { 
+            .nav-headers
+            {
+                
+                transition: ease 0.7s all;
+               
+            }
+            
+            #iitgoalogotext
+            {
+                position: relative;
+                left: 30px;
+                
+            }
+        
+        }
+        
+         @media (max-width: 1300px) 
+        { 
+            .nav-headers
+            {
+                position: relative;
+                text-align: center;
+                transition: ease 0.5s all;
+            }
+        
+        }
+        
+        @media (min-width: 992px) and (max-width: 1199.98px) { 
+            .nav-headers
+            {
+                position: relative;
+                margin-left: 50px;
+                left: 10px;
+                font-size: 30px;
+                transition: ease 0.5s all;
+            }
+        }
+
+@media (min-width: 1000px){
+    .navbar-expand-custom {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    }
+    .navbar-expand-custom .navbar-nav {
+        flex-direction: row;
+    }
+    .navbar-expand-custom .navbar-nav .nav-link {
+        padding-right: .5rem;
+        padding-left: .5rem;
+    }
+    .navbar-expand-custom .navbar-collapse {
+        display: flex!important;
+    }
+    .navbar-expand-custom .navbar-toggler {
+        display: none;
+    }
+    
+}
+        
+        @media (max-width: 575.98px) 
+        {
+            .nav-headers
+            {
+                text-align: center;
+                
+        
+                margin-left: 115px;
+          
+            }
+            #iitgoalogotext{
+                font-size: 35px !important;
+            }
+        }
+        
+        @media (min-width: 576px) and (max-width: 767.98px)
+        {
+            .nav-headers
+        {
+            margin-left: 140px !important;
+            font-family: 'Montserrat', sans-serif;
+            
+        }
+        }
+        @media (min-width: 767.98px) and (max-width: 992px)
+        {
+            .nav-headers
+        {
+            margin-left: 140px !important;
+            font-family: 'Montserrat', sans-serif;
+            
+        }
+        }
+
+
+

@@ -1,0 +1,259 @@
+@import "https://fonts.googleapis.com/css?family=Alice&display=swap";
+.box{
+  display: inline-block;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 2em;
+}
+.container a {
+  background-color: rgba(0,0,0,0);
+  text-decoration: none;
+  justify-content: center;
+}
+.container h1{
+  text-align: center;
+  font-size: 100%;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+
+}
+.bg-modal{
+  font-family: 'Montserrat', sans-serif;
+}
+.card-wrap {
+  margin-left: 2em;
+  margin-right: 2em;
+  margin-bottom: 0.2em;
+  margin-top: 3em;
+
+}
+
+.card{
+  border-width: 4px;
+  border-color: #5a79af;
+
+}
+
+.card-info {
+  position: absolute;
+  &:after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+}
+.top button{
+  font-size: 5em;
+}
+.top h1{
+  text-align: center;
+  color: #3c4075;
+
+}
+/*popups styling*/
+/*mobile view*/
+@media (max-width: 800px)
+{
+  .card-bg {
+   opacity: 1;
+  position: fixed;
+  left: -25%;
+  top : -31%;
+  width: 150%;
+  height: 150%;
+   background-repeat:repeat;
+  background-position: center;
+  background-size: cover;
+
+}
+  .card {
+    position: relative;
+    width: 7em;
+    height: 6em;
+    overflow: hidden;
+    border-radius: 10px;
+
+  }
+  .bg-modal {
+    margin: 5%;
+    margin-top: 10%;
+
+    position: fixed;
+    top: 0;
+    display: none;
+    z-index: 100;
+    height: 75vh;
+    width: 90%;
+    background-color: #68EEE3;
+    
+    
+  }
+  .insidecontent{
+    display: inline;
+    width: 100%;
+    height: 100%;
+    background-color:white;
+    color:blue;
+  }
+  .top{
+    width:100%;
+    height:10%;
+    background-color:white;
+  }
+  .bottom{
+    width:100%;
+    height:100%;
+    background-color: white;
+    display: inline;
+
+  }
+  .top button{
+    float: right;
+    width:20%;
+    height:100%;
+    font-size: 1.75em;
+  }
+  .top button span{
+    height: 100%;
+  }
+    .top h1{
+      font-size: 1.75em;
+      width: 80%;
+    margin-left:auto;
+    position: relative;
+  }
+
+  .bottom .leftside{
+    width:100%;
+    height:50%;
+    background-color: white;
+    padding: 5%;
+
+  }
+  .bottom .leftside img{
+    height: 100%;
+    width: 100%;
+
+  }
+  .bottom .rightside{
+    width:100%;
+    height:60%;
+    background-color: white;
+    padding: 5%;
+
+  }
+  .bottom .rightside p{
+    line-height: 1.2em;
+    font-stretch: expanded;
+    font-size: 80%;
+    color:black;
+    font-family: montserrat;
+  }
+
+  
+}
+/*desktopview*/
+@media (min-width: 800px)
+{
+  .card-bg {
+   opacity: 1;
+  position: fixed;
+  left: -25%;
+  top : -28%;
+  width: 150%;
+  height: 150%;
+   background-repeat:repeat;
+  background-position: center;
+  background-size: cover;
+
+}
+    .card {
+    position: relative;
+    width: 12em;
+    height:9em;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  .blur1{
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-color: blue;
+  }
+  .bg-modal {
+    margin: 5%;
+    margin-left: 15%;
+ 
+    position: fixed;
+    top: 0;
+    display: none;
+    z-index: 100;
+    height: 70vh;
+    width: 70%;
+    background-color: white;
+    border-color: black; 
+    border-style:solid;
+
+    
+  }
+  .insidecontent{
+    display: inline;
+    width: 100%;
+    height: 100%;
+    background-color:white;
+    color:blue;
+  }
+  .top{
+    width:100%;
+    height:15%;
+    background-color:white;
+  }
+  .bottom{
+    width:100%;
+    height:90%;
+    background-color: white;
+    display: flex;
+  }
+  .top button{
+    float: right;
+    width:10%;
+    height:100%;
+    font-size: 1.75em;
+  }
+  .top h1{
+    font-size: 2em;
+    margin-left:12%;
+    height: 100%;
+    text-align: center;
+  }
+  .bottom .leftside{
+    width:50%;
+    height:100%;
+    background-color: white;
+    padding: 5%;
+
+  }
+  .bottom .leftside img{
+    height: 100%;
+    width: 100%;
+  }
+  .bottom .rightside{
+    width:50%;
+    height:100%;
+    background-color: white;
+    padding: 5%;
+
+  }
+  .bottom .rightside p{
+    line-height: 1.5em;
+    font-size: 80%;
+    color:black;
+    font-family: montserrat;
+  }
+
+
+}

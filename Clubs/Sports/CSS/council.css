@@ -1,0 +1,138 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  backface-visibility: hidden;
+
+}
+
+
+
+
+.threecards {
+  display: flex;
+  justify-content: center;
+  margin: 1%;
+}
+
+
+
+.contactimg {
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: 700px) {
+  .contactimg {
+    width: 100%;
+    height: 100%;
+  }
+
+  .flip-card {
+    margin: 1%;
+    background-color: transparent;
+    width: 35vh;
+    height: 35vh;
+    perspective: 1000px;
+  }
+ 
+  .flip-card-front {
+  background-color: #bbb;
+  color: black;
+  }
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+  height: 100%;
+  width:100%;
+  }
+  .flip-card-back h2{
+    font-size: 1.5em;
+    font-family: Montserrat;
+  }
+  .flip-card-back p{
+    line-height: 0.90em;
+    font-family: Montserrat;
+
+  }
+  .contact1{
+    font-size: 75%; margin-top: -10%; text-align: left; line-height: 1em;
+  }
+  
+}
+
+
+@media (max-width: 700px){
+  .threecards {
+    display: flex;
+    flex-direction: row;
+  
+  }
+
+  
+  .flip-card {
+    background-color: transparent;
+    width: 30%;
+    height: 27vh;
+    perspective: 1000px;
+    margin: 1%;
+  }
+
+  .flip-card-front {
+  background-color: #bbb;
+  color: black;
+  width: 100%;
+  height: 27vh;
+  }
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+  width: 100%;
+  height: 27vh;
+  }
+  .flip-card-back h2{
+    line-height: 5vw;
+    font-size: 2.5vw;
+    font-family: Montserrat;
+  }
+  .flip-card-back p{
+    line-height: 2vw;
+     font-size: 1.5vw;    
+    font-family: Montserrat;
+
+
+  }
+  .contact1{
+
+    font-size: 1.5vw;  text-align: left; line-height: 1.5vw;
+  }
+
+}
+
+
+  
+
+

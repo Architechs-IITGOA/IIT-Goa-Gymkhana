@@ -1,3 +1,3 @@
 # IITGoa-Gymkhana-Website
 
---Developed by ArchiTechs IIT Goa
+--Developed by ArchiTech

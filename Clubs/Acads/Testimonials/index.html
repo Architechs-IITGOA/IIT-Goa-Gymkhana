@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>How to create Testimonials slider</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="owl.carousel.css" />
+  </head>
+  <body>
+    <div class="testimonial-area">
+      <h1 class="testimonial-main-title">TESTIMONIALS</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="owl-carousel test-slides" id="testimonial-carousel">
+              <div class="item">
+                <div class="single-testimonial">
+                  <div class="testi-text">
+                    <div class="upper-testi">
+                      <img src="images/1.jpg" alt="" class="testimonial-img" />
+                      <h4>GAUTHAM <span>Second year student</span></h4>
+                    </div>
+
+                    <p>
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Rerum at aspernatur culpa asperiores officia illo
+                      perferendis vero quia veritatis assumenda animi eligendi,
+                      nihil cupiditate ullam cum fugit blanditiis reprehenderit
+                      harum.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="single-testimonial">
+                  <div class="testi-text">
+                    <div class="upper-testi">
+                      <img src="images/2.jpg" alt="" class="testimonial-img" />
+                      <h4>JAISHIKA <span>Second year CSE</span></h4>
+                    </div>
+                    <p>
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Rerum at aspernatur culpa asperiores officia illo
+                      perferendis vero quia veritatis assumenda animi eligendi,
+                      nihil cupiditate ullam cum fugit blanditiis reprehenderit
+                      harum.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="single-testimonial">
+                  <div class="testi-text">
+                    <div class="upper-testi">
+                      <img src="images/3.jpg" alt="" class="testimonial-img" />
+                      <h4>JAISHIKA <span>Second year CSE</span></h4>
+                    </div>
+                    <p>
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Rerum at aspernatur culpa asperiores officia illo
+                      perferendis vero quia veritatis assumenda animi eligendi,
+                      nihil cupiditate ullam cum fugit blanditiis reprehenderit
+                      harum.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="owl.carousel.min.js"></script>
+    <script>
+      $("#testimonial-carousel").owlCarousel({
+        autolay: true,
+        dots: false,
+        nav: true,
+        loop: true,
+        navText: [
+          '<i class="fa fa-angle-left"></i>',
+          '<i class="fa fa-angle-right"></i>',
+        ],
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 1,
+          },
+          1000: {
+            items: 2,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,34 @@
+.resources {
+  background: #f1f1f1;
+  padding: 3rem;
+}
+
+.resources-header {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.resource-link {
+  background-color: white;
+  width: 15em;
+  height: 7.5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: black;
+  font-weight: 500;
+  margin-top: 2vh;
+  border-radius: 15px;
+}
+
+.resources-btn {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.manual-menu {
+  width: 15rem;
+}

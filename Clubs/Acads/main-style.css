@@ -1,0 +1,12 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.section-header {
+  font-size: 40px !important;
+  text-align: center;
+  font-weight: bolder;
+  color: #505050;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+}

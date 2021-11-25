@@ -10,6 +10,7 @@ background: linear-gradient(180deg, rgba(186,44,198,1) 21%, rgba(183,52,136,1) 4
     text-align:center;
     font-size:10vh;
     top: 0;
+    margin-bottom: -2.5rem;
     font-family: 'Indie Flower', cursive;
 }
 #scrollclubs{ 

@@ -1,7 +1,7 @@
 body {
   background-color: #152836;
   color: #eee;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .small {
@@ -74,7 +74,7 @@ body {
 .page-head h1 {
   font-size: 42px;
   margin: 0 0 20px;
-  color: #FFF;
+  color: #fff;
   position: relative;
   display: inline-block;
 }
@@ -103,8 +103,8 @@ body {
 }
 
 .demo-gallery > ul > li a {
-  border: 3px solid #FFF;
-  border-radius: 3px;
+  border: 3px solid #fff;
+  border-radius: 10px;
   display: block;
   overflow: hidden;
   position: relative;

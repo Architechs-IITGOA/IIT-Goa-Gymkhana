@@ -65,6 +65,10 @@
 }
 
 @media (max-width: 650px) {
+
+    /* #section3{
+        height:120vh;
+    } */
     .imgclub {
         width: 12vh;
         height: 12vh;
@@ -85,7 +89,7 @@
         height: 22vh;
     }
     .GS-stab {
-        height: 40vh;
+        height: 50vh;
         padding-top: 7vh;
         padding-bottom: 5vh;
         text-align: center;
@@ -102,7 +106,7 @@
         transform: translateX(-50%);
     }
     .clubyash {
-        width: 18vh;
+        width: 21vh;
         margin: 1vh;
         display: inline-block;
     }

@@ -1,3 +1,4 @@
+
 var navicon = document.getElementById('navicon');
 var cheading = document.getElementById('cheading');
 var cdetails = document.getElementById('cdetails');
@@ -33,13 +34,13 @@ function commonclubfunction(x) {
              the basis for the programming to work on. ArchiTechs team ensures the practicality and is responsible \
              for making the apps and sites operational for users.';
         cheadname.innerHTML = 'ArchiTechs-Head';
-        cheaddetail.innerHTML = 'Head-detail';
+        cheaddetail.innerHTML = 'Adwait Agashe';
         cimage1.src = './images/clubs/archi/1.jpg';
         cimage2.src = './images/clubs/archi/2.jpg';
         cimage3.src = './images/clubs/archi/3.jpg';
         cimage4.src = './images/clubs/archi/4.jpg';
         cimage5.src = './images/clubs/archi/5.jpg';
-        headpic.src = './images/clubhead/kakashi.jpg'
+        headpic.src = './images/clubhead/adwait.jpg'
     } else if (x == 'er') {
         cheading.innerHTML = 'E & R';
         cdetails.innerHTML =
@@ -48,13 +49,13 @@ function commonclubfunction(x) {
         under student technical Activities Body.The club caters to every individual with or without experience and\
         helps students gain the required knowledge and experience.';
         cheadname.innerHTML = 'E & R-Head';
-        cheaddetail.innerHTML = 'Head-detail';
+        cheaddetail.innerHTML = 'Ujjwal Rana';
         cimage1.src = './images/clubs/er/er1.jpg';
         cimage2.src = './images/clubs/er/er2.jpg';
         cimage3.src = './images/clubs/er/er3.jpg';
         cimage4.src = './images/clubs/er/er4.jpg';
         cimage5.src = './images/clubs/er/er5.jpg';
-        headpic.src = './images/clubhead/janim.jpg'
+        headpic.src = './images/clubhead/ujjwal.jpg'
     } else if (x == 'gomyno') {
         cheading.innerHTML = 'GOMYNO';
         cdetails.innerHTML =
@@ -64,13 +65,13 @@ function commonclubfunction(x) {
               is to build a strong coding culture among the passionate students of the institute so that they can get \
               assistance and enhance their coding ability.';
         cheadname.innerHTML = 'GoMyno-Head';
-        cheaddetail.innerHTML = 'Head-detail';
+        cheaddetail.innerHTML = 'Kartikey Sharma';
         cimage1.src = './images/clubs/gomyno/gomynoa.jpg';
         cimage2.src = './images/clubs/gomyno/gomynob.jpg';
         cimage3.src = './images/clubs/gomyno/gomynoc.jpg';
         cimage4.src = './images/clubs/gomyno/gomynod.jpg';
         cimage5.src = './images/clubs/gomyno/gomynoe.jpg';
-        headpic.src = './images/clubhead/yash.jpg'
+        headpic.src = './images/clubhead/katikey.jpg'
     } else if (x == 'googledsc') {
         cheading.innerHTML = 'GOOGLE DSC';
         cdetails.innerHTML =
@@ -80,14 +81,14 @@ function commonclubfunction(x) {
             communities.By developing solutions, the talented students can now help the local community and have a \
             hands-on experience for building real world applications.';
         cheadname.innerHTML = 'DSC-Head';
-        cheaddetail.innerHTML = 'Head-detail';
+        cheaddetail.innerHTML = 'Sejal Gupta';
         cimage1.src = './images/clubs/dsc/dsc1.jpg';
         cimage2.src = './images/clubs/dsc/dsc2.jpg';
         cimage3.src = './images/clubs/dsc/dsc3.jpg';
         cimage4.src = './images/clubs/dsc/dsc4.jpg';
         cimage5.src = './images/clubs/dsc/dsc5.jpg';
-        headpic.src = './images/clubhead/aditi.jpeg';
-    } else if (x == 'motorsports') {
+        headpic.src = './images/clubhead/sejal.jpg';
+    } else if (x == 'infosec') {
         cheading.innerHTML = 'INFOSEC';
         cdetails.innerHTML =
             'Infosec IIT Goa consists of students enthusiastic about the domain of Cyber Security. There are currently 103 members\
@@ -96,13 +97,13 @@ function commonclubfunction(x) {
                and assists them in the learning process. It has been the organizing partner for the HCL Cyber Security Hackathon 2020\
                 conducted IIT Kanpur.';
         cheadname.innerHTML = 'InfoSec-Head';
-        cheaddetail.innerHTML = 'Head-detail';
+        cheaddetail.innerHTML = 'Moraya Prabhu';
         cimage1.src = './images/clubs/infosec/infosec1.jpg';
         cimage2.src = './images/clubs/infosec/infosec2.jpg';
         cimage3.src = './images/clubs/infosec/infosec3.jpg';
         cimage4.src = './images/clubs/infosec/infosec4.jpg';
         cimage5.src = './images/clubs/infosec/infosec5.jpg';
-        headpic.src = './images/clubhead/rahul.jpg'
+        headpic.src = './images/clubhead/moraya.jpg'
     } else if (x == 'mdash') {
         cheading.innerHTML = 'M-DASH';
         cdetails.innerHTML =
@@ -111,16 +112,46 @@ function commonclubfunction(x) {
             comfortable with various designing softwares like AutoCAD, Solidworks, etc.Things are taught from scratch to \
             freshmen and hence, everyone is welcome to join the club and gain knowledge and experience.';
         cheadname.innerHTML = 'M-Dash-Head';
-        cheaddetail.innerHTML = 'Head-detail';
+        cheaddetail.innerHTML = 'Sakar';
         cimage1.src = './images/clubs/mdash/mdash1.JPG';
         cimage2.src = './images/clubs/mdash/mdash2.JPG';
         cimage3.src = './images/clubs/mdash/mdash3.JPG';
         cimage4.src = './images/clubs/mdash/mdash4.JPG';
         cimage5.src = './images/clubs/mdash/mdash5.JPG';
-        headpic.src = './images/clubhead/darshay.jpg';
+        headpic.src = './images/clubhead/sakar.jpg';
     }
-}
+    else if (x=='alpha'){
+        cheading.innerHTML = 'ALPHA';
+        cdetails.innerHTML =
+            'Official Finanace Club of IIT Goa, student driven body which aims at increasing the awareness of Finance and Economics among IIT Goa\
+            community by conducting various workshops, sessions and competitions along wth encouraging students to see Finance as a \
+            viable carrer option leveraging their technical Skills. Our activities and projects are aimed at demonstrating the \
+            application of technology in Finance.';
+        cheadname.innerHTML = 'Alpha Head';
+        cheaddetail.innerHTML = 'Shantanu Wagh';
+        cimage1.src = '';
+        cimage2.src = '';
+        cimage3.src = '';
+        cimage4.src = '';
+        cimage5.src = '';
+        headpic.src = './images/clubhead/shantanu.jpg';
+    }
+    else if (x=='steelx'){
+        cheading.innerHTML = 'STEEL X';
+        cdetails.innerHTML =
+            '.';
+        cheadname.innerHTML = 'Steel X Head';
+        cheaddetail.innerHTML = 'Aastha Jain';
+        cimage1.src = '';
+        cimage2.src = '';
+        cimage3.src = '';
+        cimage4.src = '';
+        cimage5.src = '';    
+        headpic.src = './images/clubhead/aastha.jpg';
+    }
 
+
+}
 $(document).ready(function() {
     $('.gallery-slider').slick({
         // autoplay: true,

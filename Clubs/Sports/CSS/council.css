@@ -2,16 +2,12 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-
-
 .flip-card-inner {
   position: relative;
   width: 100%;
   height: 100%;
-  text-align: center;
   transition: transform 0.6s;
   transform-style: preserve-3d;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .flip-card:hover .flip-card-inner {
@@ -22,117 +18,247 @@ body {
 .flip-card-back {
   position: absolute;
   backface-visibility: hidden;
-
+  border-radius: 10%;
+  box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.7);
 }
-
-
-
 
 .threecards {
   display: flex;
   justify-content: center;
   margin: 1%;
+  flex-flow: row wrap;
 }
-
-
 
 .contactimg {
   width: 100%;
   height: 100%;
+  border-radius: 20px;
+  border: solid black;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-@media (min-width: 700px) {
+.flip-card-back-photo {
+  border-radius: 10%;
+  border: solid black;
+  margin-right: 3%;
+  margin-top: auto;
+  margin-bottom: auto;
+  /*transform: translate(0%, 32%);*/
+  float: right;
+  height: auto;
+  width: 95%;
+}
+
+.flip-card-back-text-wrapper{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
+  width: 60%;
+}
+
+.flip-card-back-photo-wrapper{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
+  width: 40%;
+  justify-content: flex-end;
+}
+
+.icon-border{
+  background-color: #00162d;
+  border-radius: 50%;
+  border: 2px solid white;
+  padding: 3.5px;
+  margin-top: 3%;
+  margin-right: 1%;
+}
+
+@media (min-width: 600px) {
   .contactimg {
-    width: 100%;
+    width: 60%;
     height: 100%;
   }
 
   .flip-card {
     margin: 1%;
     background-color: transparent;
-    width: 35vh;
+    width: 28vw;
     height: 35vh;
+    max-height: 300px;
     perspective: 1000px;
+    min-width: 400px;
   }
- 
+
   .flip-card-front {
-  background-color: #bbb;
-  color: black;
+    background-color: rgba(7,22,37,255);
+    background-image: url(./../images/Council/Card_front.png);
+    background-size: 100% 100%;
+    color: white;
+    font-family: Montserrat;
+    font-size: 150%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
   }
 
-.flip-card-back {
-  background-color: #2980b9;
-  color: white;
-  transform: rotateY(180deg);
-  height: 100%;
-  width:100%;
+  .flip-card-back {
+    background-color: #2980b9;
+    background-image: url(./../images/Council/Card_back.png);
+    background-size: 100% 100%;
+    color: white;
+    transform: rotateY(180deg);
+    height: 100%;
+    width: 100%;
+    display: flex;
   }
-  .flip-card-back h2{
-    font-size: 1.5em;
-    font-family: Montserrat;
-  }
-  .flip-card-back p{
-    line-height: 0.90em;
-    font-family: Montserrat;
 
+  .flip-card-back-text {
+    margin-left: 4%;
+    display: flex;
+    width: 85%;
+    height: 71%;
+    flex-direction: column;
+    justify-content: center;
   }
-  .contact1{
-    font-size: 75%; margin-top: -10%; text-align: left; line-height: 1em;
+  .flip-card-back h2 {
+    font-size: 1.6em;
+    line-height: 1;
+    font-family: Montserrat;
   }
-  
+
+  .flip-card-back h4 {
+    font-size: 1.25em;
+    line-height: 1.4;
+    font-family: Montserrat;
+  }
+  .flip-card-back p {
+    font-size: 0.8em;
+    line-height: 1.2;
+    margin-top: -4%;
+    margin-bottom: 15%;
+    
+  }
+
+  .flip-card-back h6 {
+    font-size: 0.6em;
+    line-height: 1em;
+    margin-top: -25%;
+    margin-bottom: 15%;
+    font-family: Montserrat;
+  }
+
+  .contact1 {
+    font-size: 85%;
+    margin-top: -20%;
+    line-height: 1em;
+  }
+  #long-name-email{
+    font-size: 72%;
+  }
 }
 
-
-@media (max-width: 700px){
+@media (max-width: 600px) {
   .threecards {
     display: flex;
     flex-direction: row;
-  
+    flex-flow: row wrap;
   }
 
-  
   .flip-card {
+    max-width: 400px;
+    margin: 2%;
     background-color: transparent;
-    width: 30%;
-    height: 27vh;
+    width: 75%;
+    height: 30vh;
     perspective: 1000px;
-    margin: 1%;
   }
 
   .flip-card-front {
-  background-color: #bbb;
-  color: black;
-  width: 100%;
-  height: 27vh;
+    background-color: rgba(7,22,37,255);
+    background-image: url(./../images/Council/Card_front.png);
+    background-size: auto 100%;
+    color: white;
+    font-family: Montserrat;
+    font-size: 4.5vw;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
   }
 
-.flip-card-back {
-  background-color: #2980b9;
-  color: white;
-  transform: rotateY(180deg);
-  width: 100%;
-  height: 27vh;
+  .flip-card-back {
+    background-color: #2980b9;
+    background-image: url(./../images/Council/Card_back.png);
+    
+    background-size: 100% 100%;
+    color: white;
+    transform: rotateY(180deg);
+    height: 100%;
+    width: 100%;
+    display: flex;
   }
-  .flip-card-back h2{
-    line-height: 5vw;
-    font-size: 2.5vw;
+  .flip-card-back-text {
+    display: flex;
+    height: 72%;
+    margin-left: 4%;
+    width: 80%;
+    flex-direction: column;
+    justify-content: center;
+    
+  }
+
+  .flip-card-back h2 {
+    font-size: 125%;
+    
     font-family: Montserrat;
   }
-  .flip-card-back p{
-    line-height: 2vw;
-     font-size: 1.5vw;    
+  .flip-card-back h4 {
+    font-size: 2.5vh;
     font-family: Montserrat;
-
-
   }
-  .contact1{
-
-    font-size: 1.5vw;  text-align: left; line-height: 1.5vw;
+  .flip-card-back p {
+    line-height: 0.1vh;
+    font-size: 1.25vh;
+    font-family: Montserrat;
+    white-space: nowrap;
   }
-
+  .flip-card-back h6 {
+    font-size: 1vh;
+    line-height: 0.1vh;
+    margin-top: -4vh;
+    margin-bottom: 1vh;
+    font-family: Montserrat;
+    white-space: nowrap;
+  }
+  .contact1 {
+    font-size: 1vh;
+    text-align: left;
+    margin-top: -5vw;
+    line-height: 1.5vw;
+    white-space: nowrap;
+  }
+  #long-name-email{
+    font-size: 0.8vh;
+  }
 }
 
-
-  
-
-
+@media (max-height: 500px) {
+  .flip-card {
+    width: 55vw;
+    height: 30vw;
+    font-size: smaller;
+  }
+}

@@ -1,3 +1,4 @@
 # IITGoa-Gymkhana-Website
 
---Developed by ArchiTech
+--Developed by ArchiTechs 
+--Updated by ArchiTechs in 2022

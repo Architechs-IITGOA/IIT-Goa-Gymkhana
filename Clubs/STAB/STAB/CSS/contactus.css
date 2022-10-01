@@ -8,6 +8,32 @@
     padding-bottom: 10vh;
     text-align: center;
 }
+/* .gmailgs{
+    font-size: 1.7vh;
+    
+    width: 30vh;
+    height: 4vh;
+    background-color: rgb(50, 50, 50);
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 3vh;
+    margin-left: 50%;
+    transform: translateX(-50%);
+} */
+.positiongs{
+    
+    width: 30vh;
+    height: 4vh;
+    /* background-color: rgb(50, 50, 50); */
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 2.3vh;
+    margin-left: 50%;
+    margin-top: 4px;
+    transform: translateX(-50%);
+}
 
 .contact-us {
     background: #000428;
@@ -21,9 +47,10 @@
 }
 
 .heading-gs {
+    
     width: 30vh;
     height: 4vh;
-    background-color: rgb(50, 50, 50);
+    /* background-color: rgb(50, 50, 50); */
     color: white;
     font-weight: bolder;
     text-align: center;
@@ -35,11 +62,13 @@
 #img-gs {
     width: 24vh;
     height: 24vh;
+    border-radius: 50%;
 }
 
 .imgclub {
     width: 15vh;
     height: 15vh;
+    border-radius:50%;
 }
 
 .stab-club {
@@ -55,7 +84,7 @@
 .heading {
     width: 18vh;
     height: 3vh;
-    background-color: rgb(50, 50, 50);
+    /* background-color: rgb(50, 50, 50); */
     color: white;
     font-weight: bolder;
     text-align: center;
@@ -67,16 +96,18 @@
 @media (max-width: 650px) {
 
     /* #section3{
-        height:120vh;
-    } */
+        /* height:160vh; */
+        /* width: 100%; overflow-y: scroll; */
+    /* } */
     .imgclub {
         width: 12vh;
         height: 12vh;
+        border-radius: 50%;
     }
     .heading {
         width: 15vh;
         height: 3vh;
-        background-color: rgb(50, 50, 50);
+        /* background-color: rgb(50, 50, 50); */
         color: white;
         font-weight: bolder;
         text-align: center;
@@ -87,6 +118,7 @@
     #img-gs {
         width: 22vh;
         height: 22vh;
+        border-radius: 50%;
     }
     .GS-stab {
         height: 50vh;
@@ -97,7 +129,7 @@
     .heading-gs {
         width: 26vh;
         height: 4vh;
-        background-color: rgb(50, 50, 50);
+        /* background-color: rgb(50, 50, 50); */
         color: white;
         font-weight: bolder;
         text-align: center;
@@ -116,11 +148,12 @@
     .imgclub {
         width: 10vh;
         height: 10vh;
+        border-radius:50%;
     }
     .heading {
         width: 12vh;
         height: 3vh;
-        background-color: rgb(50, 50, 50);
+        /* background-color: rgb(50, 50, 50); */
         color: white;
         font-weight: bolder;
         text-align: center;

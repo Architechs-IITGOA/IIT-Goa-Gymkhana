@@ -24,7 +24,7 @@ background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(37,24,55,1) 25%, rgba
   position: absolute;
 }
 .card-img-top{
-  width:200px;
+  width:180px;
   height:180px;
   z-index: 100;
 }

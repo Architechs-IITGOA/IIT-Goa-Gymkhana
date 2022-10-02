@@ -136,18 +136,18 @@ function commonclubfunction(x) {
         cimage5.src = '';
         headpic.src = './images/clubhead/Upendra_Katara_Alpha_Club_Head.jpeg';
     }
-    else if (x=='steelx'){
-        cheading.innerHTML = 'STEEL X';
+    else if (x=='MotorSports'){
+        cheading.innerHTML = 'MotorSports';
         cdetails.innerHTML =
             '.';
-        cheadname.innerHTML = 'Steel X Head';
-        cheaddetail.innerHTML = 'Aastha Jain';
+        cheadname.innerHTML = 'MotorSports Head';
+        cheaddetail.innerHTML = 'Runal Palkar';
         cimage1.src = '';
         cimage2.src = '';
         cimage3.src = '';
         cimage4.src = '';
         cimage5.src = '';    
-        headpic.src = './images/clubhead/aastha.jpg';
+        headpic.src = './images/clubhead/Runal_Palkar_Motorsports_Team.jpeg';
     }
 
 

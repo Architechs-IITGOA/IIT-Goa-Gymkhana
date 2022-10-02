@@ -3,6 +3,13 @@
 <!--ArchiTechs-Head -->
 <head>
     
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -42,27 +49,42 @@
 
 
 <body>
-
-    <div id="mySidenav" class="sidenav">
+    
+    
+    
+    <div id="mySidenav" class="sidenav" style="z-index:2000;">
         <div><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         </div>
         <div class="Navdata" id="navdata">
-            <a href="#home">HOME</a>
+            <a href="#">HOME</a>
             <!-- <a href="#page2">ABOUT US</a> -->
-            <a href="#about&clubs">About Us & CLUBS</a>
-            <a href="#timeline" class="one" onscroll="openNav()">TIMELINE</a>
-            <a href="#contact">CONTACT US</a>
+            <a href="#page4">About Us & CLUBS</a>
+            <a href="#page3" class="one" onscroll="openNav()">TIMELINE</a>
+            <a href="#page5">CONTACT US</a>
         </div>
     </div>
-    <div id="nav" class="Navicon">
+    <div id="nav" class="Navicon" style="z-index:2000;">
         <span id="navicon" onclick="openNav()">&#9776;</span>
+    </div>
+    <div id="home1">
+    <div class="section" id="section0">
+        <section class="vertical-scrolling" id="page1">
+            <div class="bg" id="bg">
+                <div class="landingpg">
+                    <div class="animatedtext"></div>
+                    <br />
+                    <div class="animatedtwotext"></div>
+                </div>
+            </div>
+        </section>
+    </div>
     </div>
 
 
 
-    <div id="fp-wrapper">
+    <!-- <div id="fp-wrapper"> -->
         
-        <div class="section" id="section0">
+        <!-- <div class="section" id="section0">
             <section class="vertical-scrolling" id="page1">
                 <div class="bg" id="bg">
                     <div class="landingpg">
@@ -72,12 +94,12 @@
                     </div>
                 </div>
             </section>
-        </div>
+        </div> -->
         
-        <div class="section" id="section1">
-            <section class="vertical-scrolling" id="page4" class="aboutusclubs">
-                <div class="entire">
-                    <div class="individual-pages" id="individual-pages">
+        <div class="section" id="section1" style="margin-top:95vh;height:105vh" >
+            <section class="vertical-scrolling" id="page4" class="aboutusclubs" style="height:105vh">
+                <div class="entire" style="height:105vh">
+                    <div class="individual-pages" id="individual-pages" style="height:105vh">
                         <div class="individual-architechs" id="individual-common">
                             <div class="back">
                                 <i onclick="commonbackFunction()" class="fas fa-chevron-left"></i>
@@ -93,23 +115,76 @@
                                         design team for the creation of apps and websites. Conclusively, the design team is responsible for the attractiveness of the site and the programming team ensures the practicality and is responsible for making
                                         the apps and sites operational for users. </p>
                             </div>
-                            <div class="one-contact">
+                            <div class="one-contact" >
                                 <img src="./images/darshay.jpg" alt="contact" class="contact-img" id="headpic">
-                                <h2 id="cheadname">Ayan Adhya</h2>
-                                <h3 id="cheaddetail">Mechanical'18</h3>
+                                <h2 id="cheadname" >Ayan Adhya</h2>
+                                <h3 id="cheaddetail"  class="hideing1">Mechanical'18</h3>
+                                
                             </div>
-                            <div class="gallery">
-                                <h2>Glimpses</h2>
+                            <!-- <div class="gallery">
+                                <h2>Glimpses</h2> -->
                                 <!-- <i class="fas fa-chevron-left prev"></i>
                 <i class="fas fa-chevron-right next"></i> -->
-                                <section class="gallery-slider gallery-architechs" id="galleryarchi" data-slick='{"slidesToShow": 3, "slidesToScroll": 1}'>
+                                <!-- <section class="gallery-slider gallery-architechs" id="galleryarchi" data-slick='{"slidesToShow": 3, "slidesToScroll": 3}' >
+                                    
                                     <div><img src="#" alt="" id="cimage1"></div>
                                     <div><img src="#" alt="" id="cimage2"></div>
                                     <div><img src="#" alt="" id="cimage3"></div>
                                     <div><img src="#" alt="" id="cimage4"></div>
                                     <div><img src="#" alt="" id="cimage5"></div>
                                 </section>
-                            </div>
+                            </div> -->
+                            <center>
+                            <div class="your-class " >
+                                <div><img style="border-radius:1rem;width:20vw;" src="#" alt="" id="cimage1"></div>
+                                <div><img style="border-radius:1rem;width:20vw;" src="#" alt="" id="cimage2"></div>
+                                <div><img style="border-radius:1rem;width:20vw;" src="#" alt="" id="cimage3"></div>
+                                <div><img style="border-radius:1rem;width:20vw;" src="#" alt="" id="cimage4"></div>
+                                <div><img style="border-radius:1rem;width:20vw;" src="#" alt="" id="cimage5"></div>
+                                
+                              </div>
+                            </center>
+                        <script>
+                            $(document).ready(function(){
+                                $('.your-class').slick({
+                                    dots: true,
+                                    infinite: false,
+                                    speed: 300,
+                                    slidesToShow: 3,
+                                    slidesToScroll: 3,
+                                    responsive: [
+                                        {
+                                        breakpoint: 1024,
+                                        settings: {
+                                            slidesToShow: 3,
+                                            slidesToScroll: 3,
+                                            infinite: true,
+                                            dots: true
+                                        }
+                                        },
+                                        {
+                                        breakpoint: 600,
+                                        settings: {
+                                            slidesToShow: 2,
+                                            slidesToScroll: 2
+                                        }
+                                        },
+                                        {
+                                        breakpoint: 480,
+                                        settings: {
+                                            slidesToShow: 1,
+                                            slidesToScroll: 1
+                                        }
+                                        }
+                                        // You can unslick at a given breakpoint now by adding:
+                                        // settings: "unslick"
+                                        // instead of a settings object
+                                    ]
+                                });
+                                });
+                                            
+                        </script>
+                            
                         </div>
                         <div class="border">
 
@@ -197,8 +272,8 @@
 
                                     <div class="carone">
                                         <a>
-                                            <img onclick="commonclubfunction('Team Motorsports')" class="car firstcar" src="./images/STAB-About3.png" alt="car" />
-                                            <div onclick="commonclubfunction('Team Motorsports')" class="centered googledscgoogledsc-car-header">Team MotorSports</div>
+                                            <img onclick="commonclubfunction('steelx')" class="car firstcar" src="./images/STAB-About3.png" alt="car" />
+                                            <div onclick="commonclubfunction('steelx')" class="centered googledscgoogledsc-car-header">SteelX</div>
                                     </div>
                                     </a>
                                 </div>
@@ -274,8 +349,8 @@
 
                                         <div class="carone">
                                             <a>
-                                                <img onclick="commonclubfunction('Team MotorSports')" class="car firstcar" src="./images/STAB-About3.png" alt="car" />
-                                                <div onclick="commonclubfunction('Team MotorSports')" class="centered">STEEL X</div>
+                                                <img onclick="commonclubfunction('steelx')" class="car firstcar" src="./images/STAB-About3.png" alt="car" />
+                                                <div onclick="commonclubfunction('steelx')" class="centered">STEEL X</div>
                                         </div>
                                         </a>
                                     </div>
@@ -286,6 +361,7 @@
                     </div>
             </section>
             </div>
+
 
 
             <div class="section" id="section2">
@@ -352,7 +428,10 @@
                 </section>
             </div>
 
-            <div class="section" id="section3" >
+
+            
+
+            <div class="section" id="section3" style="margin-top:0vh;" >
                 <section class="vertical-scrolling contact-us" id="page5">
                     <div class="GS-stab">
                         
@@ -391,7 +470,7 @@
                         <div class="clubyash c1">
                             <img src="./images/clubhead/Atharva_Bhawsar_EnR_Secretary.jpeg" alt="CLUB 1" class="imgclub C2" />
                             <div class="heading club1">
-                                Atharva Bhawsar
+                                Atharva
                             </div>
                             <div class="heading club1">
                                 E&R Secy
@@ -406,7 +485,7 @@
                         <div class="clubyash c2">
                             <img src="./images/clubhead/Kushagra_Srivastava_ArchiTechs_Club_Head.jpg" alt="CLUB 1" class="imgclub C3" />
                             <div class="heading club1">
-                                Kushagra Srivastava
+                                Kushagra
                             </div>
                             <div class="heading club1">
                                 ArchiTechs
@@ -419,7 +498,7 @@
                         <div class="clubyash c2">
                             <img src="./images/clubhead/Anish_Natekar_E&R_Club_Head.jpg" alt="CLUB 2" class="imgclub C4" />
                             <div class="heading club2">
-                                Anish Natekar
+                                E & R
                             </div>
                             <div class="heading club2">
                                 E & R
@@ -433,10 +512,10 @@
                         <div class="clubyash c3">
                             <img src="./images/clubhead/Aniket_Chaudhri_GoMyno_Club_Head.jpg" alt="CLUB 3" class="imgclub C5" />
                             <div class="heading club3">
-                                Aniket Chaudhri
+                                GO Myno
                             </div>
                             <div class="heading club3">
-                                GoMyno
+                                E&R Secy
                             </div>
                             <div class="heading club3">
                                 <a href="mailto:"><i class="fa fa-envelope" aria-hidden="true" style="color:white;cursor:pointer"></i></a>
@@ -446,10 +525,10 @@
                         <div class="clubyash c4">
                             <img src="./images/clubhead/Adarsh_Anand_DSC_Lead.jpg" alt="CLUB 4" class="imgclub C4" />
                             <div class="heading club4">
-                                Adarsh Anand
+                                GOOGLE DSC
                             </div>
                             <div class="heading club4">
-                                Google DSC
+                                E&R Secy
                             </div>
                             <div class="heading club4">
                                 <a href="mailto:adarsh.anand.20031@iitgoa.ac.in"><i class="fa fa-envelope" aria-hidden="true" style="color:white;cursor:pointer"></i></a>
@@ -460,10 +539,10 @@
                         <div class="clubyash c5">
                             <img src="./images/clubhead/Runal_Palkar_Motorsports_Team.jpeg" alt="CLUB 5" class="imgclub C5" />
                             <div class="heading club5">
-                                Runal Palkar
+                                Motorsports
                             </div>
                             <div class="heading club5">
-                                Team MotorSports
+                                E&R Secy
                             </div>
                             <div class="heading club5">
                                 <a href="mailto:kushagra.srivastava.20042@iitgoa.ac.in"><i class="fa fa-envelope" aria-hidden="true" style="color:white;cursor:pointer"></i></a>
@@ -474,10 +553,10 @@
                         <div class="clubyash c6">
                             <img src="./images/clubhead/Shrikrishna_Bodle_M_Dash_Club_Head.jpg" alt="CLUB 6" class="imgclub C6" />
                             <div class="heading club6">
-                                Shrikrishna Bodle
+                                M-Dash
                             </div>
                             <div class="heading club6">
-                                M-Dash
+                                E&R Secy
                             </div>
                             <div class="heading club6">
                                 <a href="mailto:runal.palkar.20042@iitgoa.ac.in"><i class="fa fa-envelope" aria-hidden="true" style="color:white;cursor:pointer"></i></a>
@@ -487,10 +566,10 @@
                         <div class="clubyash c7">
                             <img src="./images/clubhead/Khushi_Chaudhary_InfoSec_Club_Head.jpeg" alt="CLUB 8" class="imgclub C7" />
                             <div class="heading club7">
-                                Khushi Chaudhary
+                                InfoSec
                             </div>
                             <div class="heading club7">
-                                Infosec
+                                E&R Secy
                             </div>
                             <div class="heading club7">
                                 <a href="mailto:#"><i class="fa fa-envelope" aria-hidden="true" style="color:white;cursor:pointer"></i></a>
@@ -500,7 +579,7 @@
                         <div class="clubyash c8">
                             <img src="./images/clubhead/Upendra_Katara_Alpha_Club_Head.jpeg" alt="CLUB 9" class="imgclub C7" />
                             <div class="heading club7">
-                                Upendra Katara
+                                Alpha
                             </div>
                             <div class="heading club7">
                                 Alpha
@@ -511,10 +590,10 @@
                             </div>
                         </div>
 
-                        <div class="clubyash c8">
+                        <!-- <div class="clubyash c8">
                             <img src="./images/clubhead/aastha.jpg" alt="CLUB 10" class="imgclub C7" />
                             <div class="heading club7">
-                                Team MotorSports
+                                SteelX
                             </div>
                             <div class="heading club8">
                                 E&R Secy
@@ -523,11 +602,9 @@
                                 <a href="mailto:#"><i class="fa fa-envelope" aria-hidden="true" style="color:white;cursor:pointer"></i></a>
 
                             </div>
-                        </div>
-                        <div>
-                            <br>
-                        </div>
-                        <!-- <div class="footer-right" style="font-size: 4vh; color: white; position: absolute; left: 0; bottom: 0; width: 100%; background-color: #292c2f;">
+                        </div> -->
+                        
+                        <div  class="footer-right" style="font-size: 4vh;text-align:center; color: white; position:static; left: 0; bottom: 0; width: 100%; background-color: #292c2f;margin-top:5vh;height:10vh;">
                             Contact Us:
                             <a href="mailto:stab@iitgoa.ac.in ">
                                 <i class="far fa-envelope " style="color:white "></i>
@@ -535,11 +612,14 @@
                             <div style="font-size: 2vh; color: white;">
                                 <p> ArchiTechs &copy; 2020</p>
                             </div>
-                        </div> -->
+                        </div>
+                        
                 </section>
+                
                 </div>
 
             </div>
+            
 
             <!-- Scripts of timeline-->
             <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js'></script>

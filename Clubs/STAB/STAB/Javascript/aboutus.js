@@ -139,13 +139,17 @@ function commonclubfunction(x) {
     else if (x=='MotorSports'){
         cheading.innerHTML = 'MotorSports';
         cdetails.innerHTML =
-            '.';
+            'IIT Goa Motorsports is the Official Formula Student team of IIT Goa which develops prototype race cars and represent the Institute\
+            at national and international engineering design competitions like Formula Bharat, Formula Student Electric Vehicle (FSEV), \
+            FMEA-FKDC, GO Kart challenge, etc. The team gives you a platform to build exciting racing cars like formula one, go-karts, \
+            off-road vehicles, etc, and make a business plan for the cars built by the team. We aim to step towards Sustainable and carbon-neutral \
+            energy-powered innovations.';
         cheadname.innerHTML = 'MotorSports Head';
         cheaddetail.innerHTML = 'Runal Palkar';
-        cimage1.src = '';
-        cimage2.src = '';
-        cimage3.src = '';
-        cimage4.src = '';
+        cimage1.src = './images/clubs/motorsports/1.jpg';
+        cimage2.src = './images/clubs/motorsports/2.jpg';
+        cimage3.src = './images/clubs/motorsports/3.jpg';
+        cimage4.src = './images/clubs/motorsports/4.jpg';
         cimage5.src = '';    
         headpic.src = './images/clubhead/Runal_Palkar_Motorsports_Team.jpeg';
     }

@@ -106,6 +106,103 @@
 
 
 
+.flip-card {
+    position: relative;
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    margin: 20px;
+}
+.mls{
+    width: 280px;
+    height: 280px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.3s;
+    transform-style: preserve-3d;
+    /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(-180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 20px;
+}
+
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+}
+
+.flip-card-back {
+    background-image: url("background.jpg");
+    background-size: cover;
+    color: white;
+    transform: rotateY(180deg);
+}
+.flip-card .flip-card-inner .flip-card-front img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    /* filter: grayscale(80%); */
+}
+.flip-card .flip-card-inner .flip-card-front div{
+    position: absolute;
+    color: #cbcbcb;
+    width: 100%;
+    font-size: x-large;
+    font-weight: bold;
+    bottom: 10px;
+    left: 10px;
+    text-align: center;
+}
+.flip-card .flip-card-inner .flip-card-back img{
+    width: 40%;
+    object-fit: cover;
+    height: 40%;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+.flip-card .flip-card-inner .flip-card-back div:nth-child(1){
+    width: 100%;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: large;
+}
+.flip-card .flip-card-inner .flip-card-back div{
+    width: 100%;
+    border-radius: 50%;
+    margin: 3% 0px;
+}
+.flip-card .flip-card-inner .flip-card-back a{
+    text-decoration: none;
+    color: white;
+    font-size: x-large;
+}
+
+/* .front-description {
+    background-image: linear-gradient(transparent, black);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: absolute;
+    bottom: 0px;
+    left: -30px;
+} */
 
 
 
@@ -354,92 +451,4 @@
     .glimp{
         margin-top:40vh;
     }
-}
-.flip-card {
-    position: relative;
-    background-color: transparent;
-    width: 300px;
-    height: 300px;
-    perspective: 1000px;
-    margin: 20px;
-}
-.mls{
-    width: 280px;
-    height: 280px;
-}
-
-.flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.3s;
-    transform-style: preserve-3d;
-    /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
-}
-
-.flip-card:hover .flip-card-inner {
-    transform: rotateY(-180deg);
-}
-
-.flip-card-front,
-.flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    border-radius: 20px;
-}
-
-.flip-card-front {
-    background-color: #bbb;
-    color: black;
-}
-
-.flip-card-back {
-    background-image: url("background.jpg");
-    background-size: cover;
-    color: white;
-    transform: rotateY(180deg);
-}
-.flip-card .flip-card-inner .flip-card-front img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 20px;
-    /* filter: grayscale(80%); */
-}
-.flip-card .flip-card-inner .flip-card-front div{
-    position: absolute;
-    color: #cbcbcb;
-    width: 100%;
-    font-size: x-large;
-    font-weight: bold;
-    bottom: 10px;
-    left: 10px;
-    text-align: center;
-}
-.flip-card .flip-card-inner .flip-card-back img{
-    width: 40%;
-    object-fit: cover;
-    height: 40%;
-    border-radius: 50%;
-    margin-top: 20px;
-}
-.flip-card .flip-card-inner .flip-card-back div:nth-child(1){
-    width: 100%;
-    border-radius: 50%;
-    font-weight: bold;
-    font-size: large;
-}
-.flip-card .flip-card-inner .flip-card-back div{
-    width: 100%;
-    border-radius: 50%;
-    margin: 3% 0px;
-}
-.flip-card .flip-card-inner .flip-card-back a{
-    text-decoration: none;
-    color: white;
-    font-size: x-large;
 }

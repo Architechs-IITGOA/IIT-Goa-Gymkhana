@@ -3,6 +3,8 @@
   height: 240px;
   padding: 20px;
   margin-top: -10px;
+  object-fit: cover;
+  object-position: 0px 0px;
 }
 .gallery__container {
   display: flex;

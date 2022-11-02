@@ -122,16 +122,16 @@ document.getElementById("gallery__btn2020").onclick = function () {
   document.querySelector(".gallery__crs .gallery__crs__ee h4").innerHTML =
     "ATHARVA BHANAGE";
   document.querySelector(".gallery__crs .gallery__crs__me h4").innerHTML =
-    "PRASHANT CHOUDHARY";
+    "PRANAV PATIL";
   //PHOTO CHANGE
   document.querySelector(".gallery__crs .gallery__crs__mnc img").src =
     "./gallery/photos/Sanskar_Dethe_CR_MnC_2020.jpg";
   document.querySelector(".gallery__crs .gallery__crs__cse img").src =
     "./gallery/photos/Rajat_Singh_CR_CSE_2020.jpg";
   document.querySelector(".gallery__crs .gallery__crs__ee img").src =
-    "./gallery/photos/Atharva_Bhanage_CR_EE_2020.jpeg";
+    "./gallery/photos/Atharva_Bhanage_CR_EE_2020.jpg";
   document.querySelector(".gallery__crs .gallery__crs__me img").src =
-    "./gallery/photos/Prashant_Chaudhary_CR_ME_2020.jpg";
+    "./gallery/photos/Pranav_Patil_CR_ME_2020.jpg";
   //element hide
   document.querySelector(".gallery__crs .gallery__crs__mnc").style.display =
     "flex";
@@ -158,7 +158,7 @@ document.getElementById("gallery__btn2021").onclick = function () {
   document.querySelector(".gallery__crs .gallery__crs__ee h4").innerHTML =
     "ANUSHKA SRIVASTAVA";
   document.querySelector(".gallery__crs .gallery__crs__me h4").innerHTML =
-    "SANJAY SINGH";
+    "SHIVAM SINGH";
   //PHOTO CHANGE
   document.querySelector(".gallery__crs .gallery__crs__mnc img").src =
     "./gallery/photos/Arnav_Kamat_CR_MnC_2021.jpg";
@@ -167,7 +167,7 @@ document.getElementById("gallery__btn2021").onclick = function () {
   document.querySelector(".gallery__crs .gallery__crs__ee img").src =
     "./gallery/photos/Anushka_Srivastava_CR_EE_2021.JPG";
   document.querySelector(".gallery__crs .gallery__crs__me img").src =
-    "./gallery/photos/Sanjay_Singh_CR_ME_2021.jpg";
+    "./gallery/photos/Shivam_Singh_CR_ME_2021.jpg";
   //element hide
   document.querySelector(".gallery__crs .gallery__crs__mnc").style.display =
     "flex";

@@ -23,8 +23,10 @@ a{
   color:white;
   overflow: visible;
   font-family: 'Bellota', cursive;
+  /* border: 1px solid red; */
 }
 .title_C2{
+  /* border: 1px solid red; */
   position: relative;
   width: max-content;
   height: max-content;
@@ -36,6 +38,12 @@ a{
   overflow: visible;
   font-family: 'Bellota', cursive;
   
+}
+
+.campulse {
+  margin: auto;
+  /* border: 1px solid red; */
+  width: 10vw;
 }
 @media screen and (max-width: 700px)
 {

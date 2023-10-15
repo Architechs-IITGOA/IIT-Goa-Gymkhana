@@ -34,13 +34,13 @@ function commonclubfunction(x) {
              the basis for the programming to work on. ArchiTechs team ensures the practicality and is responsible \
              for making the apps and sites operational for users.';
         cheadname.innerHTML = 'ArchiTechs-Head';
-        cheaddetail.innerHTML = 'Kushagra Srivastava';
+        cheaddetail.innerHTML = 'Gautam Kumar';
         cimage1.src = './images/clubs/archi/1.jpg';
         cimage2.src = './images/clubs/archi/2.jpg';
         cimage3.src = './images/clubs/archi/3.jpg';
         cimage4.src = './images/clubs/archi/4.jpg';
         cimage5.src = './images/clubs/archi/5.jpg';
-        headpic.src = './images/clubhead/Kushagra_Srivastava_ArchiTechs_Club_Head.jpg'
+        headpic.src = './images/clubhead/gautam_kumar_club_head_ArchiTechs.jpg'
     } else if (x == 'er') {
         cheading.innerHTML = 'E & R';
         cdetails.innerHTML =

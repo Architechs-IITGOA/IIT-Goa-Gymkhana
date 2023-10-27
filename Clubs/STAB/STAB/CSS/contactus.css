@@ -167,8 +167,10 @@
     width: 100%;
     font-size: x-large;
     font-weight: bold;
-    bottom: 10px;
-    left: 10px;
+    bottom: 0px;
+    /* height: inherit; */
+    left: 0;
+    background-color:rgba(0, 0, 0, 0.3);
     text-align: center;
 }
 .flip-card .flip-card-inner .flip-card-back img{

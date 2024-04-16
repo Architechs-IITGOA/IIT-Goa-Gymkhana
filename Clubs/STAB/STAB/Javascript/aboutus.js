@@ -82,10 +82,10 @@ function commonclubfunction(x) {
             hands-on experience for building real world applications.';
         cheadname.innerHTML = 'DSC-Head';
         cheaddetail.innerHTML = 'Akash Khandelwal';
-        cimage1.src = './images/clubs/dsc/dsc1.jpg';
-        cimage2.src = './images/clubs/dsc/dsc2.jpg';
+        cimage1.src = './images/clubs/dsc/dsc8.jpg';
+        cimage2.src = './images/clubs/dsc/dsc6.jpg';
         cimage3.src = './images/clubs/dsc/dsc3.jpg';
-        cimage4.src = './images/clubs/dsc/dsc4.jpg';
+        cimage4.src = './images/clubs/dsc/dsc7.jpg';
         cimage5.src = './images/clubs/dsc/dsc5.jpg';
         headpic.src = './images/clubhead/Akash_Khandelwal_GDSC_Lead.jpg';
     } else if (x == 'infosec') {
@@ -147,10 +147,10 @@ function commonclubfunction(x) {
         cheadname.innerHTML = 'MotorSports Head';
         cheaddetail.innerHTML = 'Dhiraj Pachore';
         cimage1.src = './images/clubs/motorsports/1.jpg';
-        cimage2.src = './images/clubs/motorsports/2.jpg';
-        cimage3.src = './images/clubs/motorsports/3.jpg';
+        cimage2.src = './images/clubs/motorsports/6.jpg';
+        cimage3.src = './images/clubs/motorsports/7.jpg';
         cimage4.src = './images/clubs/motorsports/4.jpg';
-        cimage5.src = '';    
+        cimage5.src = './images/clubs/motorsports/5.jpg';
         headpic.src = './images/clubhead/Dhiraj_Pachore_Motorsports_Club_Head.jpg';
     }
 

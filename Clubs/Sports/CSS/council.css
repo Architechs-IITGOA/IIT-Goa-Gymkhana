@@ -361,3 +361,56 @@ body {
   color: white;
   font-size: x-large;
 }
+
+#EsportsCouncil{
+  display : flex;
+  align-items: center;
+  justify-content: center;
+}
+#EsportsInfo{
+  max-width : 900px;
+  width : 90%;
+  margin : auto;
+  text-align : center;
+  position : static;
+}
+#EsportsTagline{
+  margin-bottom : 30px;
+  color : white;
+  font-size : 2rem;
+  margin-bottom : 50px;
+  line-height: 1.25;
+}
+#EsportsLinkWrapper{
+  text-align : center;
+  margin-top : 50px;
+}
+#EsportsLink{
+  color : white;
+  font-size : 1.5rem;
+  font-weight : bold;
+  position: relative;
+  text-decoration : none;
+}
+#EsportsLink::after{
+  content : '';
+  position : absolute;
+  bottom : -7px;
+  left : 0;
+  height : 3px;
+  width : 0;
+  background-color: white;
+  transition: 0.5s ease;
+}
+#EsportsLink:hover::after{
+  width : 100%;
+}
+
+@media screen and (max-width:450px){
+  #EsportsTagline{
+    font-size : 1.4rem;
+  }
+  #EsportsLink{
+    font-size : 1.4rem;
+  }
+}

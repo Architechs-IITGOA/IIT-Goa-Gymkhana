@@ -34,6 +34,10 @@
   background-image:url('../images/Parralax/parrcouncil.jpg');
   min-height:400px;
 }
+.pimg6{
+  background-image: url("../images/Parralax/parresports3.jpg");
+  min-height : 500px;
+}
 .section{
   height: 100%;
   text-align:center;

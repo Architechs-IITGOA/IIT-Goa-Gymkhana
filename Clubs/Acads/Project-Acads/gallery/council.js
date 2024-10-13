@@ -1,154 +1,13 @@
-// // btns selector
-// document.getElementById("gallery__btn2018").onclick = function () {
-//   //color change
-//   document.getElementById("gallery__btn2018").style.color = "white";
-//   document.getElementById("gallery__btn2018").style.backgroundColor = "#505050";
-//   document.getElementById("gallery__btn2019").style.color = "#505050";
-//   document.getElementById("gallery__btn2019").style.backgroundColor = "white";
-//   // document.getElementById("gallery__btn2017").style.color = "#505050";
-//   // document.getElementById("gallery__btn2017").style.backgroundColor = "white";
-//   document.getElementById("gallery__btn2020").style.color = "#505050";
-//   document.getElementById("gallery__btn2020").style.backgroundColor = "white";
-
-//   //data change
-
-//   document.querySelector(".gallery__crs .gallery__crs__cse h4").innerHTML =
-//     "SIDDHARTH SINGH SOLANKI";
-//   document.querySelector(".gallery__crs .gallery__crs__ee h4").innerHTML =
-//     "SHUBHANSHU TOMER";
-//   document.querySelector(".gallery__crs .gallery__crs__me h4").innerHTML =
-//     "RAHUL GOYAT";
-//   //PHOTO CHANGE
-//   document.querySelector(".gallery__crs .gallery__crs__cse img").src =
-//     "./gallery/photos/Siddharth_Singh_Solanki - Siddharth Solanki.JPG";
-//   document.querySelector(".gallery__crs .gallery__crs__ee img").src =
-//     "./gallery/photos/shubhanshu_tomer - Shubhanshu Tomar.jpg";
-//   document.querySelector(".gallery__crs .gallery__crs__me img").src =
-//     "./gallery/photos/rahul_goyat - Rahul Goyat.jpg";
-//   //element hide
-//   document.querySelector(".gallery__crs .gallery__crs__mnc").style.display =
-//     "none";
-// };
-// document.getElementById("gallery__btn2018").onclick();
-
-function batch2k19(){
-    
-  document.getElementById("gallery__btn2019").style.color = "white";
-  document.getElementById("gallery__btn2019").style.backgroundColor = "#505050";
-  document.getElementById("gallery__btn2021").style.color = "#505050";
-  document.getElementById("gallery__btn2021").style.backgroundColor = "white";
-  // document.getElementById("gallery__btn2017").style.color = "#505050";
-  // document.getElementById("gallery__btn2017").style.backgroundColor = "white";
-  document.getElementById("gallery__btn2020").style.color = "#505050";
-  document.getElementById("gallery__btn2020").style.backgroundColor = "white";
-
-  //data change
-  document.querySelector(".gallery__crs .gallery__crs__mnc h4").innerHTML =
-    "SATVIK BHATNAGAR";
-  document.querySelector(".gallery__crs .gallery__crs__cse h4").innerHTML =
-    "RAGHVENDRA SINGH";
-  document.querySelector(".gallery__crs .gallery__crs__ee h4").innerHTML =
-    "SHUBHAM GARG";
-  document.querySelector(".gallery__crs .gallery__crs__me h4").innerHTML =
-    "MAYANK SHRESHTHA";
-  //PHOTO CHANGE
-  document.querySelector(".gallery__crs .gallery__crs__mnc img").src =
-    "./gallery/photos/Satvik_Bhatnagar_CR_MnC_2019.jpg";
-  document.querySelector(".gallery__crs .gallery__crs__cse img").src =
-    "./gallery/photos/Raghvendra_Singh_CR_CSE_2019.jpg";
-  document.querySelector(".gallery__crs .gallery__crs__ee img").src =
-    "./gallery/photos/Shubham_Garg_CR_EE_2019.jpg";
-  document.querySelector(".gallery__crs .gallery__crs__me img").src =
-    "./gallery/photos/Mayank_Shreshtha_CR_2019.jpg";
-  //element hide
-  document.querySelector(".gallery__crs .gallery__crs__mnc").style.display =
-    "flex"; 
-}
-
-batch2k19();
-
-document.getElementById("gallery__btn2019").onclick = function () {
-  batch2k19();
-};
-
-// document.getElementById("gallery__btn2017").onclick = function () {
-//   //color change
-//   document.getElementById("gallery__btn2017").style.color = "white";
-//   document.getElementById("gallery__btn2017").style.backgroundColor = "#505050";
-//   document.getElementById("gallery__btn2019").style.color = "#505050";
-//   document.getElementById("gallery__btn2019").style.backgroundColor = "white";
-//   document.getElementById("gallery__btn2018").style.color = "#505050";
-//   document.getElementById("gallery__btn2018").style.backgroundColor = "white";
-//   document.getElementById("gallery__btn2020").style.color = "#505050";
-//   document.getElementById("gallery__btn2020").style.backgroundColor = "white";
-
-//   //data change
-
-//   document.querySelector(".gallery__crs .gallery__crs__cse h4").innerHTML =
-//     "RAJ JAGTAP";
-//   document.querySelector(".gallery__crs .gallery__crs__ee h4").innerHTML =
-//     "SATYENDRA";
-//   document.querySelector(".gallery__crs .gallery__crs__me h4").innerHTML =
-//     "RUTVIK KEVADIYA";
-//   // PHOTO CHANGE
-//   document.querySelector(".gallery__crs .gallery__crs__cse img").src =
-//     "./gallery/photos/raj_jagtap - Raj Jagtap.JPG";
-//   document.querySelector(".gallery__crs .gallery__crs__ee img").src =
-//     "./gallery/photos/Satyendra - Satyendra IIT.jpg";
-//   document.querySelector(".gallery__crs .gallery__crs__me img").src =
-//     "./gallery/photos/Rutvik_Kevadiya - Kevadiya Jayeshbhai.jpg";
-
-//   //element hide
-//   document.querySelector(".gallery__crs .gallery__crs__mnc").style.display =
-//     "none";
-// };
-
-document.getElementById("gallery__btn2020").onclick = function () {
-  //color change
-  document.getElementById("gallery__btn2020").style.color = "white";
-  document.getElementById("gallery__btn2020").style.backgroundColor = "#505050";
-  document.getElementById("gallery__btn2019").style.color = "#505050";
-  document.getElementById("gallery__btn2019").style.backgroundColor = "white";
-  // document.getElementById("gallery__btn2017").style.color = "#505050";
-  // document.getElementById("gallery__btn2017").style.backgroundColor = "white";
-  document.getElementById("gallery__btn2021").style.color = "#505050";
-  document.getElementById("gallery__btn2021").style.backgroundColor = "white";
-
-  //data change
-  document.querySelector(".gallery__crs .gallery__crs__mnc h4").innerHTML =
-    "SANSKAR DETHE";
-  document.querySelector(".gallery__crs .gallery__crs__cse h4").innerHTML =
-    "RAJAT SINGH";
-  document.querySelector(".gallery__crs .gallery__crs__ee h4").innerHTML =
-    "ATHARVA BHANAGE";
-  document.querySelector(".gallery__crs .gallery__crs__me h4").innerHTML =
-    "PRANAV PATIL";
-  //PHOTO CHANGE
-  document.querySelector(".gallery__crs .gallery__crs__mnc img").src =
-    "./gallery/photos/Sanskar_Dethe_CR_MnC_2020.jpg";
-  document.querySelector(".gallery__crs .gallery__crs__cse img").src =
-    "./gallery/photos/Rajat_Singh_CR_CSE_2020.jpg";
-  document.querySelector(".gallery__crs .gallery__crs__ee img").src =
-    "./gallery/photos/Atharva_Bhanage_CR_EE_2020.jpg";
-  document.querySelector(".gallery__crs .gallery__crs__me img").src =
-    "./gallery/photos/Pranav_Patil_CR_ME_2020.jpg";
-  //element hide
-  document.querySelector(".gallery__crs .gallery__crs__mnc").style.display =
-    "flex";
-};
-
-
-
 document.getElementById("gallery__btn2021").onclick = function () {
   //color change
   document.getElementById("gallery__btn2021").style.color = "white";
   document.getElementById("gallery__btn2021").style.backgroundColor = "#505050";
-  document.getElementById("gallery__btn2020").style.color = "#505050";
-  document.getElementById("gallery__btn2020").style.backgroundColor = "white";
-  // document.getElementById("gallery__btn2017").style.color = "#505050";
-  // document.getElementById("gallery__btn2017").style.backgroundColor = "white";
-  document.getElementById("gallery__btn2019").style.color = "#505050";
-  document.getElementById("gallery__btn2019").style.backgroundColor = "white";
+  document.getElementById("gallery__btn2022").style.color = "#505050";
+  document.getElementById("gallery__btn2022").style.backgroundColor = "white";
+  document.getElementById("gallery__btn2023").style.color = "#505050";
+  document.getElementById("gallery__btn2023").style.backgroundColor = "white";
+  document.getElementById("gallery__btn2024").style.color = "#505050";
+  document.getElementById("gallery__btn2024").style.backgroundColor = "white";
 
   //data change
   document.querySelector(".gallery__crs .gallery__crs__mnc h4").innerHTML =
@@ -168,7 +27,99 @@ document.getElementById("gallery__btn2021").onclick = function () {
     "./gallery/photos/Anushka_Srivastava_CR_EE_2021.JPG";
   document.querySelector(".gallery__crs .gallery__crs__me img").src =
     "./gallery/photos/Shivam_Singh_CR_ME_2021.jpg";
-  //element hide
-  document.querySelector(".gallery__crs .gallery__crs__mnc").style.display =
-    "flex";
+
+};
+
+document.getElementById("gallery__btn2022").onclick = function () {
+  //color change
+  document.getElementById("gallery__btn2022").style.color = "white";
+  document.getElementById("gallery__btn2022").style.backgroundColor = "#505050";
+  document.getElementById("gallery__btn2021").style.color = "#505050";
+  document.getElementById("gallery__btn2021").style.backgroundColor = "white";
+  document.getElementById("gallery__btn2023").style.color = "#505050";
+  document.getElementById("gallery__btn2023").style.backgroundColor = "white";
+  document.getElementById("gallery__btn2024").style.color = "#505050";
+  document.getElementById("gallery__btn2024").style.backgroundColor = "white";
+
+  //data change
+  document.querySelector(".gallery__crs .gallery__crs__mnc h4").innerHTML =
+    "NANDAN MAYEKAR";
+  document.querySelector(".gallery__crs .gallery__crs__cse h4").innerHTML =
+    "SAHIL GARG";
+  document.querySelector(".gallery__crs .gallery__crs__ee h4").innerHTML =
+    "JATIN REDDY";
+  document.querySelector(".gallery__crs .gallery__crs__me h4").innerHTML =
+    "KRIS AJUDIYA";
+  //PHOTO CHANGE
+  document.querySelector(".gallery__crs .gallery__crs__mnc img").src =
+    "./gallery/photos/Nandan_MnC_BR.jpg";
+  document.querySelector(".gallery__crs .gallery__crs__cse img").src =
+    "./gallery/photos/Sahil_CSE_BR.jpg";
+  document.querySelector(".gallery__crs .gallery__crs__ee img").src =
+    "./gallery/photos/Jatin_Reddy_GSAcads.jpg";
+  document.querySelector(".gallery__crs .gallery__crs__me img").src =
+    "./gallery/photos/Kris_Ajudiya.jpg";
+
+};
+document.getElementById("gallery__btn2023").onclick = function () {
+  //color change
+  document.getElementById("gallery__btn2023").style.color = "white";
+  document.getElementById("gallery__btn2023").style.backgroundColor = "#505050";
+  document.getElementById("gallery__btn2021").style.color = "#505050";
+  document.getElementById("gallery__btn2021").style.backgroundColor = "white";
+  document.getElementById("gallery__btn2022").style.color = "#505050";
+  document.getElementById("gallery__btn2022").style.backgroundColor = "white";
+  document.getElementById("gallery__btn2024").style.color = "#505050";
+  document.getElementById("gallery__btn2024").style.backgroundColor = "white";
+
+  //data change
+  document.querySelector(".gallery__crs .gallery__crs__mnc h4").innerHTML =
+    "ASHWIN GAIKWAD";
+  document.querySelector(".gallery__crs .gallery__crs__cse h4").innerHTML =
+    "ABHINAV DAGGUBELLI";
+  document.querySelector(".gallery__crs .gallery__crs__ee h4").innerHTML =
+    "BHUKYA MADHU";
+  document.querySelector(".gallery__crs .gallery__crs__me h4").innerHTML =
+    "SHREEKANT LOLAGE";
+  //PHOTO CHANGE
+  document.querySelector(".gallery__crs .gallery__crs__mnc img").src =
+    "./gallery/photos/Ashwin_CR_MnC .jpg";
+  document.querySelector(".gallery__crs .gallery__crs__cse img").src =
+    "./gallery/photos/Daggubelli_Abhinav_CSE'27_CR.png";
+  document.querySelector(".gallery__crs .gallery__crs__ee img").src =
+    "./gallery/photos/Bhukya_Madhu_CR_EE.jpg";
+  document.querySelector(".gallery__crs .gallery__crs__me img").src =
+    "./gallery/photos/Shreekant _Lolage_CR_ME_27.jpg";
+
+};
+document.getElementById("gallery__btn2024").onclick = function () {
+  //color change
+  document.getElementById("gallery__btn2024").style.color = "white";
+  document.getElementById("gallery__btn2024").style.backgroundColor = "#505050";
+  document.getElementById("gallery__btn2021").style.color = "#505050";
+  document.getElementById("gallery__btn2021").style.backgroundColor = "white";
+  document.getElementById("gallery__btn2023").style.color = "#505050";
+  document.getElementById("gallery__btn2023").style.backgroundColor = "white";
+  document.getElementById("gallery__btn2022").style.color = "#505050";
+  document.getElementById("gallery__btn2022").style.backgroundColor = "white";
+
+  //data change
+  document.querySelector(".gallery__crs .gallery__crs__mnc h4").innerHTML =
+    "MITTA SIVA SAI VARSHITH";
+  document.querySelector(".gallery__crs .gallery__crs__cse h4").innerHTML =
+    "SHAURYA SINHA";
+  document.querySelector(".gallery__crs .gallery__crs__ee h4").innerHTML =
+    "ARYAN DACHEPALLY";
+  document.querySelector(".gallery__crs .gallery__crs__me h4").innerHTML =
+    "HARSHIL SHARMA ";
+  //PHOTO CHANGE
+  document.querySelector(".gallery__crs .gallery__crs__mnc img").src =
+    "./gallery/photos/Siva Sai Varshith_CR_MnC 2024-28.jpg";
+  document.querySelector(".gallery__crs .gallery__crs__cse img").src =
+    "./gallery/photos/Shaurya Sinha_CR_CS 2024-2028.jpg";
+  document.querySelector(".gallery__crs .gallery__crs__ee img").src =
+    "./gallery/photos/ARYAN-24CR-EE.jpg";
+  document.querySelector(".gallery__crs .gallery__crs__me img").src =
+    "./gallery/photos/Harshil-24CR-ME.jpg";
+
 };

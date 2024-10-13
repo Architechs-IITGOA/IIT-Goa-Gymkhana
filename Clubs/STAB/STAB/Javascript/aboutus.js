@@ -34,13 +34,13 @@ function commonclubfunction(x) {
              the basis for the programming to work on. ArchiTechs team ensures the practicality and is responsible \
              for making the apps and sites operational for users.';
         cheadname.innerHTML = 'ArchiTechs-Head';
-        cheaddetail.innerHTML = 'Gautam Kumar';
+        cheaddetail.innerHTML = 'Utsav Shah';
         cimage1.src = './images/clubs/archi/1.jpg';
         cimage2.src = './images/clubs/archi/2.jpg';
         cimage3.src = './images/clubs/archi/3.jpg';
         cimage4.src = './images/clubs/archi/4.jpg';
         cimage5.src = './images/clubs/archi/5.jpg';
-        headpic.src = './images/clubhead/gautam_kumar_club_head_ArchiTechs.jpg'
+        headpic.src = './images/clubhead/Utsav_Shah_club_head_ArchiTechs.jpg'
     } else if (x == 'er') {
         cheading.innerHTML = 'E & R';
         cdetails.innerHTML =
@@ -49,13 +49,13 @@ function commonclubfunction(x) {
         under student technical Activities Body.The club caters to every individual with or without experience and\
         helps students gain the required knowledge and experience.';
         cheadname.innerHTML = 'E & R-Head';
-        cheaddetail.innerHTML = 'Anish Natekar';
+        cheaddetail.innerHTML = 'Roshan Sharma';
         cimage1.src = './images/clubs/er/er1.jpg';
         cimage2.src = './images/clubs/er/er2.jpg';
         cimage3.src = './images/clubs/er/er3.jpg';
         cimage4.src = './images/clubs/er/er4.jpg';
         cimage5.src = './images/clubs/er/er5.jpg';
-        headpic.src = './images/clubhead/Anish_Natekar_E&R_Club_Head.jpg'
+        headpic.src = './images/clubhead/Roshan_Sharma_EnR_club_head.jpg'
     } else if (x == 'gomyno') {
         cheading.innerHTML = 'GOMYNO';
         cdetails.innerHTML =
@@ -65,13 +65,13 @@ function commonclubfunction(x) {
               is to build a strong coding culture among the passionate students of the institute so that they can get \
               assistance and enhance their coding ability.';
         cheadname.innerHTML = 'GoMyno-Head';
-        cheaddetail.innerHTML = 'Abhinav Reddy';
+        cheaddetail.innerHTML = 'Karmanya Gupta';
         cimage1.src = './images/clubs/gomyno/gomynoa.jpg';
         cimage2.src = './images/clubs/gomyno/gomynob.jpg';
         cimage3.src = './images/clubs/gomyno/gomynoc.jpg';
         cimage4.src = './images/clubs/gomyno/gomynod.jpg';
         cimage5.src = './images/clubs/gomyno/gomynoe.jpg';
-        headpic.src = './images/clubhead/Abhinav_Reddy.jpeg'
+        headpic.src = './images/clubhead/Karmanya_Gupta_GoMyno_Head.jpg'
     } else if (x == 'googledsc') {
         cheading.innerHTML = 'GOOGLE DSC';
         cdetails.innerHTML =
@@ -81,13 +81,13 @@ function commonclubfunction(x) {
             communities.By developing solutions, the talented students can now help the local community and have a \
             hands-on experience for building real world applications.';
         cheadname.innerHTML = 'DSC-Head';
-        cheaddetail.innerHTML = 'Akash Khandelwal';
+        cheaddetail.innerHTML = 'Jatin Reddy';
         cimage1.src = './images/clubs/dsc/dsc8.jpg';
         cimage2.src = './images/clubs/dsc/dsc6.jpg';
         cimage3.src = './images/clubs/dsc/dsc3.jpg';
         cimage4.src = './images/clubs/dsc/dsc7.jpg';
         cimage5.src = './images/clubs/dsc/dsc5.jpg';
-        headpic.src = './images/clubhead/Akash_Khandelwal_GDSC_Lead.jpg';
+        headpic.src = './images/clubhead/Jatin_Reddy_GDSC_club_head.jpg';
     } else if (x == 'infosec') {
         cheading.innerHTML = 'INFOSEC';
         cdetails.innerHTML =
@@ -97,13 +97,13 @@ function commonclubfunction(x) {
                and assists them in the learning process. It has been the organizing partner for the HCL Cyber Security Hackathon 2020\
                 conducted IIT Kanpur.';
         cheadname.innerHTML = 'InfoSec-Head';
-        cheaddetail.innerHTML = 'Akhil Thirukonda';
+        cheaddetail.innerHTML = 'Maanas Bhaya';
         cimage1.src = './images/clubs/infosec/infosec1.jpg';
         cimage2.src = './images/clubs/infosec/infosec2.jpg';
         cimage3.src = './images/clubs/infosec/infosec3.jpg';
         cimage4.src = './images/clubs/infosec/infosec4.jpg';
         cimage5.src = './images/clubs/infosec/infosec5.jpg';
-        headpic.src = './images/clubhead/Akhil_Thirukonda_Sivakumar_Infosec_Clubhead.jpg'
+        headpic.src = './images/clubhead/Maanas_Bhaya_infosec_club_head.jpg'
     } else if (x == 'mdash') {
         cheading.innerHTML = 'M-DASH';
         cdetails.innerHTML =
@@ -112,13 +112,13 @@ function commonclubfunction(x) {
             comfortable with various designing softwares like AutoCAD, Solidworks, etc.Things are taught from scratch to \
             freshmen and hence, everyone is welcome to join the club and gain knowledge and experience.';
         cheadname.innerHTML = 'M-Dash-Head';
-        cheaddetail.innerHTML = 'Atul Mehta';
+        cheaddetail.innerHTML = 'Yash Khobragade';
         cimage1.src = './images/clubs/mdash/mdash1.JPG';
         cimage2.src = './images/clubs/mdash/mdash2.JPG';
         cimage3.src = './images/clubs/mdash/mdash3.JPG';
         cimage4.src = './images/clubs/mdash/mdash4.JPG';
         cimage5.src = './images/clubs/mdash/mdash5.JPG';
-        headpic.src = './images/clubhead/Atul_Mehta_MDash_Club_Head.jpg';
+        headpic.src = './images/clubhead/Yash_Khobragade_Mdash_club_head.jpg';
     }
     else if (x=='alpha'){
         cheading.innerHTML = 'ALPHA';
@@ -128,13 +128,13 @@ function commonclubfunction(x) {
             viable carrer option leveraging their technical Skills. Our activities and projects are aimed at demonstrating the \
             application of technology in Finance.';
         cheadname.innerHTML = 'Alpha Head';
-        cheaddetail.innerHTML = 'Akarsh Jha';
+        cheaddetail.innerHTML = 'Jash Gaglani';
         cimage1.src = '';
         cimage2.src = '';
         cimage3.src = '';
         cimage4.src = '';
         cimage5.src = '';
-        headpic.src = './images/clubhead/Akarsh_Jha_Alpha_Club_Head.jpg';
+        headpic.src = './images/clubhead/Jash_Gaglani_Alpha_club_head.jpg';
     }
     else if (x=='MotorSports'){
         cheading.innerHTML = 'MotorSports';
@@ -145,13 +145,13 @@ function commonclubfunction(x) {
             off-road vehicles, etc, and make a business plan for the cars built by the team. We aim to step towards Sustainable and carbon-neutral \
             energy-powered innovations.';
         cheadname.innerHTML = 'MotorSports Head';
-        cheaddetail.innerHTML = 'Dhiraj Pachore';
+        cheaddetail.innerHTML = 'Rahul Tilwani';
         cimage1.src = './images/clubs/motorsports/1.jpg';
         cimage2.src = './images/clubs/motorsports/6.jpg';
         cimage3.src = './images/clubs/motorsports/7.jpg';
         cimage4.src = './images/clubs/motorsports/4.jpg';
         cimage5.src = './images/clubs/motorsports/5.jpg';
-        headpic.src = './images/clubhead/Dhiraj_Pachore_Motorsports_Club_Head.jpg';
+        headpic.src = './images/clubhead/Rahul_Tilwani_Motorsports_club_head.jpg';
     }
 
 

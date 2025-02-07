@@ -3,3 +3,8 @@ $(document).ready(function() {
     pager: true
   });
 });
+$(document).ready(function() {
+  $('#darkgallery').lightGallery({
+    pager: true
+  });
+});

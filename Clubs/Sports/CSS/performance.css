@@ -23,6 +23,11 @@
     gap: 1.2rem;
     justify-content: center;
     align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.interiit-performance .performance-card:hover{
+    transform: scale(1.1);
 }
 
 .performance-img-container{

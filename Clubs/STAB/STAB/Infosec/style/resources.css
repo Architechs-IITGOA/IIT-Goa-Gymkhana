@@ -1,0 +1,170 @@
+/* Resources style */
+.resource-wrapper{
+    margin: 0 auto;
+    background: linear-gradient(0deg, #000000 30%, #1E1E1E 67%);
+    padding: 2rem;
+    padding-top: 3rem;
+}
+.resource-content{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    align-items: center;
+}
+.resource-header{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.resource-header h1{
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7), 0 1px 3px rgba(255, 255, 255, 0.1); */
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.3),0px 0px 15px rgba(0, 255, 255, 0.5);
+    padding: 1rem;
+    width: fit-content;
+    margin: auto;
+    border-radius: 5px;
+}
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    min-width: 380px;
+    width: 25%;
+    height: 350px;
+}
+/* ------ */
+.card-1{
+    background: url('../assets/images/card-image3.jpeg') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7), 0 1px 3px rgba(255, 255, 255, 0.1);
+}
+
+.title-2{
+    font-size: 3rem;
+    font-weight: 600;
+    padding: 1rem;
+    color: var(--bs-text-secondary-color);
+}
+.button{
+    cursor: pointer;
+    display: inline-block;
+    border: 2px solid #0606f0;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 0.75rem 2rem;
+    color: #a5d6a7;
+    text-decoration: underline;
+    background-color: #0606f0;
+    transition: transform 0.3s ease;
+}
+.button:hover{
+    transform: scale(1.1);
+    color: #81c784;
+    text-decoration: none;
+}
+.button:active{
+    background-color: black;
+}
+/* ------ */
+.card-2,.card-3{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    border-radius: 10px;
+    background-color: var(--gray);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7), 0 1px 3px rgba(255, 255, 255, 0.1);
+}
+.embed-item{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+/* ---- */
+.card-4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background: url('../assets/images/card-image1.jpg') no-repeat center right;
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7), 0 1px 3px rgba(255, 255, 255, 0.1);
+    color: var(--bs-text-secondary-color);
+}
+/* ----- */
+.card-5,.card-6,.card-7{
+    color: #f0f0f0;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(110, 72, 72, 0.7), 0 1px 3px rgba(255, 255, 255, 0.1);
+}
+.card-5{
+    background: url('../assets/images/card-image2.jpg') no-repeat center center;
+    background-size: cover;
+}
+.card-6{
+    background: url('../assets/images/card-image4.jpg') no-repeat center center;
+    background-size: cover;
+}
+.card-7{
+    background: url('../assets/images/card-image5.jpg') no-repeat center center;
+    background-size: cover;
+}
+.title-6{
+    font-size: 2rem;
+}
+
+@media screen and (max-width: 1080px)and (min-width:640px){
+    .resource-wrapper,.resource-content{
+        padding: 1rem;
+    }
+    .title-2{
+        font-size: 2rem;
+    }
+    .resource-header{
+        padding: 0.5rem;
+    }
+    .card{
+        min-width: 280px;
+        width: 45%;
+    }
+}
+@media screen and (max-width: 640px){
+    .resource-wrapper,.resource-content{
+        padding: 0.5rem;
+    }
+    .title-2{
+        font-size: 2rem;
+    }
+    .resource-header{
+        padding: 0.5rem;
+    }
+    .title-6{
+        font-size: 1.2rem;
+    }
+    .card{
+        min-width: 300px;
+        width: 90%;
+    }
+    .card-container{
+        gap: 1rem;
+    }
+}
+/* --------------------------------------------------------------------- */

@@ -1,0 +1,30 @@
+:root {
+  --glow-color1: rgba(243, 243, 243, 0.7);
+  --glow-color2: rgba(209, 209, 209, 0.5);
+  --glow-color3: rgba(185, 185, 185, 0.9);
+  --glow-color4: rgba(133, 133, 133, 0.7);
+  --gradient-color1: #ff9800;
+  --gradient-color2: #f0e68c;
+}
+
+@keyframes glowing-box-shadow {
+  0%,
+  100% {
+    box-shadow: 0 0 6px var(--glow-color1), 0 0 10px var(--glow-color2);
+  }
+  50% {
+    box-shadow: 0 0 12px var(--glow-color3), 0 0 16px var(--glow-color4);
+  }
+}
+
+@keyframes gradientAnimation {
+  0% {
+    color: var(--gradient-color1);
+  }
+  50% {
+    color: var(--gradient-color2);
+  }
+  100% {
+    color: var(--gradient-color1);
+  }
+}

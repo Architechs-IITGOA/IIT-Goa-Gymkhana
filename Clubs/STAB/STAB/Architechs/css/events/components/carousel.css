@@ -1,0 +1,173 @@
+/* General Styling for the Carousel */
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Fullscreen carousel */
+  overflow: hidden;
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 1s ease; /* Smooth sliding effect */
+}
+
+.carousel-item {
+  width: 100vw;
+  height: 100vh;
+  background-size: cover; /* Default for desktop */
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  color: white;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  z-index: 2;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%; /* Ensure the full height of the image is used */
+}
+
+/* Title and Year on top center */
+.carousel-caption .title-container {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  width: auto; /* changed from 100% to auto to keep it tighter */
+  z-index: 3;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.timeline-year {
+  font-size: 32px;
+  font-weight: bold;
+  color: #d4a024;
+  z-index: 2;
+}
+
+.carousel-caption .h5 {
+  font-size: 36px;
+  font-weight: 700;
+  z-index: 2;
+}
+
+/* Paragraph on bottom center */
+.carousel-caption p {
+  font-size: 2rem;
+  line-height: 1.5;
+  max-width: 90%;
+  margin: 20px auto 0; /* Center align and space out from the title */
+  position: absolute;
+  bottom: 10%; /* Place the paragraph near the bottom */
+  left: 50%;
+  transform: translateX(-50%); /* Center horizontally */
+  width: 90%;
+  text-align: center;
+  z-index: 2;
+  word-wrap: break-word; /* Allow the text to wrap instead of cutting off */
+}
+
+/* Controls Styling */
+.carousel-controls {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.carousel-control {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #ff9800;
+  font-size: 3rem;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.carousel-control:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.carousel-control.prev {
+  left: 20px;
+}
+
+.carousel-control.next {
+  right: 20px;
+}
+
+@media (max-width: 1024px) {
+  .carousel-item {
+    background-size: contain; /* Default for desktop */
+    background-repeat: no-repeat;
+  }
+}
+.carousel-caption .timeline-year,
+.carousel-caption .h5,
+.carousel-caption p {
+  background: rgba(0, 0, 0, 0.4); /* Subtle dark background */
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8), -1px -1px 2px rgba(0, 0, 0, 0.8),
+    0 0 5px rgba(0, 0, 0, 0.5); /* Gentle glow for clarity */
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+  .carousel-item {
+    background-size: contain; /* Fit the image without stretching */
+    background-repeat: no-repeat; /* Ensure the image is not repeated */
+    background-position: center center; /* Keep the image centered */
+  }
+
+  .carousel-caption {
+    top: 10%;
+  }
+
+  .timeline-year {
+    font-size: 24px;
+  }
+
+  .carousel-caption .h5 {
+    font-size: 28px;
+  }
+
+  /* Adjust position for title and paragraph */
+  .carousel-caption .title-container {
+    top: 0%; /* Move the title and year a little above */
+  }
+
+  .carousel-caption p {
+    bottom: 20%; /* Move the paragraph moderately above */
+    font-size: 16px;
+  }
+  .carousel-control {
+    font-size: 2rem; /* Smaller controls for mobile */
+    padding: 5px;
+  }
+
+  .carousel-caption .timeline-year,
+  .carousel-caption .h5,
+  .carousel-caption p {
+    background: none; /* Subtle dark background */ 
+
+    text-shadow: none;
+  }
+}

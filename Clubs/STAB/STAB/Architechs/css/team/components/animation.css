@@ -1,0 +1,14 @@
+@keyframes glowing-border {
+    0% {
+      border-color: rgb(109, 109, 109);
+      box-shadow: 0 0 7.5px rgb(161, 161, 161);
+    }
+    50% {
+      border-color: white;
+      box-shadow: 0 0 25px white;
+    }
+    100% {
+      border-color: rgb(216, 216, 216);
+      box-shadow: 0 0 7.5px rgb(75, 75, 75);
+    }
+  }

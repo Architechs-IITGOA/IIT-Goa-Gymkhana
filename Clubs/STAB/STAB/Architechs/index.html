@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <title>ArchiTechs - IIT Goa</title>
+  </head>
+
+  <body>
+    <div id="loading-screen">
+      <div class="spinner"></div>
+    </div>
+
+    <div class="header">
+      <a href="#hero" class="logo-section">
+        <div class="logo">ArchiTechs</div>
+        <img src="./img/a.png" alt="Logo" class="logo-image" />
+      </a>
+
+      <div class="options">
+        <a href="#event">
+          <div class="nav-link">Events</div>
+        </a>
+        <a href="#team">
+          <div class="nav-link">Team</div>
+        </a>
+        <a href="#about">
+          <div class="nav-link">About</div>
+        </a>
+        <a href="#footer">
+          <div class="nav-link">Contact Us</div>
+        </a>
+      </div>
+
+      <div class="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+
+      <div class="dropdown-menu">
+        <a href="#event">
+          <div class="dropdown-item nav-link">Events</div>
+        </a>
+        <a href="#team">
+          <div class="dropdown-item nav-link">Team</div>
+        </a>
+        <a href="#about">
+          <div class="dropdown-item nav-link">About</div>
+        </a>
+        <a href="#footer">
+          <div class="dropdown-item nav-link">Contact Us</div>
+        </a>
+      </div>
+    </div>
+
+    <div id="hero" class="hero-section">
+      <div class="hero-writing-section">
+        <div class="hero-text-title">ArchiTechs</div>
+        <div class="hero-text-title-part1">Dev Club of IIT Goa</div>
+        <img
+          src="./img/a.png"
+          alt="Hero-image"
+          class="hero-image-section-mobile"
+        />
+        <a href="#about"
+          ><button class="get-started-button">Get Started ▼</button></a
+        >
+        <div class="icons">
+          <a
+            href="https://www.instagram.com/architechs_iitgoa"
+            target="_blank"
+            class="icon-link"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="mailto:club.architech@iitgoa.ac.in" target="_blank" class="icon-link">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="gap-between-section"></div>
+    <div id="about" class="about-section">
+      <h1 class="intro">About ArchiTechs</h1>
+      <div class="about-content">
+        <div class="vision">
+          <h2 style="color: #ff9800">Our Vision</h2>
+          <p>
+            Empowering individuals with technology and fostering innovation. We
+            strive to create impactful solutions and inspire future developers.
+          </p>
+        </div>
+        <div class="wedo">
+          <h2 style="color: #ff9800">What We Do</h2>
+          <p>
+            ArchiTechs hosts coding events, workshops, and hackathons, enabling
+            members to learn, grow, and excel in web development and other
+            cutting-edge technologies.
+          </p>
+          <ul>
+            <li>hackathons</li>
+            <li>contest</li>
+            <li>workshops</li>
+            <li>updating and maintaning student council website</li>
+          </ul>
+        </div>
+        <div class="head-info">
+          <img
+            src="./img/about-section/Utsav_Shah_Core.jpg"
+            alt="Club Head"
+            class="head-photo"
+          />
+          <div class="head-name">Utsav Shah</div>
+          <p class="head-title">Club Head</p>
+        </div>
+      </div>
+    </div>
+    <div class="gap-between-section"></div>
+    <div class="event" id="event">
+      <div class="carousel" id="myCarousel">
+        <div class="carousel-inner" id="carouselInner">
+      
+          <!-- Slide 1 -->
+          <div class="carousel-item" style="background-image: url('./img/events/orientation.jpg')">
+            <div class="carousel-caption d-none d-md-block">
+              <div class="title-container">
+                <span class="timeline-year">22/10/2024</span>
+                <span class="h5">ArchiTech's Orientation</span>
+              </div>
+              <p>
+                Architech’s Orientation covered our club’s goals, past projects,
+                and upcoming opportunities in web development.
+              </p>
+            </div>
+          </div>
+      
+          <!-- Slide 2 -->
+          <div class="carousel-item" style="background-image: url('./img/events/html-session.jpg')">
+            <div class="carousel-caption d-none d-md-block">
+              <div class="title-container">
+                <span class="timeline-year">31/03/2025</span>
+                <span class="h5">HTML Workshop</span>
+              </div>
+              <p>
+                Architech's HTML workshop introduced the fundamentals of HTML,
+                guiding participants through building structured and accessible
+                web pages.
+              </p>
+            </div>
+          </div>
+      
+          <!-- Slide 3 -->
+          <div class="carousel-item" style="background-image: url('./img/events/snapCodeShowdown.jpg')">
+            <div class="carousel-caption d-none d-md-block">
+              <div class="title-container">
+                <span class="timeline-year">29/11/2019</span>
+                <span class="h5">SnapCode Showdown</span>
+              </div>
+              <p>
+                SnapCode Showdown challenged participants to recreate a web page
+                from memory under time constraints, testing their HTML and CSS
+                skills.
+              </p>
+            </div>
+          </div>
+      
+          <!-- Slide 4 -->
+          <div class="carousel-item" style="background-image: url('./img/events/hackathon.png')">
+            <div class="carousel-caption d-none d-md-block">
+              <div class="title-container">
+                <span class="timeline-year">18/12/2024</span>
+                <span class="h5">Hackathon</span>
+              </div>
+              <p>ArchiTech's Fullstack Hackathon: Build, Innovate, and Win!</p>
+            </div>
+          </div>
+      
+        </div>
+      
+        <!-- Controls -->
+        <div class="carousel-controls">
+          <button class="carousel-control prev" id="prevBtn">❮</button>
+          <button class="carousel-control next" id="nextBtn">❯</button>
+        </div>
+      </div>
+      
+      
+    </div>
+    <div class="gap-between-section"></div>
+    <div id="team" class="team-section">
+      <h1 class="team-title">Meet the Team</h1>
+      <div class="core-groups">
+        <div class="core-group">
+          <h2 class="group-title">Senior Core Members</h2>
+          <div class="team-grid">
+            <figure
+              class="team-member"
+              data-title="Utsav Shah"
+              data-branch="CSE"
+              data-mobile="706 911 5433"
+              data-description="Email: shah.manojbhai.22031@iitgoa.ac.in"
+              data-image="img/about-section/Utsav_Shah_Core.jpg"
+            >
+              <img
+                src="./img/about-section/Utsav_Shah_Core.jpg"
+                alt="Senior Member 1"
+                class="member-photo"
+              />
+              <figcaption class="member-name">Utsav Shah</figcaption>
+            </figure>
+            <figure
+              class="team-member"
+              data-title="Anil Patel"
+              data-branch="CSE"
+              data-mobile="890 578 7636"
+              data-description="Email: anil.patel.22031@iitgoa.ac.in"
+              data-image="img/team/Anil_Patel_Core.jpg"
+            >
+              <img
+                src="./img/team/Anil_Patel_Core.jpg"
+                alt="Senior Member 2"
+                class="member-photo"
+              />
+              <figcaption class="member-name">Anil Patel</figcaption>
+            </figure>
+            <figure
+              class="team-member"
+              data-title="Mithun P"
+              data-branch="MnC"
+              data-mobile="805 647 4754"
+              data-description="Email: mithun.p.22033@iitgoa.ac.in"
+              data-image="img/team/Mithun_Core.jpg"
+            >
+              <img
+                src="./img/team/Mithun_Core.jpg"
+                alt="Senior Member 2"
+                class="member-photo"
+                style="background-size: cover"
+              />
+              <figcaption class="member-name">Mithun P</figcaption>
+            </figure>
+            <figure
+              class="team-member"
+              data-title="Ritesh Phulari"
+              data-branch="CSE"
+              data-mobile="928 408 3445"
+              data-description="Email: ritesh.phulari.22031@iitgoa.ac.in"
+              data-image="img/team/ritesh_phulari_core.jpg"
+            >
+              <img
+                src="./img/team/ritesh_phulari_core.jpg"
+                alt="Senior Member 3"
+                class="member-photo"
+              />
+              <figcaption class="member-name">Ritesh Phulari</figcaption>
+            </figure>
+            <figure
+              class="team-member"
+              data-title="Om Sharma"
+              data-branch="CSE"
+              data-mobile="873 687 0351"
+              data-description="Email: om.sharma.22031@iitgoa.ac.in"
+              data-image="img/team/Om_sharma_core.jpg"
+            >
+              <img
+                src="./img/team/Om_sharma_core.jpg"
+                alt="Senior Member 3"
+                class="member-photo"
+              />
+              <figcaption class="member-name">Om Sharma</figcaption>
+            </figure>
+            <figure
+              class="team-member"
+              data-title="Sajal Garg"
+              data-branch="Mech"
+              data-mobile="914 902 3136"
+              data-description="Email: sajal.garg.22063@iitgoa.ac.in"
+              data-image="img/team/sajal_garg_core.png"
+            >
+              <img
+                src="./img/team/sajal_garg_core.png"
+                alt="Senior Member 3"
+                class="member-photo"
+              />
+              <figcaption class="member-name">Sajal Garg</figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="core-group">
+          <h2 class="group-title">Junior Core Members</h2>
+          <div class="team-grid">
+            <figure
+              class="team-member"
+              data-title="Harshal Maru"
+              data-branch="CSE"
+              data-mobile="991 342 6105"
+              data-description="Email: harshal.rakeshbhai.23031@iitgoa.ac.in"
+              data-image="img/team/Harshal_Maru_Core.jpg"
+            >
+              <img
+                src="./img/team/Harshal_Maru_Core.jpg"
+                alt="Junior Member 1"
+                class="member-photo"
+              />
+              <figcaption class="member-name">Harshal Maru</figcaption>
+            </figure>
+            <figure
+              class="team-member"
+              data-title="Kartik Bhutra"
+              data-branch="MnC"
+              data-mobile="810 777 8231"
+              data-description="Email: kartik.bhutra.23033@iitgoa.ac.in"
+              data-image="img/team/Kartik_Bhutra_core.jpg"
+            >
+              <img
+                src="./img/team/Kartik_Bhutra_core.jpg"
+                alt="Junior Member 2"
+                class="member-photo"
+              />
+              <figcaption class="member-name">Kartik Bhutra</figcaption>
+            </figure>
+            <figure
+              class="team-member"
+              data-title="Ashwin Gaikwad"
+              data-branch="MnC"
+              data-mobile="935 687 9636"
+              data-description="Email: ashwin.rajaram.23033@iitgoa.ac.in"
+              data-image="img/team/Ashwin_Gaikwad_Core.jpg"
+            >
+              <img
+                src="./img/team/Ashwin_Gaikwad_Core.jpg"
+                alt="Junior Member 3"
+                class="member-photo"
+              />
+              <figcaption class="member-name">Ashwin Gaikwad</figcaption>
+            </figure>
+            <figure
+              class="team-member"
+              data-title="Vinay Kumar Reddy Chinthala"
+              data-branch="CSE"
+              data-mobile="630 094 4255"
+              data-description="Email: chinthala.vinay.23031@iitgoa.ac.in"
+              data-image="img/team/VinayKumarReddy_Core.jpg"
+            >
+              <img
+                src="./img/team/VinayKumarReddy_Core.jpg"
+                alt="Junior Member 3"
+                class="member-photo"
+              />
+              <figcaption class="member-name">
+                Vinay Kumar Reddy Chinthala
+              </figcaption>
+            </figure>
+            <figure
+              class="team-member"
+              data-title="Siva Manoj Vakkalagadda"
+              data-branch="CSE"
+              data-mobile="891 937 6709"
+              data-description="Email: vakkalagadda.siva.23031@iitgoa.ac.in"
+              data-image="img/team/SivaManoj_Core.jpg"
+            >
+              <img
+                src="./img/team/SivaManoj_Core.jpg"
+                alt="Junior Member 3"
+                class="member-photo"
+              />
+              <figcaption class="member-name">
+                Siva Manoj Vakkalagadda
+              </figcaption>
+            </figure>
+            <figure
+              class="team-member"
+              data-title="Alok kumar"
+              data-branch="MnC"
+              data-mobile="700 473 0523"
+              data-description="Email: alok.kumar.23033@iitgoa.ac.in"
+              data-image="img/team/Alok_kumar_Core.jpg"
+            >
+              <img
+                src="./img/team/Alok_kumar_Core.jpg"
+                alt="Junior Member 3"
+                class="member-photo"
+              />
+              <figcaption class="member-name">Alok kumar</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="gap-between-section"></div>
+    <div class="gap-between-section"></div>
+
+    <div id="footer" class="footer">
+      <div class="footer-logo">
+        <h2>ArchiTechs</h2>
+        <p>Empowering Innovation</p>
+      </div>
+      <div class="vertical-line"></div>
+      <div class="footer-contact">
+        <h3>Contact Us</h3>
+        <div class="social-contact">
+          <a href="mailto:club.architech@iitgoa.ac.in" class="social-contact"
+            ><i class="fa-solid fa-envelope"></i
+          ></a>
+          <a href="https://chat.whatsapp.com/BX0fw86qrTn8i0SY9vYrtX" class="social-contact"
+            ><i class="fa-brands fa-whatsapp"></i
+          ></a>
+          <!-- DO not remove this mobile section, it break the website -->
+          <div class="mobile-number" style="display: none">
+            <i class="fa-solid fa-mobile" id="copy-icon" title="Copy"></i>
+            <p id="mobile-text" title="Copy">+91 1234567890</p>
+          </div>
+        </div>
+      </div>
+      <div class="vertical-line"></div>
+      <div class="footer-social">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a
+            href="https://www.instagram.com/architechs_iitgoa"
+            target="_blank"
+            class="social-link"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/company/architechs-iit-goa/"
+            target="_blank"
+            class="social-link"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <!-- <a href="#" class="social-link"
+            ><i class="fa-brands fa-twitter"></i
+          ></a> -->
+        </div>
+      </div>
+    </div>
+
+    <div class="progress-bar"></div>
+    <div id="popup-overlay" class="popup-overlay">
+      <div class="popup-content">
+        <button class="close-popup">×</button>
+        <div class="popup-header">
+          <img src="" alt="Member Image" class="popup-member-photo" />
+          <h2 id="popup-title"></h2>
+        </div>
+        <div class="popup-info">
+          <p class="popup-branch">
+            Branch: <span id="popup-branch-name"></span>
+          </p>
+          <p class="popup-mobile">
+            Mobile: <span id="popup-mobile-number"></span>
+          </p>
+          <p id="popup-description"></p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="module" src="./js/main.js"></script>
+</html>

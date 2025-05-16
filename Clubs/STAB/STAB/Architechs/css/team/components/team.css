@@ -1,0 +1,147 @@
+.team-section {
+  width: 100%; /* Subtle gradient for depth */
+  color: #e0e0e0;
+  text-align: center;
+}
+
+.team-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.core-groups {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: opacity 0.6s ease-in-out, transform 0.9s ease-in-out;
+}
+.core-groups.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.team-title {
+  font-size: 3.5rem;
+  letter-spacing: 15px;
+  color: white;
+  margin-top: 1rem;
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.6); /* Adds depth to the title */
+}
+
+.core-group {
+  margin-bottom: 4rem; /* Slightly larger space for distinction */
+}
+
+.group-title {
+  font-size: 2em;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  color: #ff9800;
+  text-transform: uppercase;
+  letter-spacing: 15px;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center; /* Centers items horizontally */
+  align-items: center; /* Centers items vertically */
+  gap: 3rem;
+}
+
+.team-member {
+  width: 280px;
+  height: 280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background: #212121;
+  border-radius: 15px; /* Slightly more rounded for a softer look */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  transition: transform 0.4s ease, box-shadow 0.4s ease, background 0.4s ease;
+  ;
+}
+
+.team-member:hover {
+  transform: scale(1.08);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+  background: linear-gradient(
+    145deg,
+    #1e1e1e,
+    #333333
+  ); /* Subtle gradient on hover */
+  animation: glowing-border 1s forwards;
+  border: 2px solid white;
+  border-color: rgb(255, 251, 251);
+  box-shadow: 0 0 7.5px rgb(75, 75, 75);
+}
+
+.member-photo {
+  width: 150px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 3px solid #c2c2c2;
+  object-fit: cover;
+  margin: 1rem;
+  transition: transform 0.4s ease, border-color 0.4s ease;
+}
+
+.team-member:hover .member-photo {
+  /* Adds a playful hover effect */
+  border-color: #ffffff; /* Changes border color for contrast */
+}
+
+.member-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #e0e0e0;
+  margin-bottom: 0.5rem;
+  transition: color 0.4s ease;
+  letter-spacing: 2px;
+  padding: 6px;
+}
+
+.team-member:hover .member-name {
+  color: #c2c2c2; /* Highlight name on hover */
+}
+
+.member-role {
+  font-size: 1rem;
+  color: #bbbbbb;
+  font-style: italic;
+}
+
+@media (max-width: 1000px) {
+  .team-title {
+    font-size: 2rem;
+  }
+
+  .group-title {
+    font-size: 1.5rem;
+  }
+  .team-member {
+    height: 220px;
+    width: 180px;
+  }
+
+  .member-photo {
+    width: 100px;
+  }
+
+  .member-name {
+    font-size: 1rem;
+    width: 180px;
+  }
+
+  .member-role {
+    font-size: 0.9rem;
+  }
+
+  .team-grid {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

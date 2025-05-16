@@ -1,0 +1,211 @@
+/* General Contact Section Styling */
+.icon {
+  font-size: 2rem;
+  color: #c2c2c2;
+  margin-bottom: 1rem;
+}
+
+.info h3 {
+  font-size: 1.5rem;
+  color: #e0e0e0;
+  margin-bottom: 0.5rem;
+}
+
+.info p {
+  font-size: 1rem;
+  color: #bbbbbb;
+}
+
+/* Footer Styling */
+.footer {
+  letter-spacing: 1.5px;
+  background-color: #222222;
+  color: #e0e0e0;
+  padding: 1.5rem 0.75rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 15px;
+}
+
+.footer-logo {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.footer-logo h2 {
+  font-size: 2.25rem;
+  color: #c2c2c2;
+  letter-spacing: 3px;
+}
+
+.footer-logo p {
+  font-size: 1.5rem;
+  color: #bbbbbb;
+  letter-spacing: 1.75px;
+}
+
+.footer-support,
+.footer-social,
+.footer-contact {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.footer-support h3,
+.footer-social h3,
+.footer-contact h3 {
+  font-size: 2rem;
+  color: #c2c2c2;
+  margin-bottom: 1rem;
+  letter-spacing: 3px;
+}
+
+.footer-support a,
+.footer-social a,
+.footer-contact a {
+  display: block;
+  font-size: 1.25rem;
+  color: #bbbbbb;
+  text-decoration: none;
+  margin: 0.5rem 0;
+  transition: color 0.3s ease;
+}
+.iitgoa{
+  justify-content: center;
+  align-items: start;
+}
+.iitgoa p:hover{
+  color: #ff9800;
+  transition: color 0.3s ease;
+}
+.footer-support a:hover,
+.footer-social a:hover,
+.footer-contact a:hover {
+  color: #ff9800;
+  transition: color 0.3s ease;
+}
+.iitgoa-a:hover {
+  color: #ff9800;
+  transition: color 0.3s ease;
+}
+
+.mobile-number {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.mobile-number i,
+.mobile-number p {
+  cursor: pointer;
+  position: relative;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: space-evenly;
+
+  gap: 1rem;
+}
+
+.social-link,
+.social-contact {
+  color: #bbbbbb;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-contact{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.social-link i,
+.social-contact i {
+  font-size: 1.75em;
+}
+
+.social-link:hover {
+  color: #ff9800;
+  transform: scale(1.2);
+}
+
+.vertical-line {
+  height: 120px;
+  width: 1px;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.iitgoa-logo {
+  height: 80px;
+  border-radius: 30px;
+  aspect-ratio: 1;
+  margin: 10px 0px;
+}
+.iitgoa-logo:hover{
+  transform: scale(1.1);
+  transition: border 0.3s ease-in-out;
+  box-shadow: 0px 0px 15px  #000000;
+}
+.iitgoa {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+/* Responsiveness */
+@media (max-width: 900px) {
+  .contact-content {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .vertical-line {
+    height: 1px;
+    width: 180px;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-logo,
+  .footer-support,
+  .footer-social {
+    margin-bottom: 1rem;
+  }
+  .iitgoa{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 300px) {
+  .contact-item {
+    width: 90%;
+  }
+
+  .contact-title {
+    font-size: 2rem;
+  }
+
+  .icon {
+    font-size: 2.5rem;
+  }
+
+  .footer-logo h2 {
+    font-size: 1.8rem;
+  }
+
+  .footer-logo p {
+    font-size: 0.9rem;
+  }
+
+  .footer-support h3,
+  .footer-social h3 {
+    font-size: 1.3rem;
+  }
+}

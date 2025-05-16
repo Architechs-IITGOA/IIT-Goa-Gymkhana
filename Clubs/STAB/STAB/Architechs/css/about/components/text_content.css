@@ -1,0 +1,144 @@
+:root {
+  --background-color: #121212;
+  --card-background: #1e1e1e;
+  --primary-color: #ff9800;
+  --text-color: #e0e0e0;
+  --box-shadow-color: rgba(0, 0, 0, 0.3);
+}
+
+.about-section {
+  width: 100%;
+  max-width: 100%;
+  background: var(--background-color);
+  color: var(--text-color);
+}
+
+.intro {
+  text-align: center;
+  font-size: 3.5rem;
+  color: var(--primary-color);
+  letter-spacing: 7.5px;
+  margin: 20px;
+  opacity: 0;
+  transform: translateY(0px);
+  transition: opacity 0.6s ease-in-out, transform 0.9s ease-in-out;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 70% 25%;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+  padding: 1.5em;
+  opacity: 0;
+  transform: translateY(60px);
+  transition: opacity 0.6s ease-in-out, transform 0.9s ease-in-out;
+}
+
+.about-content.visible,
+.intro.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.vision,
+.wedo {
+  background: var(--card-background);
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px var(--box-shadow-color);
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.vision h2,
+.wedo h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+  letter-spacing: 3px;
+}
+
+.vision p,
+.wedo p,
+.wedo ul li {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  letter-spacing: 3px;
+  color: var(--text-color);
+}
+
+.wedo ul {
+  margin-top: 1rem;
+  padding-left: 1.5rem;
+  list-style-type: "➤";
+}
+
+.wedo li::marker {
+  color: #ff9800;
+}
+
+@media (max-width: 1300px) {
+  .about-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .vision,
+  .wedo {
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .wedo ul {
+    text-align: left;
+    padding: 1rem;
+  }
+  .intro{
+    font-size: 3em;
+  }
+}
+
+@media (max-width: 900px) {
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .vision,
+  .wedo {
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .intro {
+    font-size: 3em;
+  }
+
+  .vision h2,
+  .wedo h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .vision p,
+  .wedo p {
+    font-size: 1rem;
+  }
+
+  .wedo ul {
+    margin-top: 1rem;
+    padding-left: 1.5rem;
+  }
+
+  .wedo ul li {
+    margin: 0 0.5rem;
+    font-size: 1.1rem;
+  }
+  .intro{
+    font-size: 2.5em;
+  }
+}

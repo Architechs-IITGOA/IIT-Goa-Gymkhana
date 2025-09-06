@@ -104,16 +104,59 @@
     margin-top:40vh;
 }
 
-
+#page5 {
+    /* background: linear-gradient(100deg, grey, black,rgb(54, 0, 54),rgb(0, 0, 41), white, grey); */
+    background: linear-gradient(45deg, rgb(0, 0, 0), rgb(27, 0, 27));
+}
 
 .flip-card {
     position: relative;
     background-color: transparent;
+    border-image: conic-gradient(from 0deg, rgb(0, 0, 62), rgb(39, 0, 39)) 1;
+    border-width: 10px;
+    border-radius: 20px;
     width: 300px;
     height: 300px;
     perspective: 1000px;
-    margin: 20px;
+    margin: 40px 50px;
 }
+
+.flip-card::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: inherit;
+    padding: 2px; 
+    background: conic-gradient( rgb(0, 0, 66), rgb(57, 0, 57));
+    -webkit-mask:
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+            mask-composite: exclude;
+    z-index: -1;
+    animation: borderMove 6s linear infinite;
+}
+
+.flip-card::after{
+    content: "";
+    position: absolute;
+    inset: -5px;
+    border-radius: inherit;
+    background: conic-gradient(rgb(0, 0, 62), rgb(39, 0, 39));
+    filter: blur(20px);
+    opacity: 0.5;
+    z-index: -2;
+    animation: borderMove 6s linear infinite;
+}
+
+@keyframes borderMove {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
 .mls{
     width: 280px;
     height: 280px;
@@ -126,7 +169,7 @@
     text-align: center;
     transition: transform 0.3s;
     transform-style: preserve-3d;
-    /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
+    border-radius: 20px;
 }
 
 .flip-card:hover .flip-card-inner {
@@ -197,14 +240,11 @@
     font-size: x-large;
 }
 
-/* .front-description {
-    background-image: linear-gradient(transparent, black);
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    position: absolute;
-    bottom: 0px;
-    left: -30px;
-} */
+.front-description {
+    background: black;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
 
 
 

@@ -10,12 +10,35 @@ body {
   top: 0;
   left: -64.3vh;
   margin: 0 auto;
-  background-image: url('../images/Image1.png');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(42, 42, 42, 0.7));
   background-size: contain;
   background-repeat: no-repeat;
+  font-family: "Poppins", sans-serif; /* modern clean font */
   overflow-x: hidden;
   transition: 0.5s;
 }
+
+.sidenav a {
+  display: block;
+  padding: 14px 24px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: #f1f1f1 !important;
+  transition: 0.3s;
+  letter-spacing: 1px;
+}
+
+.closebtn {
+  position: absolute;
+  top: 20px;
+  text-decoration: none;
+  right: 25px;
+  font-size: 30px;
+  color: #f1f1f1;
+  cursor: pointer;
+}
+
 @media screen and (max-width: 600px) {
   .sidenav {
     min-height: 100vh;

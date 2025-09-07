@@ -231,8 +231,8 @@
 
 .border {
   position: relative;
-  /* left: -100vw; */
-  top: -100vh !important;
+  z-index: 100;
+  /* top: -100vh !important; */
 }
 
 .header-individualpg {
@@ -657,6 +657,17 @@ h3 {
 
 p {
   text-align: center;
+}
+
+.section {
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100vw;
+}
+
+#section2, #section1,#section3 {
+  display: none;
 }
 
 @media screen and (max-width: 1221px) {

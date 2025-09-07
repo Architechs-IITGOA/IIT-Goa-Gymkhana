@@ -1,0 +1,346 @@
+/* General Body Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+/* Header and Navigation */
+header {
+    background: #2c3e50; /* Dark blue-grey */
+    color: #fff;
+    padding: 1rem 0;
+    border-bottom: #3498db 3px solid; /* Bright blue accent */
+}
+
+header .logo h1 {
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    float: right;
+}
+
+header nav li {
+    display: inline;
+    padding: 0 15px;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: #3498db;
+}
+
+/* Hero Section */
+#hero {
+    background: url('https://via.placeholder.com/1500x500/1abc9c/FFFFFF?text=Electronics+&+Robotics+Hero') no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.5); /* Dark overlay */
+}
+
+.hero-content {
+    max-width: 800px;
+    padding: 20px;
+}
+
+#hero h2 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+#hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    color: #fff;
+    background: #3498db;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #2980b9;
+}
+
+/* Section Headings */
+h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    position: relative;
+}
+
+h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #3498db;
+    margin: 10px auto 0;
+}
+
+
+/* About Section */
+#about {
+    background-color: #fff;
+    padding: 40px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.about-content ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.about-content ul li {
+    margin-bottom: 8px;
+}
+
+/* Team Section */
+#team {
+    padding: 40px 0;
+    background-color: #ecf0f1; /* Light grey */
+    border-bottom: 1px solid #ddd;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    text-align: center;
+}
+
+.team-member {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 3px solid #3498db;
+}
+
+.team-member h3 {
+    margin: 10px 0 5px;
+    color: #2c3e50;
+}
+
+.team-member p {
+    color: #555;
+    font-size: 0.9em;
+}
+
+/* Gallery Section */
+#gallery {
+    padding: 40px 0;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 200px;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+.gallery-item .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.7);
+    color: #fff;
+    padding: 10px;
+    font-size: 0.9em;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover .overlay {
+    opacity: 1;
+}
+
+/* Contact Section */
+#contact {
+    padding: 40px 0;
+    background-color: #ecf0f1;
+}
+
+.contact-info {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact-info p {
+    margin: 5px 0;
+    font-size: 1.1em;
+}
+
+.contact-info a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: #2980b9;
+}
+
+.social-links {
+    margin-top: 15px;
+    font-size: 1.2em;
+}
+
+#contact-form {
+    max-width: 600px;
+    margin: auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+#contact-form h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+#contact-form .btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+#form-status {
+    text-align: center;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header .logo, header nav ul {
+        float: none;
+        text-align: center;
+    }
+
+    header nav li {
+        padding: 0 10px;
+    }
+
+    #hero h2 {
+        font-size: 2em;
+    }
+
+    #hero p {
+        font-size: 1em;
+    }
+
+    .team-grid, .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .container {
+        width: 90%;
+    }
+}

@@ -33,7 +33,7 @@ body {
 .closebtn {
   position: absolute;
   top: 20px;
-  text-decoration: none;
+  text-decoration: none !important;
   right: 25px;
   font-size: 30px;
   color: #f1f1f1;

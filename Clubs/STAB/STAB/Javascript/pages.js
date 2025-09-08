@@ -28,6 +28,7 @@ timeline.addEventListener("click", ()=>{
     document.querySelector('#section2').style.display = "block";
     setTimeout(() => {
         timelineSwiper.update();
+        timelineSwiper.slideTo(0, 0);
     }, 50);
 });
 

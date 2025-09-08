@@ -1,44 +1,42 @@
-document.addEventListener('DOMContentLoaded', () => {
-    // Smooth scrolling for navigation links
-    document.querySelectorAll('nav a').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
 
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
-            });
+    // Fade-in on scroll using Intersection Observer
+    document.addEventListener('DOMContentLoaded', () => {
+      const sections = document.querySelectorAll('section');
+      const options = {
+        threshold: 0.15
+      };
+      const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if(entry.isIntersecting){
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
         });
+      }, options);
+
+      sections.forEach(section => {
+        observer.observe(section);
+      });
     });
 
-    // Simple contact form submission (for demonstration)
-    const contactForm = document.getElementById('contact-form');
-    const formStatus = document.getElementById('form-status');
+    // Responsive nav burger menu toggle
+    const burger = document.getElementById('burgerBtn');
+    const navMenu = document.getElementById('navMenu');
 
-    if (contactForm) {
-        contactForm.addEventListener('submit', function (e) {
-            e.preventDefault(); // Prevent actual form submission
+    burger.addEventListener('click', () => {
+      const expanded = burger.getAttribute('aria-expanded') === 'true' || false;
+      burger.setAttribute('aria-expanded', !expanded);
+      burger.classList.toggle('open');
+      navMenu.classList.toggle('open');
+    });
 
-            // In a real scenario, you'd send this data to a server
-            // For now, we'll just simulate a success message
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const message = document.getElementById('message').value;
-
-            console.log('Form Submitted!');
-            console.log('Name:', name);
-            console.log('Email:', email);
-            console.log('Message:', message);
-
-            formStatus.style.color = 'green';
-            formStatus.textContent = 'Thank you for your message! We will get back to you soon.';
-
-            // Clear the form fields
-            contactForm.reset();
-
-            // Optionally, clear status after a few seconds
-            setTimeout(() => {
-                formStatus.textContent = '';
-            }, 5000);
-        });
-    }
-});
+    // Close menu when clicking a nav link (mobile)
+    navMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        if(navMenu.classList.contains('open')){
+          burger.classList.remove('open');
+          burger.setAttribute('aria-expanded', false);
+          navMenu.classList.remove('open');
+        }
+      });
+    });

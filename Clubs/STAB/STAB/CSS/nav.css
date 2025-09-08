@@ -11,6 +11,7 @@ body {
   left: -64.3vh;
   margin: 0 auto;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(42, 42, 42, 0.7));
+  backdrop-filter: blur(5px);
   background-size: contain;
   background-repeat: no-repeat;
   font-family: "Poppins", sans-serif; /* modern clean font */

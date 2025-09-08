@@ -26,6 +26,9 @@ timeline.addEventListener("click", ()=>{
         elem.style.display = "none";
     });
     document.querySelector('#section2').style.display = "block";
+    setTimeout(() => {
+        timelineSwiper.update();
+    }, 50);
 });
 
 contactus.addEventListener("click", ()=>{

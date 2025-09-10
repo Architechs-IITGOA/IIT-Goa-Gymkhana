@@ -10,7 +10,7 @@
   display: none;
 }
 
-#page4 > * {
+#page4 > *{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -25,7 +25,7 @@
   flex-direction: column;
   align-items: center;
   padding: 2rem;
-  gap: 2rem;
+  gap: 3rem;
 }
 
 .clubs-heading {
@@ -53,7 +53,7 @@
     inset 2px 2px 6px rgba(255, 255, 255, 0.05),
     inset -2px -2px 6px rgba(0, 0, 0, 0.8);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border-radius: 50px;
+  border-radius: 25px !important;
   cursor: pointer;
   position: relative;
   overflow: hidden;
@@ -74,7 +74,7 @@
 
 /* Hover effect */
 .card:hover {
-  transform: scale(1.05);
+  transform: translateY(-10px) scale(1.1) ;
   box-shadow:
     0 4px 20px rgba(98, 0, 234, 0.7),
     0 0 20px rgba(98, 0, 234, 0.6),
@@ -83,11 +83,13 @@
 }
 
 .card img {
-  width: max-content;
+  width: 100%;
+  max-width: 140px; /* or whatever limit you want */
+  display: block;
   margin : 0 auto;
   height: 140px;
   object-fit: cover;
-  border-radius: 12px;
+  border-radius: 50%;
   margin-bottom: 1rem;
   filter: drop-shadow(0 2px 6px rgba(98, 0, 234, 0.5));
   transition: filter 0.3s ease;
@@ -105,8 +107,9 @@
   color: #bb86fc;
 }
 
-.card hr {
+.hr-blue-gradient {
   border: none;
+  z-index: 12;
   height: 2px;
   background: linear-gradient(90deg, transparent, #6200ea, transparent);
   margin: 1rem 0;

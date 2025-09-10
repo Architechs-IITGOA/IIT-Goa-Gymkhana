@@ -32,6 +32,7 @@ body {
   text-decoration: none;
   font-size: 18px;
   font-weight: bold;
+  user-select: none;
   color: #f1f1f1 !important;
   transition: 0.3s;
   letter-spacing: 1px;
@@ -44,7 +45,8 @@ body {
   right: 25px;
   font-size: 30px;
   color: #f1f1f1;
-  cursor: pointer;
+  user-select: none;
+  -webkit-user-drag: none;
 }
 
 @media screen and (max-width: 600px) {

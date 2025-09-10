@@ -29,6 +29,7 @@
   position: relative;
   font-family: 'Montserrat', sans-serif;
   color: white;
+  user-select: none;
 }
 .animatedtwotext {
   display: inline;
@@ -36,6 +37,7 @@
   position: relative;
   font-family: 'Montserrat', sans-serif;
   color: white;
+  user-select: none;
 }
 
 .typed-cursor {

@@ -1,6 +1,7 @@
 
 let home = document.querySelector('#home');
 let aboutus = document.querySelector('#aboutus');
+let clubs = document.querySelector('#clubs');
 let timeline = document.querySelector('#timeline');
 let contactus = document.querySelector('#contactus');
 
@@ -29,8 +30,10 @@ if(current_Section){
 
 home.addEventListener("click", ()=>makeSectionVisible("0"));
 
-aboutus.addEventListener("click", ()=>makeSectionVisible("1"));
+clubs.addEventListener("click", ()=>makeSectionVisible("1"));
 
 timeline.addEventListener("click",()=> makeSectionVisible("2"));
 
 contactus.addEventListener("click",()=> makeSectionVisible("3"));
+
+aboutus.addEventListener("click",()=>makeSectionVisible("4"));

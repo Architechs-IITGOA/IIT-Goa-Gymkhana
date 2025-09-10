@@ -4,38 +4,33 @@ let aboutus = document.querySelector('#aboutus');
 let timeline = document.querySelector('#timeline');
 let contactus = document.querySelector('#contactus');
 
-home.addEventListener("click", ()=>{
+const makeSectionVisible = (section)=>{
     let list = document.querySelectorAll('.section');
     list.forEach((elem)=>{
         elem.style.display = "none";
     });
-    document.querySelector('#section0').style.display = "block";
-});
-
-aboutus.addEventListener("click", ()=>{
-    let list = document.querySelectorAll('.section');
-    list.forEach((elem)=>{
-        elem.style.display = "none";
-    });
-    document.querySelector('#section1').style.display = "block";
-});
-
-timeline.addEventListener("click", ()=>{
-    let list = document.querySelectorAll('.section');
-    list.forEach((elem)=>{
-        elem.style.display = "none";
-    });
-    document.querySelector('#section2').style.display = "block";
-    setTimeout(() => {
+    document.querySelector('#section' + section).style.display = "block";
+    if(section == "2") {
+        setTimeout(() => {
         timelineSwiper.update();
         timelineSwiper.slideTo(0, 0);
     }, 50);
-});
+    }
+    localStorage.setItem('currentSection',section);
+}
 
-contactus.addEventListener("click", ()=>{
-    let list = document.querySelectorAll('.section');
-    list.forEach((elem)=>{
-        elem.style.display = "none";
-    });
-    document.querySelector('#section3').style.display = "block";
-});
+let current_Section = localStorage.getItem('currentSection');
+if(current_Section){
+    makeSectionVisible(current_Section);
+} else {
+    makeSectionVisible("0");
+}
+
+
+home.addEventListener("click", ()=>makeSectionVisible("0"));
+
+aboutus.addEventListener("click", ()=>makeSectionVisible("1"));
+
+timeline.addEventListener("click",()=> makeSectionVisible("2"));
+
+contactus.addEventListener("click",()=> makeSectionVisible("3"));

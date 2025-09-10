@@ -2,9 +2,16 @@ body {
   scroll-behavior: all;
 }
 
+.Navdata{
+  display: flex;
+  height: 60%;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
 .sidenav {
   height: 100vh;
-  width: 64.3vh;
+  width: 50vh;
   position: fixed;
   z-index: 2;
   top: 0;

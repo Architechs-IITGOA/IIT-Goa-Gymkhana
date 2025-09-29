@@ -104,57 +104,64 @@
     margin-top:40vh;
 }
 
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
 #page5 {
-    /* background: linear-gradient(100deg, grey, black,rgb(54, 0, 54),rgb(0, 0, 41), white, grey); */
-    background: linear-gradient(45deg, rgb(0, 0, 0), rgb(27, 0, 27));
+    background: linear-gradient(270deg, #1a0b26, #3d157f, #1a0b26);
+    background-size: 600% 600%;
+    animation: gradientShift 15s ease infinite;
 }
 
 .flip-card {
     position: relative;
     background-color: transparent;
-    border-image: conic-gradient(from 0deg, rgb(0, 0, 62), rgb(39, 0, 39)) 1;
+    /* border-image: conic-gradient(from 0deg, rgb(0, 0, 62), rgb(39, 0, 39)) 1;
     border-width: 10px;
-    border-radius: 20px;
+    border-radius: 20px; */
     width: 300px;
     height: 300px;
     perspective: 1000px;
     margin: 40px 50px;
 }
 
-.flip-card::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    border-radius: inherit;
-    padding: 2px; 
-    background: conic-gradient( rgb(0, 0, 66), rgb(57, 0, 57));
-    -webkit-mask:
-    linear-gradient(#fff 0 0) content-box, 
-    linear-gradient(#fff 0 0);
-    -webkit-mask-composite: xor;
-            mask-composite: exclude;
-    z-index: -1;
-    animation: borderMove 6s linear infinite;
+@keyframes borderRotate {
+    to {
+        /* Rotate the entire pseudo-element a full turn */
+        --angle : -360deg;
+    }
+}
+/* @keyframes borderRotate {
+    0%{
+        background-image: conic-gradient(from 0deg,rgb(203, 0, 203),black,black, black);
+    }
+    100%{
+        background-image: conic-gradient(from 360deg,rgb(203, 0, 203),black,black, black);
+    }
+} */
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
 }
 
-.flip-card::after{
+.flip-card-inner::before{
     content: "";
+    --angle:0deg;
+    height: 100%;
+    width: 100%;
+    transform: scale(1.1);
+    box-shadow: purple 0px 0px 10px;
+    background-image: conic-gradient(from var(--angle),rgb(75, 0, 75),rgb(32, 0, 65),black,black, black);
+    border-radius: 20px;
+    animation: borderRotate 5s ease-in-out infinite;
     position: absolute;
-    inset: -5px;
-    border-radius: inherit;
-    background: conic-gradient(rgb(0, 0, 62), rgb(39, 0, 39));
-    filter: blur(20px);
-    opacity: 0.5;
-    z-index: -2;
-    animation: borderMove 6s linear infinite;
-}
-
-@keyframes borderMove {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+    filter: blur(0px);
+    left:0;
+    top:0;
 }
 
 .mls{
@@ -201,7 +208,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 20px;
+    border-radius: 20px !important ;
     /* filter: grayscale(80%); */
 }
 .flip-card .flip-card-inner .flip-card-front div{
@@ -217,6 +224,7 @@
     text-align: center;
 }
 .flip-card .flip-card-inner .flip-card-back img{
+    margin : 0 auto;
     width: 40%;
     object-fit: cover;
     height: 40%;

@@ -18,10 +18,12 @@ const makeSectionVisible = (section)=>{
     }, 50);
     }
     localStorage.setItem('currentSection',section);
+    localStorage.setItem('expiryTime',Date.now()+30*60*1000); // currentTime + 30min = expiryTime
 }
 
 let current_Section = localStorage.getItem('currentSection');
-if(current_Section){
+let expiryTime = localStorage.getItem('expiryTime');
+if(current_Section && expiryTime && expiryTime > Date.now()){
     makeSectionVisible(current_Section);
 } else {
     makeSectionVisible("0");

@@ -98,7 +98,7 @@
 .card-3d-wrapper {
     position: relative;
     opacity: 0;
-    left : -200vw;
+    left : -100vw;
     filter: blur(10px);
     border-radius: 1em;
     padding: 4px;

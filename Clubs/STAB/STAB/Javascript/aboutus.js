@@ -10,8 +10,8 @@ const handleSliding = ()=>{
     }
     
     for(let i=0;i<cards.length;i++){
-        setTimeout(()=>sildeFromLeftToRight(cards[i]), i*200);
-        setTimeout(()=>temp[i].style.zIndex = cards.length-i, i*200);
+        cards[i].style.zIndex = cards.length-i;
+        setTimeout(()=>sildeFromLeftToRight(cards[i]), i*300);
     }
 }
 

@@ -10,10 +10,27 @@
   }
 }
 
+@keyframes floatInY {
+  0%{
+    transform: translateY(0px);
+  }
+  25%{
+    transform: translateY(20px);
+  }
+  50%{
+    transform: translateY(0px);
+  }
+  75%{
+    transform: translateY(-25px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
+}
+
 #page5 {
-  background: linear-gradient(270deg, #1a0b26, #3d157f, #1a0b26);
-  background-size: 600% 600%;
-  animation: gradientShift 15s ease infinite;
+  background-image: url("https://images.pexels.com/photos/1723637/pexels-photo-1723637.jpeg");
+  background-size: cover;
 }
 
 #page5 {
@@ -22,27 +39,42 @@
   background-color: black;
   flex-direction: column;
   align-items: center;
-  height: 400vh;
+  height: 300vh; /* calc using number of x card in 1 row */
 }
 
 ::-webkit-scrollbar {
   display: none;
 }
 
-.cards_members {
+.cards_members_container {
   --card-height : 400px;
   --card-width : 300px;
+  position: fixed;
+  margin: 0px auto;
+  height: 100%;
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  justify-content: center;
+  align-items: center;
+  gap : 25px;
+}
+
+.cards_members {
+  position: fixed;
   width: var(--card-width);
   height: var(--card-height);
   background: #07182e;
-  position: fixed;
-  top: 15vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: center;
+  opacity: 0;
+  z-index: 1;
   overflow: hidden;
   border-radius: 20px;
-  transition: all 1s ease;
+  transition: all 0.6s ease-out !important;
+  animation: floatInY 10s ease;
 }
 
 .cards_members h2 {
@@ -51,6 +83,7 @@
   text-align: center;
   color: white;
   font-size: 2em;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Subtle text glow */
   text-align: center;
   width: 100%;
 }
@@ -62,39 +95,51 @@
 .cards_members::before {
   content: "";
   position: absolute;
-  left:-50%;
+  left:-70%;
   width: calc(var(--card-height) + var(--card-width));
   height: calc(var(--card-height) + var(--card-width));
   background: conic-gradient(
-        #d100d1, /* Magenta */
+        #e900e9, /* Magenta */
         #00aaff, /* Blue */
         #00ff00, /* Green */
         #ffff00, /* Yellow */
-        #ff0000, /* Red */
-        #d100d1  /* Magenta to complete the cycle */
-    );
+        #bc0000, /* Red */
+        #750075  /* Magenta to complete the cycle */
+        );
   animation: rotBGimg 3s linear infinite;
 }
 
 .cards_members::after {
   content: "";
   position: absolute;
-  background: #07182e;
+  background: linear-gradient(270deg,black, rgb(0, 0, 57),#260046, #2b1058, #44007c,black);
+  background-size: 600% 600%;
+  animation: gradientShift 10s infinite alternate;
   inset: 5px;
   border-radius: 15px;
+}
+.cards_members:nth-child(3n+1){
+  left : 150px;
+}
+.cards_members:nth-child(3n+2){
+  left : 600px;
+}
+.cards_members:nth-child(3n+3){
+  left : 1050px;
 }
 
 .cards_members.showit {
   opacity: 1;
-  transform: translate(0px) scale(1) rotate(0deg);
+  transform: scale(1);
   filter: blur(0px);
+  z-index: 1;
 }
 
 .cards_members.hideit {
-  opacity: 0.3;
-  transform: translate(-100vw) scale(0.7) rotate(-360deg);
-  filter: blur(10px);
-  display: block !important;
+  opacity: 0;
+  transform: scale(0.5);
+  filter: blur(5px);
+  z-index: 0;
 }
 
 .button-container {

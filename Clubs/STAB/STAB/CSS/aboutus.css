@@ -1,16 +1,6 @@
-@keyframes gradientShift {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-}
-
-@keyframes orbitBorder {
-    0% { background-position: 0% 50%; }
-    100% { background-position: 100% 50%; }
-}
-
+/* 🌌 Section 4 Base Styles */
 #section4 {
-    background: linear-gradient(270deg, #1a0b26, #3d157f, #1a0b26,rgb(3, 0, 14),#3d157f,#1a0b26);
+    background: linear-gradient(270deg, #1a0b26, #3d157f, #1a0b26, rgb(3, 0, 14), #3d157f, #1a0b26);
     background-size: 1000% 1000%;
     animation: gradientShift 25s ease infinite;
     height: 100%;
@@ -40,7 +30,6 @@
     text-align: center;
 }
 
-/* Typography */
 .section-heading {
     font-size: 3em;
     font-weight: 800;
@@ -59,11 +48,13 @@
     color: #e9d5ff;
 }
 
+/* Card Text */
 .card-title {
     font-size: 1.5em;
     font-weight: 600;
     margin-bottom: 0.5em;
-    color: #f3e8ff;
+    color: #fdffe8;
+    text-align: center;
 }
 
 .card-text {
@@ -88,7 +79,15 @@
     gap: 2.5em;
 }
 
+/* Responsive grid for medium screens */
 @media (min-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Responsive grid for large screens */
+@media (min-width: 1024px) {
     .grid-container {
         grid-template-columns: repeat(3, 1fr);
     }
@@ -98,14 +97,14 @@
 .card-3d-wrapper {
     position: relative;
     opacity: 0;
-    left : -100vw;
-    filter: blur(10px);
+    filter: blur(5px);
+    left:-100vw;
     border-radius: 1em;
     padding: 4px;
     background: linear-gradient(270deg, #6b46c1, #06b6d4);
     background-size: 300% 300%;
     animation: orbitBorder 6s linear infinite;
-    transition: all 2s ease;
+    transition: all 1s ease;
 }
 
 /* Card */
@@ -127,4 +126,63 @@
     background-image: linear-gradient(to bottom right, #db2777, #9333ea, #06b6d4);
     transform: rotateY(15deg) rotateX(10deg) scale(1.05);
     box-shadow: 0 0 20px #9f7aea, 0 0 40px #6b46c1;
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+    .section-heading {
+        font-size: 2em;
+    }
+
+    .section-description {
+        font-size: 1em;
+        padding: 0 1em;
+    }
+
+    .card-title {
+        font-size: 1.25em;
+    }
+
+    .card-3d {
+        padding: 1.25em;
+    }
+
+    .icon {
+        width: 3em;
+        height: 3em;
+    }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+    .section-heading {
+        font-size: 2.25em;
+    }
+
+    .section-description {
+        font-size: 1.05em;
+    }
+
+    .grid-container {
+        gap: 1.5em;
+    }
+
+    .card-3d {
+        padding: 1.5em;
+    }
+}
+
+/* Big desktops */
+@media (min-width: 1440px) {
+    .section-heading {
+        font-size: 3.5em;
+    }
+
+    .section-description {
+        font-size: 1.25em;
+    }
+
+    .grid-container {
+        gap: 3em;
+    }
 }

@@ -29,22 +29,16 @@
 }
 
 #page5 {
-  /* background-image: url("https://images.pexels.com/photos/2670898/pexels-photo-2670898.jpeg");  
-  background-image: url("./../images/background/contactus-bg.jpg");  
-  background-image: url("https://images.pexels.com/photos/1493226/pexels-photo-1493226.jpeg");     
-  background-image: url("./../images/background/Lucid_Origin_Image_is_an_abstract_closeup_photograph_featuring_1.jpg");  
-  background-image: url("./../images/background/red bg.jpeg"); */
-  background-color: #121212;
+  background-image: url("./../images/background/contactus-bg.jpg");
   background-size: cover;
 }
 
 #page5 {
   overflow-y: auto;
   display: flex;
-  background-color: black;
   flex-direction: column;
   align-items: center;
-  height: 300vh; /* calc using number of x card in 1 row */
+  height: 300vh;
 }
 
 ::-webkit-scrollbar {
@@ -57,7 +51,10 @@
   top:0;
   font-weight: 700;
   font-size: 3em;
-  margin: 10px;
+  width: 100%;
+  background: transparent; 
+  backdrop-filter: blur(5px); /* blur whatever is behind the div */
+  border-bottom: 2px solid rgba(0, 0, 0, 0.05 );
   color: #fff;
   text-align: center;
   text-shadow: 0 0 15px rgb(181, 181, 181);
@@ -119,6 +116,7 @@
 .cards_members .img-wrapper img {
   width: 120px;
   height: 120px;
+  box-shadow: 0px 0px 10px rgba(245, 245, 245, 0.514);
   border-radius: 50%;
   object-fit: cover;
   z-index: 1;
@@ -259,7 +257,7 @@
 
 .cards_members.hideit {
   opacity: 0;
-  transform: scale(0.5);
+  transform: scale(0.5) translateX(100vw);
   filter: blur(5px);
   z-index: 0;
 }
@@ -327,5 +325,132 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+/* =========================
+   RESPONSIVE STYLES 
+   ========================= */
+
+/* Tablets (<=1400px) */
+@media (max-width: 1400px) {
+
+  #page5 {
+    height : 400vh;
+  }
+
+  .cards_members_container {
+    position: fixed;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 95%;
+    height: 80vh;
+    top: 10vh;
+    margin: 0 auto;
+  }
+
+  .cards_members {
+    position: fixed;
+    height: 70vh;
+  }
+
+  .contactus-heading {
+    font-size: 2.5em;
+  }
+
+  .cards_members.showit:nth-child(2n+1){
+    left: 10%;
+  }
+  .cards_members.showit:nth-child(2n+2){
+    left: 60%;
+  }
+}
+
+/* Mobiles (<=768px) */
+@media (max-width: 768px) {
+
+  #page5 {
+    height : 750vh;
+  }
+
+  .cards_members_container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding-bottom: 120px; /* space for buttons */
+  }
+
+  .cards_members {
+    width: 90%;
+    max-width: 350px;
+    height: 40vh;
+    min-height: 380px;
+  }
+
+  .cards_members.showit:nth-child(n) {
+    left: calc(45vw - var(--card-width) / 2);
+  }
+  
+  .contactus-heading {
+    font-size: 2em;
+    padding: 10px 0;
+  }
+
+  .cards_members .img-wrapper img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .cards_members .card-name {
+    font-size: 1.6em;
+  }
+
+  .cards_members .card-contanct-number {
+    font-size: 1.2em;
+  }
+
+  .cards_members .card-title {
+    font-size: 1.4em;
+  }
+
+  .button-container {
+    position: fixed;
+    bottom: 15px;
+    top: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+  }
+
+  .button {
+    font-size: 1em;
+    padding: 10px 20px;
+  }
+}
+
+/* Small Mobiles (<=480px) */
+@media (max-width: 480px) {
+  .contactus-heading {
+    text-align: center;
+    font-size: 1.8em;
+  }
+
+  .cards_members {
+    width: 70%;
+    padding: 15px 10px;
+  }
+  
+  .cards_members.showit:nth-child(n) {
+    left: calc(50vw - var(--card-width) / 2);
+  }
+
+  .cards_members .img-wrapper img {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .button {
+    font-size: 0.9em;
+    padding: 8px 16px;
   }
 }

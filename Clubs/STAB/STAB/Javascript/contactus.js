@@ -1,55 +1,92 @@
+// Responsive show/hide for cards — replaces previous function
 const vh = window.innerHeight;
 
+function getCardsPerRow() {
+  const container = document.querySelector('.cards_members_container');
+  if (!container) {
+    // fallback to width thresholds
+    if (window.innerWidth <= 480) return 1;
+    if (window.innerWidth <= 768) return 2;
+    return 3;
+  }
+
+  const computed = window.getComputedStyle(container).gridTemplateColumns;
+  if (!computed || computed === 'none') {
+    // fallback
+    if (window.innerWidth <= 480) return 1;
+    if (window.innerWidth <= 768) return 2;
+    return 3;
+  }
+
+  // gridTemplateColumns returns something like "300px 300px 300px" — count parts
+  const parts = computed.trim().split(/\s+/);
+  const count = parts.length || (window.innerWidth <= 480 ? 1 : window.innerWidth <= 768 ? 2 : 3);
+  return Math.max(1, count);
+}
+
+let ticking = false;
 const checkHideOrShow = () => {
-    let cards = document.querySelectorAll(".cards_members");
-    let y = Math.floor(window.scrollY*2/ window.innerHeight);
+  const cards = Array.from(document.querySelectorAll(".cards_members"));
+  if (!cards.length) return;
 
-    //  0 - 50 vh : card 1 to 3
-    //  50 - 100 vh : card 1 to 6
-    //  100 - 150 vh : card 1 to 9
-    //  ... 
-    
-    let i = y;
+  const cardsPerScreen = getCardsPerRow();
 
-    if(cards[3*i]){
-        cards[3*i].classList.add("showit");
-        cards[3*i].classList.remove("hideit");
+  // same segmentation logic as before (each segment = 50vh)
+  const y = Math.floor((window.scrollY * 2) / vh);
+  const i = Math.max(0, y);
+
+  if(i*cardsPerScreen >= cards.length) return;
+
+  // helper to toggle a batch (show or hide)
+  const toggleBatch = (batchIndex, show) => {
+    for (let k = 0; k < cardsPerScreen; k++) {
+      const idx = batchIndex * cardsPerScreen + k;
+      if (typeof cards[idx] === "undefined") continue;
+      if (show) {
+        cards[idx].classList.add("showit");
+        cards[idx].classList.remove("hideit");
+      } else {
+        cards[idx].classList.add("hideit");
+        cards[idx].classList.remove("showit");
+      }
     }
-    if(cards[3*i+1]){
-        cards[3*i+1].classList.add("showit");
-        cards[3*i+1].classList.remove("hideit");
+  };
+
+  // show current
+  toggleBatch(i, true);
+
+  // hide previous
+  if (i - 1 >= 0) toggleBatch(i - 1, false);
+
+  // hide next
+  toggleBatch(i + 1, false);
+
+  // JUST IN CASE IF ANY ERROR OCCURS
+  // hide everything outside prev/current/next groups
+  const keepStart = Math.max(0, (i - 1) * cardsPerScreen);
+  const keepEnd = (i + 1) * cardsPerScreen + (cardsPerScreen - 1);
+  cards.forEach((card, idx) => {
+    if (idx < keepStart || idx > keepEnd) {
+      card.classList.add("hideit");
+      card.classList.remove("showit");
     }
-    if(cards[3*i+2]){
-        cards[3*i+2].classList.add("showit");
-        cards[3*i+2].classList.remove("hideit");
-    }
-    i--;
-    if(cards[3*i]){
-        cards[3*i].classList.add("hideit");
-        cards[3*i].classList.remove("showit");
-    }
-    if(cards[3*i+1]){
-        cards[3*i+1].classList.add("hideit");
-        cards[3*i+1].classList.remove("showit");
-    }
-    if(cards[3*i+2]){
-        cards[3*i+2].classList.add("hideit");
-        cards[3*i+2].classList.remove("showit");
-    }
-    i+=2;
-    if(cards[3*i]){
-        cards[3*i].classList.add("hideit");
-        cards[3*i].classList.remove("showit");
-    }
-    if(cards[3*i+1]){
-        cards[3*i+1].classList.add("hideit");
-        cards[3*i+1].classList.remove("showit");
-    }
-    if(cards[3*i+2]){
-        cards[3*i+2].classList.add("hideit");
-        cards[3*i+2].classList.remove("showit");
-    }
+  });
 };
 
+// scroll handler
+function onScroll() {
+  if (!ticking) {
+    window.requestAnimationFrame(() => {
+      checkHideOrShow();
+      ticking = false;
+    });
+    ticking = true;
+  }
+}
+
+// run once
 checkHideOrShow();
-window.addEventListener("scroll", () => checkHideOrShow()); // check everytime whenever user scrolls
+
+window.addEventListener("scroll", onScroll, { passive: true });
+
+window.addEventListener("resize", () => checkHideOrShow());

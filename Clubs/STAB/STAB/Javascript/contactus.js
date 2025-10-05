@@ -1,27 +1,10 @@
 // Responsive show/hide for cards — replaces previous function
 const vh = window.innerHeight;
 
-function getCardsPerRow() {
-  const container = document.querySelector('.cards_members_container');
-  if (!container) {
-    // fallback to width thresholds
-    if (window.innerWidth <= 480) return 1;
-    if (window.innerWidth <= 768) return 2;
-    return 3;
-  }
-
-  const computed = window.getComputedStyle(container).gridTemplateColumns;
-  if (!computed || computed === 'none') {
-    // fallback
-    if (window.innerWidth <= 480) return 1;
-    if (window.innerWidth <= 768) return 2;
-    return 3;
-  }
-
-  // gridTemplateColumns returns something like "XYZpx XYZpx XYZpx" — count parts
-  const parts = computed.trim().split(/\s+/);
-  const count = parts.length || (window.innerWidth <= 480 ? 1 : window.innerWidth <= 768 ? 2 : 3);
-  return Math.max(1, count);
+function getCardsPerRow() { // simple function to get max No. of cards in each row
+  if (window.innerWidth <= 480) return 1;
+  if (window.innerWidth <= 768) return 2;
+  return 3;
 }
 
 let ticking = false;
@@ -84,8 +67,10 @@ function onScroll() {
   }
 }
 
-// run once
-checkHideOrShow();
+// run once when its loaded 
+window.addEventListener("load", () => {
+  checkHideOrShow();
+});
 
 window.addEventListener("scroll", onScroll, { passive: true });
 

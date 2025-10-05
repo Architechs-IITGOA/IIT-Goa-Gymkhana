@@ -4,7 +4,11 @@ const timelineData = [
     title: "Started Programming Journey",
     description:
       "Learned basics of programming through online courses and small projects.",
-    icon: `<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M2 3h20v2H2V3zm2 14v-2h4v2H4zm6 0v-2h4v2h-4zm6 0v-2h4v2h-4zM4 7v2h4V7H4zm6 0v2h4V7h-4zm6 0v2h4V7h-4z"/></svg>`, // tech (code brackets)
+    icon: ` <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#22d3ee" stroke-width="2" width="32" height="32">
+              <circle cx="12" cy="12" r="10"/>
+              <circle cx="12" cy="12" r="6"/>
+              <circle cx="12" cy="12" r="2"/>
+            </svg>`,
     image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=600&q=80", // programming related
   },
   {
@@ -49,23 +53,43 @@ const timelineData = [
   },
 ];
 
-// Reference elements
+// >>>>>>>>>>>>>>>>>>>>>>>>>> here are some svgs for new events also can find other too <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+// <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#22d3ee" stroke-width="2" width="32" height="32">
+//   <circle cx="12" cy="12" r="10"/>
+//   <circle cx="12" cy="12" r="6"/>
+//   <circle cx="12" cy="12" r="2"/>
+// </svg>
+// <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#67e8f9" width="32" height="32">
+//   <path d="M12 2 2 9l10 13 10-13-10-7Zm-4.5 7 4.5-4 4.5 4H7.5Zm9.42 2L12 20.24 7.08 11h9.84Z"/>
+// </svg>
+// <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#60a5fa" width="32" height="32">
+//   <path d="M12 2 1 7l11 5 9-4.09V17h2V7L12 2Zm0 13-7-3.18v4.06L12 21l7-5.12v-4.06L12 15Z"/>
+// </svg>
+// <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#c084fc" width="32" height="32">
+//   <path d="M12 2 15 8l6 1-4 5 1 6-6-3-6 3 1-6-4-5 6-1 3-6z"/>
+// </svg>
+
+
+// Reference elements ( containers )
 const timelineItemsContainer = document.getElementById("timeline-items");
 const timelineLine = document.getElementById("timeline-line");
 const scrollProgress = document.getElementById("scroll-progress");
 
-// Create timeline dots and cards dynamically
+// Creating timeline dots and cards
 timelineData.forEach((item, index) => {
   
   // Create timeline card
   const card = document.createElement("article");
   card.className = "timeline-item";
+
   // Alternate left/right for desktop
   card.classList.add(index % 2 === 0 ? "left" : "right");
   // Initial slide direction
   card.classList.add(index % 2 === 0 ? "slide-in-left" : "slide-in-right");
   card.dataset.index = index;
 
+  // diciding position of card based on grid layout
   if(window.innerWidth >= 768){
     card.style.gridRow = `${index+1} / ${index+1}`;
     card.style.gridColumn = `${index%2 == 0 ? 1 : 2} / ${index%2 == 0 ? 1 : 2}`;
@@ -111,11 +135,10 @@ timelineData.forEach((item, index) => {
   
   timelineItemsContainer.appendChild(card);
 
-
   // Create timeline dot
   const dot = document.createElement("div");
   dot.className = "timeline-dot";
-  dot.style.top = `${index * 47 + 2}vh`; // vertical spacing increased
+  dot.style.top = `${index * 47 + 2}vh`; // hard coded value to match card position and dot position using vh
   dot.innerHTML = item.icon;
   dot.setAttribute("aria-hidden", "true");
   dot.dataset.index = index;

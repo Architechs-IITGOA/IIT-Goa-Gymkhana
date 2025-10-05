@@ -1,4 +1,3 @@
-
 let home = document.querySelector('#home');
 let aboutus = document.querySelector('#aboutus');
 let clubs = document.querySelector('#clubs');
@@ -38,6 +37,8 @@ clubs.addEventListener("click", ()=>makeSectionVisible("1"));
 
 timeline.addEventListener("click",()=> makeSectionVisible("2"));
 
-contactus.addEventListener("click",()=> makeSectionVisible("3"));
+contactus.addEventListener("click",()=>{ 
+    makeSectionVisible("3");
+});
 
 aboutus.addEventListener("click",()=>makeSectionVisible("4"));

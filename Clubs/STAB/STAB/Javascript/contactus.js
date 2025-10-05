@@ -2,9 +2,26 @@
 const vh = window.innerHeight;
 
 function getCardsPerRow() { // simple function to get max No. of cards in each row
-  if (window.innerWidth <= 480) return 1;
-  if (window.innerWidth <= 768) return 2;
-  return 3;
+  const container = document.querySelector('.cards_members_container');
+  if (!container) {
+    // fallback to width thresholds
+    if (window.innerWidth <= 480) return 1;
+    if (window.innerWidth <= 768) return 2;
+    return 3;
+  }
+
+  const computed = window.getComputedStyle(container).gridTemplateColumns;
+  if (!computed || computed === 'none') {
+    // fallback
+    if (window.innerWidth <= 480) return 1;
+    if (window.innerWidth <= 768) return 2;
+    return 3;
+  }
+
+  // gridTemplateColumns returns something like "XYZpx XYZpx XYZpx" — count parts
+  const parts = computed.trim().split(/\s+/);
+  const count = parts.length || (window.innerWidth <= 480 ? 1 : window.innerWidth <= 768 ? 2 : 3);
+  return Math.max(1, count);
 }
 
 let ticking = false;
@@ -67,11 +84,26 @@ function onScroll() {
   }
 }
 
-// run once when its loaded 
-window.addEventListener("load", () => {
-  checkHideOrShow();
-});
-
 window.addEventListener("scroll", onScroll, { passive: true });
 
 window.addEventListener("resize", () => checkHideOrShow());
+
+// ✅ Run the function only once when .cards_members_container first appears
+const targetDiv = document.querySelector("#page5");
+let hasTriggered = false;
+
+if (targetDiv) {
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting && !hasTriggered) {
+        hasTriggered = true;
+        checkHideOrShow();
+        obs.unobserve(targetDiv); // stop watching after first trigger
+      }
+    });
+  }, {
+    threshold: 0 // triggers when 20% of the div is visible
+  });
+
+  observer.observe(targetDiv);
+}

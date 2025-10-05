@@ -18,7 +18,7 @@ function getCardsPerRow() {
     return 3;
   }
 
-  // gridTemplateColumns returns something like "300px 300px 300px" — count parts
+  // gridTemplateColumns returns something like "XYZpx XYZpx XYZpx" — count parts
   const parts = computed.trim().split(/\s+/);
   const count = parts.length || (window.innerWidth <= 480 ? 1 : window.innerWidth <= 768 ? 2 : 3);
   return Math.max(1, count);

@@ -48,10 +48,14 @@
 
 .contactus-heading {
   position:fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   top:0;
   font-weight: 700;
   font-size: 3em;
   width: 100%;
+  height: 10vh;
   background: transparent; 
   backdrop-filter: blur(5px); /* blur whatever is behind the div */
   border-bottom: 2px solid rgba(0, 0, 0, 0.05 );
@@ -328,9 +332,6 @@
   }
 }
 
-/* =========================
-   RESPONSIVE STYLES 
-   ========================= */
 
 /* Tablets (<=1400px) */
 @media (max-width: 1400px) {
@@ -351,7 +352,7 @@
 
   .cards_members {
     position: fixed;
-    height: 70vh;
+    height: 60vh;
   }
 
   .contactus-heading {
@@ -382,7 +383,7 @@
   .cards_members {
     width: 90%;
     max-width: 350px;
-    height: 40vh;
+    height: 60vh;
     min-height: 380px;
   }
 
@@ -391,7 +392,7 @@
   }
   
   .contactus-heading {
-    font-size: 2em;
+    font-size: 2.7em;
     padding: 10px 0;
   }
 
@@ -432,7 +433,7 @@
 @media (max-width: 480px) {
   .contactus-heading {
     text-align: center;
-    font-size: 1.8em;
+    font-size: 2.5em;
   }
 
   .cards_members {
@@ -452,5 +453,17 @@
   .button {
     font-size: 0.9em;
     padding: 8px 16px;
+  }
+}
+
+@media (min-height:768px){
+  .cards_members {
+    height: 50vh;
+    max-height: 550px;
+  }
+
+  .cards_members .img-wrapper img{
+    height: 150px;
+    width: 150px;
   }
 }

@@ -6,6 +6,8 @@ let timeline = document.querySelector('#timeline');
 let contactus = document.querySelector('#contactus');
 
 const makeSectionVisible = (section)=>{
+    window.scrollTo(0,0);
+    
     let list = document.querySelectorAll('.section');
     list.forEach((elem)=>{
         elem.style.display = "none";
@@ -19,6 +21,7 @@ const makeSectionVisible = (section)=>{
     }
     localStorage.setItem('currentSection',section);
     localStorage.setItem('expiryTime',Date.now()+15*60*1000); // currentTime + 30min = expiryTime
+
 }
 
 let current_Section = localStorage.getItem('currentSection');
@@ -28,7 +31,6 @@ if(current_Section && expiryTime && expiryTime > Date.now()){
 } else {
     makeSectionVisible("0");
 }
-
 
 home.addEventListener("click", ()=>makeSectionVisible("0"));
 

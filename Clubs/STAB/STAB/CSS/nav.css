@@ -21,8 +21,9 @@ body {
   backdrop-filter: blur(5px);
   background-size: contain;
   background-repeat: no-repeat;
-  font-family: "Poppins", sans-serif; /* modern clean font */
+  font-family: "Poppins", sans-serif;
   overflow-x: hidden;
+  border-right: 2px double rgba(0, 0, 0, 0.621);
   transition: 0.5s;
 }
 
@@ -98,4 +99,28 @@ body {
   font-size: 50px;
   cursor: pointer;
   color: white;
+}
+
+.credit {
+  position: absolute;
+  width: 100%;
+  bottom:0;
+  font-size: large;
+  padding: 5%;
+  font-weight: bold;
+  user-select: none;
+  text-align: center;
+  background: linear-gradient(90deg, #8b5cf6, #ec4899, #8b5cf6);
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 4s linear infinite;
+  font-family: 'Orbitron', sans-serif;
+  letter-spacing: 2px;
+  margin-top: 40px;
+}
+
+@keyframes shine {
+  0% { background-position: 0%; }
+  100% { background-position: 200%; }
 }

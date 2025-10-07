@@ -1,0 +1,108 @@
+.section {
+  min-height: 100vh;
+  padding: 3rem 1.5rem 6rem;
+  position: relative;
+  max-width: 1200px;
+  margin: auto;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+.section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+#hero-bg {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  pointer-events: none;
+  z-index: 0;
+  background: black;
+  overflow: hidden;
+}
+
+/* Animated flowing circuit lines */
+
+.circuit-line {
+  position: absolute;
+  border: 1.5px solid #007BFF;
+  opacity: 0.3;
+  border-radius: 2px;
+  animation: flowLine 6s linear infinite;
+  filter: drop-shadow(0 0 6px #007BFF);
+  mix-blend-mode: screen;
+}
+
+@keyframes flowLine {
+  0% { transform: translateX(-100vw) translateY(0); opacity: 0.2; }
+  50% { opacity: 0.5; }
+  100% { transform: translateX(150vw) translateY(0); opacity: 0.2; }
+}
+
+#hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #00FF99;
+  text-align: center;
+  padding: 0 1rem;
+  font-family: 'Orbitron', sans-serif;
+  position: relative;
+  z-index: 1;
+}
+
+body::-webkit-scrollbar {
+    display : none;
+}
+
+#hero h1 {
+  font-size: 3.8rem;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.2em;
+  text-transform: uppercase;
+  text-shadow:
+    0 0 10px #00FF99,
+    0 0 20px #00FF99,
+    0 0 30px #00FF99;
+}
+
+#hero .tagline {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  color: #FF2C2C;
+  text-shadow:
+    0 0 5px #FF2C2C,
+    0 0 10px #FF2C2C;
+  min-height: 2.2rem;
+}
+
+#join-btn {
+  background: transparent;
+  border: 2px solid #00FF99;
+  padding: 0.75rem 2rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #00FF99;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  box-shadow:
+    0 0 3px #00FF99,
+    0 0 10px #00FF99;
+  letter-spacing: 0.1em;
+}
+
+#join-btn:hover {
+  background: #00FF99;
+  color: #050505;
+  box-shadow:
+    0 0 10px #00FF99,
+    0 0 25px #00FF99,
+    0 0 40px #00FF99;
+  transform: scale(1.05);
+}

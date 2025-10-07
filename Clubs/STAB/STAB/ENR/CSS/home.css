@@ -1,0 +1,35 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body, html {
+  margin: 0; padding: 0;
+  background-image: url("https://www.freepik.com/free-photo/close-up-photography-light-bulb_12686590.htm#fromView=search&page=1&position=6&uuid=080d6349-f5dd-484a-9b28-fc3b9ea612e2&query=electric+current");
+  background-size: cover;
+  color: #00FF99;
+  font-family: 'Rajdhani', sans-serif;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.neon-text {
+  color: #00FF99;
+  text-shadow:
+    0 0 5px #00FF99,
+    0 0 10px #00FF99,
+    0 0 20px #00FF99,
+    0 0 30px #00FF99;
+}
+
+.neon-glow {
+  box-shadow:
+    0 0 5px #00FF99,
+    0 0 10px #00FF99,
+    0 0 20px #00FF99,
+    0 0 40px #00FF99;
+}

@@ -1,0 +1,97 @@
+#about {
+  color: #00FF99;
+}
+#about h2 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  color: #007BFF;
+  text-shadow:
+    0 0 5px #007BFF,
+    0 0 10px #007BFF;
+}
+#about p {
+  font-size: 1.15rem;
+  line-height: 1.6;
+  max-width: 900px;
+  margin-bottom: 2rem;
+  color: #00FF99;
+  text-shadow:
+    0 0 3px #00FF99;
+}
+#about .tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  max-width: 900px;
+  margin-bottom: 3rem;
+}
+#about .tech-list span {
+  background: #007BFF;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-weight: 600;
+  box-shadow:
+    0 0 5px #007BFF;
+  color: #050505;
+  font-family: 'Rajdhani', sans-serif;
+  user-select: none;
+  cursor: default;
+  transition: background 0.3s ease;
+}
+#about .tech-list span:hover {
+  background: #00FF99;
+  box-shadow: 0 0 15px #00FF99;
+  color: #050505;
+}
+
+/* Interactive robot icons collage */
+#about .robot-collage {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  max-width: 900px;
+  user-select: none;
+}
+#about .robot-icon {
+  width: 80px;
+  height: 80px;
+  background: #0A0F24;
+  border: 2px solid #00FF99;
+  border-radius: 12px;
+  box-shadow:
+    0 0 10px #00FF99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+#about .robot-icon:hover {
+  transform: scale(1.2) rotate(15deg);
+  box-shadow:
+    0 0 20px #00FF99,
+    0 0 40px #00FF99;
+  z-index: 10;
+}
+#about .robot-icon svg {
+  fill: #00FF99;
+  width: 50px;
+  height: 50px;
+  filter: drop-shadow(0 0 2px #00FF99);
+}
+#about .robot-icon::after {
+  content: attr(data-name);
+  position: absolute;
+  bottom: -24px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.75rem;
+  color: #00FF99;
+  opacity: 0.7;
+  pointer-events: none;
+  white-space: nowrap;
+  font-family: 'Rajdhani', sans-serif;
+}

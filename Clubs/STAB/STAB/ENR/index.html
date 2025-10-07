@@ -3,140 +3,114 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Electronics & Robotics Club</title>
-  
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="style.css">
+  <title>ENR Club</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Rajdhani:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./CSS/home.css">
+  <link rel="stylesheet" href="./CSS/hero.css">
+  <link rel="stylesheet" href="./CSS/aboutus.css">
+  <link rel="stylesheet" href="./CSS/team.css">
+  <link rel="stylesheet" href="./CSS/events.css">
+  <link rel="stylesheet" href="./CSS/media.css">
 </head>
 <body>
 
-  <!-- Navigation -->
-  <nav aria-label="Primary navigation">
-    <div class="navbar-container">
-      <div class="nav-logo" tabindex="0">ElectroRobotics</div>
-      <ul class="nav-menu" id="navMenu">
-        <li><a href="#club-info" tabindex="0">About</a></li>
-        <li><a href="#gallery" tabindex="0">Gallery</a></li>
-        <li><a href="#events" tabindex="0">Events</a></li>
-        <li><a href="#members" tabindex="0">Members</a></li>
-      </ul>
-      <button aria-label="Toggle menu" id="burgerBtn" class="burger" aria-expanded="false" aria-controls="navMenu">
-        <div></div><div></div><div></div>
-      </button>
-    </div>
-  </nav>
+  <!-- Background circuit lines animated -->
+  <div id="hero-bg" aria-hidden="true">
+    <!-- We'll inject multiple horizontal circuit lines with JS -->
+  </div>
 
-  <!-- Hero Section -->
-  <header role="banner">
-    <div class="intro-text">
-      <h1>Electronics & Robotics Club</h1>
-      <p>Innovate, Build, and Inspire the Future with Technology</p>
-      <button onclick="document.getElementById('club-info').scrollIntoView({behavior:'smooth'})">Join Us</button>
-    </div>
-  </header>
-
-  <!-- Club Information -->
-  <section id="club-info" tabindex="0" aria-labelledby="club-info-title">
-    <div class="container">
-      <h2 class="section-title" id="club-info-title">About Our Club</h2>
-      <p>Welcome to the Electronics & Robotics Club, a passionate community of innovators, inventors, and technology enthusiasts. We thrive on designing creative electronic circuits, developing intelligent robots, and fostering teamwork. Our aim is to nurture future engineers by organizing workshops, competitions, and collaborative projects that challenge and inspire.</p>
-      <p>Whether it's your first microcontroller project or building autonomous robots, our club provides the guidance, tools, and platform to turn your ideas into reality. Join us to learn, create, and build the next generation of tech marvels!</p>
-    </div>
+  <!-- Home / Hero -->
+  <section id="hero" class="section" tabindex="0" aria-label="Home - Electronics and Robotics Club">
+    <h1 class="neon-text">Electronics and Robotics Club</h1>
+    <div class="tagline" aria-live="polite" aria-atomic="true"></div>
+    <button id="join-btn" aria-label="Join Electronics and Robotics Club">Join Us</button>
   </section>
 
-  <!-- Photo Gallery -->
-  <section id="gallery" tabindex="0" aria-labelledby="gallery-title" aria-describedby="gallery-desc">
-    <div class="container">
-      <h2 class="section-title" id="gallery-title">Photo Gallery</h2>
-      <p id="gallery-desc" style="text-align: center; margin-bottom: 2em; color:#b5a95f;">A glimpse of our activities, projects, and events captured in moments.</p>
-      <div class="gallery">
-        <div class="gallery-item" tabindex="0" aria-label="Robotics workshop photo">
-          <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=600&q=80" alt="Students working on robotics workshop" />
-        </div>
-        <div class="gallery-item" tabindex="0" aria-label="Electronics circuit design">
-          <img src="https://images.unsplash.com/photo-1581093588401-eb5e81f13f53?auto=format&fit=crop&w=600&q=80" alt="Close up of electronics circuit board" />
-        </div>
-        <div class="gallery-item" tabindex="0" aria-label="Past robotics event">
-          <img src="https://images.unsplash.com/photo-1497493292307-31c376b6e479?auto=format&fit=crop&w=600&q=80" alt="Robotics event with robots competing" />
-        </div>
-        <div class="gallery-item" tabindex="0" aria-label="Club members working on project">
-          <img src="https://images.unsplash.com/photo-1596495577886-d920f1eeec91?auto=format&fit=crop&w=600&q=80" alt="Group of young engineers working on project" />
-        </div>
-        <div class="gallery-item" tabindex="0" aria-label="Electronics prototyping">
-          <img src="https://images.unsplash.com/photo-1581090700227-048920a932cb?auto=format&fit=crop&w=600&q=80" alt="Close up of hands soldering electronics components" />
-        </div>
+  <!-- About Us -->
+  <section id="about" class="section" tabindex="0" aria-label="About Electronics and Robotics Club">
+    <h2>About Us</h2>
+    <p>
+      The Electronics and Robotics Club is a vibrant community of tech enthusiasts passionate about AI, IoT, robotics, and embedded systems.
+      We innovate cutting-edge solutions, build autonomous robots, and explore futuristic technologies shaping tomorrow.
+    </p>
+    <div class="tech-list" role="list" aria-label="Technologies used by the club">
+      <span role="listitem">Artificial Intelligence</span>
+      <span role="listitem">Internet of Things</span>
+      <span role="listitem">Robotics</span>
+      <span role="listitem">Embedded Systems</span>
+      <span role="listitem">Machine Learning</span>
+      <span role="listitem">Sensors & Actuators</span>
+    </div>
+    <div class="robot-collage" aria-label="Interactive robot icons representing club activities">
+      <div class="robot-icon" data-name="Bot Alpha" tabindex="0" role="img" aria-describedby="desc-bot-alpha">
+        <svg viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+          <path d="M32 2a6 6 0 0 0-6 6v6H18v8h4v12H18v8h10v6a6 6 0 0 0 12 0v-6h10v-8H46V22h4v-8H38v-6a6 6 0 0 0-6-6zM28 14h8v12h-8z" />
+        </svg>
+        <span id="desc-bot-alpha" class="sr-only">Robot icon Bot Alpha</span>
+      </div>
+      <div class="robot-icon" data-name="Circuitron" tabindex="0" role="img" aria-describedby="desc-circuitron">
+        <svg viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+          <circle cx="32" cy="32" r="14" stroke="#00FF99" stroke-width="2" fill="none"/>
+          <path d="M18 32h28M32 18v28" stroke="#00FF99" stroke-width="2"/>
+        </svg>
+        <span id="desc-circuitron" class="sr-only">Robot icon Circuitron</span>
+      </div>
+      <div class="robot-icon" data-name="MechaX" tabindex="0" role="img" aria-describedby="desc-mechax">
+        <svg viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+          <rect x="20" y="20" width="24" height="24" rx="6" ry="6" stroke="#00FF99" stroke-width="2" fill="none"/>
+          <circle cx="32" cy="32" r="6" fill="#00FF99"/>
+        </svg>
+        <span id="desc-mechax" class="sr-only">Robot icon MechaX</span>
+      </div>
+      <div class="robot-icon" data-name="NanoBot" tabindex="0" role="img" aria-describedby="desc-nanobot">
+        <svg viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+          <path d="M32 14l12 12-12 12-12-12z" fill="none" stroke="#00FF99" stroke-width="2"/>
+          <circle cx="32" cy="32" r="6" fill="#00FF99"/>
+        </svg>
+        <span id="desc-nanobot" class="sr-only">Robot icon NanoBot</span>
       </div>
     </div>
   </section>
 
-  <!-- Past Events -->
-  <section id="events" tabindex="0" aria-labelledby="events-title">
-    <div class="container">
-      <h2 class="section-title" id="events-title">Past Events</h2>
-      <div class="event-list">
-        <article class="event-card" tabindex="0" aria-label="Event: Robotics Hackathon 2023">
-          <h3>Robotics Hackathon 2023</h3>
-          <time datetime="2023-04-15">April 15, 2023</time>
-          <p>An electrifying 24-hour hackathon where teams built innovative robots from scratch, competing in various challenges including maze navigation and object retrieval.</p>
-        </article>
-        <article class="event-card" tabindex="0" aria-label="Event: Circuit Design Workshop">
-          <h3>Circuit Design Workshop</h3>
-          <time datetime="2022-11-10">November 10, 2022</time>
-          <p>Hands-on training on advanced circuit design, PCB layout, and use of simulation software, taught by industry experts to enhance practical skills.</p>
-        </article>
-        <article class="event-card" tabindex="0" aria-label="Event: Annual Tech Fest">
-          <h3>Annual Tech Fest</h3>
-          <time datetime="2022-06-18">June 18, 2022</time>
-          <p>A grand celebration featuring demonstrations, guest lectures, and competitions highlighting the latest trends in electronics and robotics.</p>
-        </article>
-        <article class="event-card" tabindex="0" aria-label="Event: Autonomous Robotics Competition">
-          <h3>Autonomous Robotics Competition</h3>
-          <time datetime="2021-12-05">December 5, 2021</time>
-          <p>Teams developed autonomous robots to complete preset tasks, pushing the limits of AI integration and sensor fusion technologies.</p>
-        </article>
-      </div>
+  <!-- Team Section -->
+  <section id="team" class="section" tabindex="0" aria-label="Club Members and Teams">
+    <h2>Our Team</h2>
+    <div class="filters" role="group" aria-label="Filter team members by role">
+      <button class="filter-btn active" data-filter="all" aria-pressed="true">All</button>
+      <button class="filter-btn" data-filter="core" aria-pressed="false">Core Junior Team</button>
+      <button class="filter-btn" data-filter="technical" aria-pressed="false">Core Senior Team</button>
+      <button class="filter-btn" data-filter="design" aria-pressed="false">Design Team</button>
+    </div>
+    <div class="members-grid" id="members-grid" aria-live="polite" aria-atomic="true">
+      <!-- Member cards inserted by JS -->
     </div>
   </section>
 
-  <!-- Club Members -->
-  <section id="members" tabindex="0" aria-labelledby="members-title">
-    <div class="container">
-      <h2 class="section-title" id="members-title">Our Team</h2>
-      <div class="member-list">
-        <article class="member-card" tabindex="0" aria-label="Member: Alice Johnson, Club President">
-          <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Alice Johnson" class="member-photo" />
-          <h3 class="member-name">Alice Johnson</h3>
-          <p class="member-role">Club President</p>
-          <p class="member-bio">Electrical engineering major passionate about embedded systems and AI-driven robotics projects.</p>
-        </article>
-        <article class="member-card" tabindex="0" aria-label="Member: Mark Davis, Vice President">
-          <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Mark Davis" class="member-photo" />
-          <h3 class="member-name">Mark Davis</h3>
-          <p class="member-role">Vice President</p>
-          <p class="member-bio">Robotics enthusiast specializing in autonomous navigation and computer vision applications.</p>
-        </article>
-        <article class="member-card" tabindex="0" aria-label="Member: Priya Singh, Event Coordinator">
-          <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Priya Singh" class="member-photo" />
-          <h3 class="member-name">Priya Singh</h3>
-          <p class="member-role">Event Coordinator</p>
-          <p class="member-bio">Organizes workshops and competitions, ensuring seamless operation and maximum engagement.</p>
-        </article>
-        <article class="member-card" tabindex="0" aria-label="Member: Ethan Lee, Webmaster">
-          <img src="https://randomuser.me/api/portraits/men/76.jpg" alt="Ethan Lee" class="member-photo" />
-          <h3 class="member-name">Ethan Lee</h3>
-          <p class="member-role">Webmaster</p>
-          <p class="member-bio">Developer and designer of club's digital presence; focuses on UI/UX with passion for smooth animations.</p>
-        </article>
-      </div>
+  <!-- Events Section -->
+  <section id="events" class="section" tabindex="0" aria-label="Events Timeline and Details">
+    <h2>Events</h2>
+    <div class="events-grid" id="events-grid" aria-live="polite" aria-atomic="true">
+      <!-- Event cards inserted by JS -->
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer role="contentinfo">
-    &copy; 2024 Electronics & Robotics Club. Crafted with passion and tech love.
-  </footer>
 
-<script src="script.js"></script>
+  <style>
+    /* Screen reader only */
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0,0,0,0);
+      border: 0;
+    }
+  </style>
+
+  <script src="./script.js"></script>
+
 </body>
 </html>

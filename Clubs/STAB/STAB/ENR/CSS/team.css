@@ -1,0 +1,106 @@
+#team {
+  color: #00FF99;
+}
+
+#team h2 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  color: #FF2C2C;
+  text-shadow:
+    0 0 5px #FF2C2C,
+    0 0 10px #FF2C2C;
+  text-align: center;
+}
+
+#team .filters {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+#team .filter-btn {
+  background: transparent;
+  border: 2px solid #FF2C2C;
+  padding: 0.5rem 1.2rem;
+  font-weight: 600;
+  color: #FF2C2C;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  user-select: none;
+  font-family: 'Rajdhani', sans-serif;
+  letter-spacing: 0.05em;
+}
+
+#team .filter-btn.active,
+#team .filter-btn:hover {
+  background: #FF2C2C;
+  color: #050505;
+  box-shadow:
+    0 0 15px #FF2C2C,
+    0 0 35px #FF2C2C;
+  transform: scale(1.05);
+}
+
+#team .members-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.member-card {
+  background: #0A0F24;
+  border: 2px solid #00FF99;
+  border-radius: 15px;
+  padding: 1.5rem 1rem 2rem;
+  text-align: center;
+  color: #00FF99;
+  box-shadow:
+    0 0 10px #00FF99;
+  cursor: pointer;
+  perspective: 800px;
+  transition: box-shadow 0.3s ease;
+  position: relative;
+}
+
+.member-card:hover {
+  box-shadow:
+    0 0 20px #00FF99,
+    0 0 50px #00FF99;
+  transform-style: preserve-3d;
+  transform: rotateY(15deg) rotateX(5deg);
+}
+
+.member-photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #00FF99;
+  margin-bottom: 1rem;
+  box-shadow: 0 0 10px #00FF99;
+  background: #000;
+}
+
+.member-name {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-shadow:
+    0 0 5px #00FF99;
+}
+
+.member-role {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #FF2C2C;
+  text-shadow:
+    0 0 5px #FF2C2C;
+}

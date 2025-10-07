@@ -1,0 +1,38 @@
+@media (max-width: 768px) {
+  #hero h1 {
+    font-size: 2.6rem;
+  }
+  #hero .tagline {
+    font-size: 1.2rem;
+  }
+  #join-btn {
+    font-size: 1rem;
+  }
+  .member-card:hover {
+    transform: none;
+  }
+  .event-card {
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  #hero h1 {
+    font-size: 2rem;
+  }
+  #hero .tagline {
+    font-size: 1rem;
+  }
+  #join-btn {
+    padding: 0.6rem 1.5rem;
+    font-size: 0.9rem;
+  }
+  #about .robot-icon {
+    width: 60px;
+    height: 60px;
+  }
+  #about .robot-icon svg {
+    width: 36px;
+    height: 36px;
+  }
+}

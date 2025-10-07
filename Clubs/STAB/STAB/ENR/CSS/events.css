@@ -1,0 +1,110 @@
+
+/* Events Section */
+#events {
+  color: #00FF99;
+}
+#events h2 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  color: #00BFFF;
+  text-shadow:
+    0 0 5px #00BFFF,
+    0 0 10px #00BFFF;
+  text-align: center;
+}
+#events .events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1100px;
+  margin: auto;
+  padding-bottom: 3rem;
+}
+.event-card {
+  background: #0A0F24;
+  border: 2px solid #FF2C2C;
+  border-radius: 15px;
+  box-shadow:
+    0 0 10px #FF2C2C;
+  color: #FF2C2C;
+  cursor: pointer;
+  perspective: 600px;
+  position: relative;
+  transition: box-shadow 0.3s ease;
+  overflow: hidden;
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.5rem;
+  text-align: center;
+}
+.event-card:hover {
+  box-shadow:
+    0 0 25px #FF2C2C,
+    0 0 50px #FF2C2C inset;
+  transform-style: preserve-3d;
+  transform: rotateY(10deg) rotateX(5deg);
+}
+.event-card .event-front,
+.event-card .event-back {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.5rem;
+  border-radius: 15px;
+}
+.event-card .event-front {
+  background: #0A0F24;
+  z-index: 2;
+}
+.event-card .event-back {
+  background: #FF2C2C;
+  color: #050505;
+  transform: rotateY(180deg);
+  overflow-y: auto;
+  font-size: 0.9rem;
+  text-align: left;
+  box-shadow:
+    0 0 20px #FF2C2C;
+}
+.event-card.flipped {
+  transform: rotateY(180deg);
+  box-shadow:
+    0 0 25px #FF2C2C,
+    0 0 50px #FF2C2C inset;
+}
+.event-title {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  text-shadow:
+    0 0 5px #FF2C2C;
+}
+.event-date {
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #00FF99;
+  text-shadow:
+    0 0 5px #00FF99;
+}
+.event-desc {
+  flex-grow: 1;
+  overflow-y: auto;
+  line-height: 1.4;
+  margin-top: 0.5rem;
+}
+/* Scrollbar for event back */
+.event-back::-webkit-scrollbar {
+  width: 6px;
+}
+.event-back::-webkit-scrollbar-thumb {
+  background: #FF2C2C;
+  border-radius: 3px;
+}

@@ -10,39 +10,60 @@
   <link rel="stylesheet" href="./CSS/hero.css">
   <link rel="stylesheet" href="./CSS/aboutus.css">
   <link rel="stylesheet" href="./CSS/team.css">
+  <link rel="stylesheet" href="./CSS/electricCard.css">
   <link rel="stylesheet" href="./CSS/events.css">
   <link rel="stylesheet" href="./CSS/media.css">
 </head>
+<script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.8.1/dist/dotlottie-wc.js" type="module"></script>
 <body>
 
   <!-- Background circuit lines animated -->
   <div id="hero-bg" aria-hidden="true">
-    <!-- We'll inject multiple horizontal circuit lines with JS -->
+    <!-- We'll create multiple horizontal circuit lines with JS -->
   </div>
 
   <!-- Home / Hero -->
   <section id="hero" class="section" tabindex="0" aria-label="Home - Electronics and Robotics Club">
-    <h1 class="neon-text">Electronics and Robotics Club</h1>
+    <div class="headings">
+      <h1 class="neon-text">Electronics and Robotics Club</h1>
+      <h2 class="neon-text">@IIT Goa</h2>
+    </div>
     <div class="tagline" aria-live="polite" aria-atomic="true"></div>
-    <button id="join-btn" aria-label="Join Electronics and Robotics Club">Join Us</button>
   </section>
-
+  
   <!-- About Us -->
   <section id="about" class="section" tabindex="0" aria-label="About Electronics and Robotics Club">
-    <h2>About Us</h2>
-    <p>
-      The Electronics and Robotics Club is a vibrant community of tech enthusiasts passionate about AI, IoT, robotics, and embedded systems.
-      We innovate cutting-edge solutions, build autonomous robots, and explore futuristic technologies shaping tomorrow.
-    </p>
-    <div class="tech-list" role="list" aria-label="Technologies used by the club">
+    <h2 class="section-heading ">About Us</h2>
+    <div class="club-info">
+      <img src="./images/enr.png"/>
+      <p class="club-description ">
+        The Electronics and Robotics Club is a vibrant community of tech enthusiasts passionate about AI, IoT, robotics, and embedded systems.
+        We innovate cutting-edge solutions, build autonomous robots, and explore futuristic technologies shaping tomorrow.
+      </p>
+    </div>  
+    <p class="list-heading">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="10"/>
+        <circle cx="12" cy="12" r="6"/>
+        <circle cx="12" cy="12" r="2"/>
+      </svg>
+
+      Our Vision : </p>
+    <ul>
+      <li>Provide students—whether beginners or those with experience—with a collaborative, hands-on platform to learn electronics, mechanical design, and robotics.</li>
+      <li>Bridge the gap between theory and practice by organising workshops, events, and competitions on different topics.</li>
+      <li>Supporting student ideas and projects, helping them convert concepts into working prototypes, encouraging creativity, teamwork, and problem-solving.</li>
+    </ul>
+
+    <!-- <div class="tech-list" role="list" aria-label="Technologies used by the club">
       <span role="listitem">Artificial Intelligence</span>
       <span role="listitem">Internet of Things</span>
       <span role="listitem">Robotics</span>
       <span role="listitem">Embedded Systems</span>
       <span role="listitem">Machine Learning</span>
       <span role="listitem">Sensors & Actuators</span>
-    </div>
-    <div class="robot-collage" aria-label="Interactive robot icons representing club activities">
+    </div> -->
+    <!-- <div class="robot-collage" aria-label="Interactive robot icons representing club activities">
       <div class="robot-icon" data-name="Bot Alpha" tabindex="0" role="img" aria-describedby="desc-bot-alpha">
         <svg viewBox="0 0 64 64" aria-hidden="true" focusable="false">
           <path d="M32 2a6 6 0 0 0-6 6v6H18v8h4v12H18v8h10v6a6 6 0 0 0 12 0v-6h10v-8H46V22h4v-8H38v-6a6 6 0 0 0-6-6zM28 14h8v12h-8z" />
@@ -70,30 +91,46 @@
         </svg>
         <span id="desc-nanobot" class="sr-only">Robot icon NanoBot</span>
       </div>
+    </div> -->
+  
+    <div class="animation-container">
+      <!-- <dotlottie-wc src="./lottie animation/man walking.lottie" class="animation-item slide-to-right " autoplay loop></dotlottie-wc>
+      <dotlottie-wc src="./lottie animation/Paper plane.lottie" class="animation-item slide-to-right " autoplay loop></dotlottie-wc>
+      <dotlottie-wc src="./lottie animation/robot process automation.lottie" class="animation-item " autoplay loop></dotlottie-wc> -->
+      
+      <dotlottie-wc src="./lottie animation/THNOkGgv3C.lottie" class="animation-item slide-to-left "  autoplay loop></dotlottie-wc>
+      <!-- <dotlottie-wc src="./lottie animation/THNOkGgv3C.lottie" class="animation-item slide-to-left "  autoplay loop></dotlottie-wc>
+      <dotlottie-wc src="./lottie animation/THNOkGgv3C.lottie" class="animation-item slide-to-left "  autoplay loop></dotlottie-wc>
+      <dotlottie-wc src="./lottie animation/THNOkGgv3C.lottie" class="animation-item slide-to-left "  autoplay loop></dotlottie-wc> -->
     </div>
+  
   </section>
 
   <!-- Team Section -->
   <section id="team" class="section" tabindex="0" aria-label="Club Members and Teams">
-    <h2>Our Team</h2>
+    <h2 class="section-heading ">Our Team</h2>
     <div class="filters" role="group" aria-label="Filter team members by role">
       <button class="filter-btn active" data-filter="all" aria-pressed="true">All</button>
-      <button class="filter-btn" data-filter="core" aria-pressed="false">Core Junior Team</button>
-      <button class="filter-btn" data-filter="technical" aria-pressed="false">Core Senior Team</button>
-      <button class="filter-btn" data-filter="design" aria-pressed="false">Design Team</button>
+      <button class="filter-btn" data-filter="club head" aria-pressed="false">Club Head</button>
+      <button class="filter-btn" data-filter="senior core" aria-pressed="false">Senior Core Members</button>
+      <button class="filter-btn" data-filter="junior core" aria-pressed="false">Junior Core Members</button>
     </div>
-    <div class="members-grid" id="members-grid" aria-live="polite" aria-atomic="true">
+    <div class="members-grid-container electric-border-section main-container" aria-live="polite" aria-atomic="true">
       <!-- Member cards inserted by JS -->
     </div>
   </section>
 
   <!-- Events Section -->
   <section id="events" class="section" tabindex="0" aria-label="Events Timeline and Details">
-    <h2>Events</h2>
+    <h2 class="section-heading ">Events</h2>
     <div class="events-grid" id="events-grid" aria-live="polite" aria-atomic="true">
       <!-- Event cards inserted by JS -->
     </div>
+    <div class="event-grid-container event-section main-container" aria-live="polite" aria-atomic="true">
+      <!-- Event cards will be inserted by JS -->
+    </div>
   </section>
+
 
 
   <style>

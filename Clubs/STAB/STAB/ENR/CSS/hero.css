@@ -13,6 +13,14 @@
   transform: translateY(0);
 }
 
+h2.section-heading {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bolder;
+  word-spacing: 10px;
+  margin-bottom: 3rem;
+}
+
 
 #hero-bg {
   position: fixed;
@@ -28,7 +36,7 @@
 .circuit-line {
   position: absolute;
   border: 1.5px solid #007BFF;
-  opacity: 0.3;
+  opacity: 0;
   border-radius: 2px;
   animation: flowLine 6s linear infinite;
   filter: drop-shadow(0 0 6px #007BFF);
@@ -36,9 +44,9 @@
 }
 
 @keyframes flowLine {
-  0% { transform: translateX(-100vw) translateY(0); opacity: 0.2; }
-  50% { opacity: 0.5; }
-  100% { transform: translateX(150vw) translateY(0); opacity: 0.2; }
+  0% { transform: translateX(-100vw) translateY(0); opacity: 0.8; }
+  50% { transform: translateX(0vw) translateY(0); opacity: 0.2; }
+  100% { transform: translateX(100vw) translateY(0); opacity: 0.8; }
 }
 
 #hero {
@@ -62,12 +70,29 @@ body::-webkit-scrollbar {
 #hero h1 {
   font-size: 3.8rem;
   letter-spacing: 0.15em;
-  margin-bottom: 0.2em;
+  margin-bottom: 0.3rem;
+  color:#83daff;
   text-transform: uppercase;
   text-shadow:
-    0 0 10px #00FF99,
-    0 0 20px #00FF99,
-    0 0 30px #00FF99;
+    0 0 10px #83daff,
+    0 0 20px #83daff,
+    0 0 30px #83daff;
+}
+
+#hero h2 {
+  font-size: 2em;
+  letter-spacing: 0.15em;
+  text-align: center;
+  color: rgb(225, 255, 0);
+  text-transform: uppercase;
+  text-shadow:
+    0 0 10px rgb(225, 255, 0),
+    0 0 20px rgb(225, 255, 0),
+    0 0 30px rgb(225, 255, 0);
+}
+
+#hero .headings {
+  margin-bottom: 2rem;
 }
 
 #hero .tagline {

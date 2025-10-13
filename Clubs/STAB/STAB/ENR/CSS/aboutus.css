@@ -42,9 +42,10 @@
   line-height: 1.6;
   max-width: 100%;
   margin-bottom: 2rem; 
-  color: #00FF99;
+  color: #ffffff;
   text-shadow:
-    0 0 10px #00FF99;
+    0 0 5px #007BFF,
+    0 0 10px #007BFF;
 }
 
 #about .list-heading {
@@ -79,14 +80,26 @@
     0 0 20px #007BFF;
 }
 
-#about li{ 
+#about li{
   margin-bottom: 1.5rem;
 }
 
 #about {
   font-size: 1.35rem;
-  color: #00FF99;
+  color: #ffffff;
   text-shadow:
-    0 0 10px #00FF99;
+    0 0 5px #007BFF,
+    0 0 10px #007BFF;
 }
-  
+
+@media (max-width: 768px) {
+  #about{
+    padding: 10px 20px;
+  }
+
+  .club-info {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+  }
+}

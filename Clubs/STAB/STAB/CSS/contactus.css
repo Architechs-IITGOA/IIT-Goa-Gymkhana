@@ -132,8 +132,8 @@
   inset: 0;
   border-radius: 50%;
   padding: 3px; /* border thickness */
-  background: conic-gradient(from -45deg,red,blue,red);
-  -webkit-mask: 
+  background: conic-gradient(from -45deg,red,blue,green,yellow,red);
+  -webkit-mask:
     linear-gradient(#000 0 0) content-box, 
     linear-gradient(#000 0 0);
   -webkit-mask-composite: xor;

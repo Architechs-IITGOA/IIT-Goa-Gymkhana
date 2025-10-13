@@ -1,3 +1,21 @@
+
+const hamburger = document.querySelector('.hamburger');
+const navMenu = document.querySelector('.nav-links');
+
+hamburger.addEventListener('click', () => {
+    hamburger.innerHTML = navMenu.classList.contains('active') ? 
+        '<i class="fas fa-bars"></i>' : 
+        '<i class="fas fa-times"></i>';
+    navMenu.classList.toggle('active');
+});
+
+
+document.getElementById("join-community-button").addEventListener("click",()=>{
+  window.location.href = "https://chat.whatsapp.com/L8Ul44IyCsd64UKLJC6Jky";
+});
+
+
+
 const taglineEl = document.querySelector('#hero .tagline');
 const taglineText = "Innovating Circuits, Creating the Future.";
 let taglineIndex = 0;

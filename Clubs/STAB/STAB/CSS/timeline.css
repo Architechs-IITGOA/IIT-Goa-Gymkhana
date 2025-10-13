@@ -353,10 +353,10 @@ a {
 .timeline-item h3 {
   margin-top: 0;
   margin-bottom: 10px;
-  font-weight: 600;
+  font-weight: bolder;
   font-size: 1.8em;
-  color: var(--color-gradient-end);
-  text-shadow: 0 0 6px var(--color-glow);
+  color: rgb(136, 247, 255);
+  text-shadow: 0 0 10px var(--color-glow);
 }
 .timeline-item time {
   font-size: 0.95em;

@@ -8,10 +8,16 @@ header {
     padding: 15px 0;
     transition: all 0.5s ease-in-out;
     padding: 0 5vw;
+    box-shadow: 0 5px 10px rgba(177, 177, 177, 0.2);
 }
 
-header.sticky {
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+.hamburger {
+    display: none;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
 }
 
 .navbar {
@@ -28,6 +34,7 @@ header.sticky {
 .logo img {
     height: 50px;
     margin-right: 20px;
+    border-radius: 5px;
 }
 
 .logo h1 {
@@ -51,7 +58,7 @@ header.sticky {
 .nav-links a {
     position: relative;
     font-weight: 600;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
 }
 
 .nav-links a:hover {
@@ -62,11 +69,31 @@ header.sticky {
         0 0 20px #00FF99;
 }
 
-.hamburger {
-    display: none;
-    cursor: pointer;
-    background: none;
-    border: none;
-    color: #00ff99;
+@media (max-width: 621px) {
+  .hamburger {
+    display: block;
+    z-index: 1001;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 60%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.95);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    transition: right 0.3s ease-in-out;
+  }
+
+  .nav-links.active {
+    right: 0;
+  }
+
+  .nav-links li a {
     font-size: 1.5rem;
+  }
 }

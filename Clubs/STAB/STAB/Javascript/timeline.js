@@ -1,9 +1,9 @@
 const timelineData = [
   {
-    date: "2015",
-    title: "Started Programming Journey",
+    date: "2014",
+    title: "Allotment of IIT to Goa",
     description:
-      "Learned basics of programming through online courses and small projects.",
+      "The central government allotted an IIT for Goa as part of its plan to expand IITs across India.",
     icon: ` <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#22d3ee" stroke-width="2" width="32" height="32">
               <circle cx="12" cy="12" r="10"/>
               <circle cx="12" cy="12" r="6"/>
@@ -12,44 +12,44 @@ const timelineData = [
     image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=600&q=80", // programming related
   },
   {
-    date: "2017",
-    title: "First Hackathon Win",
+    date: "2016",
+    title: "Inauguration & start of operations",
     description:
-      "Won 1st place at local hackathon with a team project focused on smart home automation.",
+      "IIT Goa formally began functioning on 30 July 2016 in a temporary campus (Goa Engineering College, Farmagudi).",
     icon: `<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2l3 7h7l-5.5 4.5 2 7-6-4-6 4 2-7L2 9h7l3-7z"/></svg>`, // event (star)
-    image: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=600&q=80", // hackathon/teamwork
+    image: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=600&q=80",
   },
   {
-    date: "2018",
-    title: "Joined Tech Startup",
+    date: "2016-2019",
+    title: "Mentorship by IIT Bombay",
     description:
-      "Started working as a frontend developer building innovative web applications.",
+      "For its first three years, IIT Goa was mentored by IIT Bombay to help set up academics, recruitment, and governance.",
     icon: `<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 4c4.4 0 8 3.6 8 8s-3.6 8-8 8-8-3.6-8-8 3.6-8 8-8z"/></svg>`, // achievement (circle badge)
-    image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=600&q=80", // startup office
+    image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=600&q=80",
   },
   {
     date: "2020",
-    title: "Open Source Contributor",
+    title: "Establishment of HPC Nodal Center",
     description:
-      "Contributed major features and bug fixes to popular open source projects.",
+      "Under India’s National Supercomputing Mission, IIT Goa became a nodal centre for high performance computing and AI education/research.",
     icon: `<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M14 2h-4v6H6l6 6 6-6h-4V2z"/></svg>`, // tech (arrow down)
-    image: "https://images.unsplash.com/photo-1537432376769-00a84a7f47d2?auto=format&fit=crop&w=600&q=80", // open source coding
+    image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=600&q=80",
   },
   {
-    date: "2021",
-    title: "Launched Personal Blog",
+    date: "2024",
+    title: "Got best UG batch ever",
     description:
-      "Started a tech blog sharing tutorials, opinions, and career advice.",
+      "IIT Goa welcomed a fresh batch of brilliant minds, ready to innovate and shape the future of technology.",
     icon: `<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 4h16v2H4zM4 10h16v2H4zM4 16h10v2H4z"/></svg>`, // event (text lines)
-    image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=600&q=80", // blog writing
+    image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=600&q=80",
   },
   {
-    date: "2023",
-    title: "Speaker at Tech Conference",
+    date: "2025",
+    title: "Highest Package Record",
     description:
-      "Presented a talk on modern web animations and user experience design.",
+      "IIT Goa secured a highest package of ₹1.1 crore per annum during the 2021-22 placement drive, showcasing the peak earning potential for its students.",
     icon: `<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 7l5 5-5 5-1.5-1.5L14 13H7v-2h7l-3.5-3.5L12 7z"/></svg>`, // achievement (arrow right)
-    image: "https://images.unsplash.com/photo-1503424886301-7c34e4f1c716?auto=format&fit=crop&w=600&q=80", // conference speaker
+    image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=600&q=80",
   },
 ];
 

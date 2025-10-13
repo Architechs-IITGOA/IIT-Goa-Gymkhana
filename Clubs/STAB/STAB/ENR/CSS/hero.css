@@ -6,13 +6,13 @@
   max-width: 1200px;
   margin: 0 auto 200px;
   opacity: 0;
-  transform: translateY(40px);
-  transition: opacity 1s ease-out, transform 1s ease-out;
+  transform: translateY(50px) ;
+  transition: opacity 2s ease-in-out, transform 2s ease-in-out;
 }
 
 .section.visible {
   opacity: 1;
-  transform: translateY(0);
+  transform: translateY(0px);
 }
 
 h2.section-heading {
@@ -81,6 +81,27 @@ body::-webkit-scrollbar {
     0 0 30px #83daff;
 }
 
+@keyframes glowPulse {
+  0%, 100% {
+    text-shadow:
+      0 0 5px #FF0,
+      0 0 10px #FF0,
+      0 0 20px #FF0;
+    opacity: 1;
+  }
+  40%,50%,60% {
+    text-shadow:
+      0 0 5px #FF0,
+      0 0 10px #FF0,
+      0 0 20px #FF0;
+    opacity: 1;
+  }
+  45%,55% {
+    text-shadow: none;
+    opacity: 0.7;
+  }
+}
+
 #hero h2 {
   font-size: 2em;
   letter-spacing: 0.15em;
@@ -91,6 +112,7 @@ body::-webkit-scrollbar {
     0 0 10px rgb(225, 255, 0),
     0 0 20px rgb(225, 255, 0),
     0 0 30px rgb(225, 255, 0);
+  animation : glowPulse 2s infinite;
 }
 
 #hero .headings {
@@ -132,4 +154,22 @@ body::-webkit-scrollbar {
     0 0 25px #00FF99,
     0 0 40px #00FF99;
   transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  #hero h1 {
+    font-size: 2.6rem;
+  }
+  #hero .tagline {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #hero h1 {
+    font-size: 2rem;
+  }
+  #hero .tagline {
+    font-size: 1rem;
+  }
 }

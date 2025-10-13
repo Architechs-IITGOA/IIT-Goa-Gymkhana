@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Rajdhani:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./CSS/navbar.css">
   <link rel="stylesheet" href="./CSS/home.css">
   <link rel="stylesheet" href="./CSS/hero.css">
   <link rel="stylesheet" href="./CSS/aboutus.css">
@@ -17,8 +18,29 @@
   <link rel="stylesheet" href="./CSS/footer.css">
   <link rel="stylesheet" href="./CSS/media.css">
 </head>
-<script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.8.1/dist/dotlottie-wc.js" type="module"></script>
 <body>
+
+  <header>
+        <div class="container navbar">
+            <div class="logo">
+              <img src="./images/ENR Logo.jpg" alt="ENR Logo">
+              <h1>ENR CLUB</h1>
+              <!-- <h1>ELECTRONICS AND ROBOTICS CLUB</h1> -->
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#team">Core Team</a></li>
+                    <li><a href="#join-community">Join</a></li>
+                </ul>
+            </nav>
+            <button class="hamburger" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+  </header>
 
   <!-- Background circuit lines animated -->
   <div id="hero-bg" aria-hidden="true">
@@ -38,7 +60,7 @@
   <section id="about" class="section" tabindex="0" aria-label="About Electronics and Robotics Club">
     <h2 class="section-heading ">About Us</h2>
     <div class="club-info">
-      <img src="./images/enr.png"/>
+      <img class="club-logo" src="./images/ENR Logo.jpg"/>
       <p class="club-description ">
         The Electronics and Robotics Club is a vibrant community of tech enthusiasts passionate about AI, IoT, robotics, and embedded systems.
         We innovate cutting-edge solutions, build autonomous robots, and explore futuristic technologies shaping tomorrow.
@@ -92,10 +114,15 @@
       <div class="glass-button">Join Community</div>
     </div>
 
-    <div class="footer-social">
-      <a href="https://www.instagram.com/gomyno_iitgoa?igsh=NGdsODg0a2NlNmR6" aria-label="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="https://www.linkedin.com/company/go-myno/" aria-label="LinkedIn" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-      <a href="mailto:club.gomyno@iitgoa.ac.in" target="_blank" aria-label="Email"><i class="fas fa-envelope"></i></a>
+    <div class="club-footer">
+      <div class="club-name">
+        Electronics and Robotics Club @IIT Goa
+      </div>
+      <div class="footer-social" id="contact">
+        <a href="https://www.instagram.com/gomyno_iitgoa?igsh=NGdsODg0a2NlNmR6" aria-label="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/company/go-myno/" aria-label="LinkedIn" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="mailto:club.gomyno@iitgoa.ac.in" target="_blank" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
     </div>
     <p class="copyright">&copy; 2025 ArchiTechs-IIT GOA - All Rights Reserved</p>
   </section>

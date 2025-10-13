@@ -36,9 +36,6 @@
   animation: glowPulseAbout 2s infinite ease-in-out;
 }
 
-#about img {
-  filter: drop-shadow(0 0 20px rgb(0, 0, 255,0.6));
-}
 
 #about p{
   text-align: center;
@@ -64,6 +61,14 @@
   align-items: center;
   justify-content: space-between;
   gap: 5%;
+}
+
+#about .club-info img.club-logo{
+  height:250px;
+  border-radius: 50%;
+  border: 7.5px solid #007BFF;
+  margin: 25px;
+  filter: drop-shadow(0 0 15px #64afff);
 }
 
 #about .club-description{

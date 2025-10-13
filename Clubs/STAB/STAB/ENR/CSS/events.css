@@ -3,6 +3,28 @@
 #events {
   color: #00FFFF;
 }
+
+@keyframes glowPulseEvent {
+  0%, 100% {
+    text-shadow:
+      0 0 5px #00FFFF,
+      0 0 10px #00FFFF,
+      0 0 20px #00FFFF;
+    opacity: 1;
+  }
+  40%,50%,60% {
+    text-shadow:
+      0 0 5px #00FFFF,
+      0 0 10px #00FFFF,
+      0 0 20px #00FFFF;
+    opacity: 1;
+  }
+  45%,55% {
+    text-shadow: none;
+    opacity: 0.8;
+  }
+}
+
 #events h2 {
   font-family: 'Orbitron', sans-serif;
   font-size: 2.8rem;
@@ -11,6 +33,7 @@
     0 0 3px #00FFFF,
     0 0 7px #00FFFF;
   text-align: center;
+  animation: glowPulseEvent 2s infinite ease-in-out;
 }
 
 .event-section {

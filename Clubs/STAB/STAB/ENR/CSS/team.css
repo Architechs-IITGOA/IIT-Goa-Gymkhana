@@ -2,14 +2,38 @@
   color: #00FF99;
 }
 
+@keyframes glowPulseTeam {
+  0%, 100% {
+    text-shadow:
+      0 0 5px #FF2C2C,
+      0 0 10px #FF2C2C,
+      0 0 20px #FF2C2C;
+    opacity: 1;
+  }
+  40%,50%,60% {
+    text-shadow:
+      0 0 5px #FF2C2C,
+      0 0 10px #FF2C2C,
+      0 0 20px #FF2C2C;
+    opacity: 1;
+  }
+
+  45%,55% {
+    text-shadow: none;
+    opacity: 0.8;
+  }
+}
+
+
 #team h2 {
   font-family: 'Orbitron', sans-serif;
   font-size: 2.8rem;
   color: #FF2C2C;
   text-shadow:
-    0 0 5px #FF2C2C,
+  0 0 5px #FF2C2C,
     0 0 10px #FF2C2C;
-  text-align: center;
+    text-align: center;
+  animation: glowPulseTeam 2s infinite ease-in-out;
 }
 
 #team .filters {

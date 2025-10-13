@@ -1,6 +1,28 @@
 #about {
   color: #00FF99;
 }
+@keyframes glowPulseAbout {
+  0%, 100% {
+    text-shadow:
+      0 0 5px #007BFF,
+      0 0 10px #007BFF,
+      0 0 20px #007BFF;
+    opacity: 1;
+  }
+  40%,50%,60% {
+    text-shadow:
+      0 0 5px #007BFF,
+      0 0 10px #007BFF,
+      0 0 20px #007BFF;
+    opacity: 1;
+  }
+
+  45%,55% {
+    text-shadow: none;
+    opacity: 1;
+  }
+}
+
 #about h2 {
   font-family: 'Orbitron', sans-serif;
   text-align: center;
@@ -9,8 +31,9 @@
   word-spacing: 10px;
   color: #ffffff;
   text-shadow:
-    0 0 10px #007BFF,
-    0 0 20px #007BFF;
+  0 0 10px #007BFF,
+  0 0 20px #007BFF;
+  animation: glowPulseAbout 2s infinite ease-in-out;
 }
 
 #about img {

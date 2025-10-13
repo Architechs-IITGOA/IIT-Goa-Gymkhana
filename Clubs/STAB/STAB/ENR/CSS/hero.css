@@ -1,7 +1,7 @@
 .section {
   min-height: 100vh;
   scroll-margin-top: 75px;
-  /* padding: 3rem 1.5rem 6rem; */
+  outline: none;
   position: relative;
   max-width: 1200px;
   margin: 0 auto 200px;

@@ -1,13 +1,14 @@
 .section {
   min-height: 100vh;
-  padding: 3rem 1.5rem 6rem;
+  /* padding: 3rem 1.5rem 6rem; */
   position: relative;
   max-width: 1200px;
-  margin: auto;
+  margin: 0 auto 200px;
   opacity: 0;
   transform: translateY(40px);
   transition: opacity 1s ease-out, transform 1s ease-out;
 }
+
 .section.visible {
   opacity: 1;
   transform: translateY(0);
@@ -15,6 +16,7 @@
 
 h2.section-heading {
   text-align: center;
+  text-decoration: 5px underline;
   font-size: 3rem;
   font-weight: bolder;
   word-spacing: 10px;

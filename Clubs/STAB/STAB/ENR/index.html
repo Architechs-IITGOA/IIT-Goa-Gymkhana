@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>ENR Club</title>
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Rajdhani:wght@400;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="./CSS/home.css">
   <link rel="stylesheet" href="./CSS/hero.css">
@@ -12,6 +14,7 @@
   <link rel="stylesheet" href="./CSS/team.css">
   <link rel="stylesheet" href="./CSS/electricCard.css">
   <link rel="stylesheet" href="./CSS/events.css">
+  <link rel="stylesheet" href="./CSS/footer.css">
   <link rel="stylesheet" href="./CSS/media.css">
 </head>
 <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.8.1/dist/dotlottie-wc.js" type="module"></script>
@@ -54,56 +57,6 @@
       <li>Bridge the gap between theory and practice by organising workshops, events, and competitions on different topics.</li>
       <li>Supporting student ideas and projects, helping them convert concepts into working prototypes, encouraging creativity, teamwork, and problem-solving.</li>
     </ul>
-
-    <!-- <div class="tech-list" role="list" aria-label="Technologies used by the club">
-      <span role="listitem">Artificial Intelligence</span>
-      <span role="listitem">Internet of Things</span>
-      <span role="listitem">Robotics</span>
-      <span role="listitem">Embedded Systems</span>
-      <span role="listitem">Machine Learning</span>
-      <span role="listitem">Sensors & Actuators</span>
-    </div> -->
-    <!-- <div class="robot-collage" aria-label="Interactive robot icons representing club activities">
-      <div class="robot-icon" data-name="Bot Alpha" tabindex="0" role="img" aria-describedby="desc-bot-alpha">
-        <svg viewBox="0 0 64 64" aria-hidden="true" focusable="false">
-          <path d="M32 2a6 6 0 0 0-6 6v6H18v8h4v12H18v8h10v6a6 6 0 0 0 12 0v-6h10v-8H46V22h4v-8H38v-6a6 6 0 0 0-6-6zM28 14h8v12h-8z" />
-        </svg>
-        <span id="desc-bot-alpha" class="sr-only">Robot icon Bot Alpha</span>
-      </div>
-      <div class="robot-icon" data-name="Circuitron" tabindex="0" role="img" aria-describedby="desc-circuitron">
-        <svg viewBox="0 0 64 64" aria-hidden="true" focusable="false">
-          <circle cx="32" cy="32" r="14" stroke="#00FF99" stroke-width="2" fill="none"/>
-          <path d="M18 32h28M32 18v28" stroke="#00FF99" stroke-width="2"/>
-        </svg>
-        <span id="desc-circuitron" class="sr-only">Robot icon Circuitron</span>
-      </div>
-      <div class="robot-icon" data-name="MechaX" tabindex="0" role="img" aria-describedby="desc-mechax">
-        <svg viewBox="0 0 64 64" aria-hidden="true" focusable="false">
-          <rect x="20" y="20" width="24" height="24" rx="6" ry="6" stroke="#00FF99" stroke-width="2" fill="none"/>
-          <circle cx="32" cy="32" r="6" fill="#00FF99"/>
-        </svg>
-        <span id="desc-mechax" class="sr-only">Robot icon MechaX</span>
-      </div>
-      <div class="robot-icon" data-name="NanoBot" tabindex="0" role="img" aria-describedby="desc-nanobot">
-        <svg viewBox="0 0 64 64" aria-hidden="true" focusable="false">
-          <path d="M32 14l12 12-12 12-12-12z" fill="none" stroke="#00FF99" stroke-width="2"/>
-          <circle cx="32" cy="32" r="6" fill="#00FF99"/>
-        </svg>
-        <span id="desc-nanobot" class="sr-only">Robot icon NanoBot</span>
-      </div>
-    </div> -->
-  
-    <div class="animation-container">
-      <!-- <dotlottie-wc src="./lottie animation/man walking.lottie" class="animation-item slide-to-right " autoplay loop></dotlottie-wc>
-      <dotlottie-wc src="./lottie animation/Paper plane.lottie" class="animation-item slide-to-right " autoplay loop></dotlottie-wc>
-      <dotlottie-wc src="./lottie animation/robot process automation.lottie" class="animation-item " autoplay loop></dotlottie-wc> -->
-      
-      <dotlottie-wc src="./lottie animation/THNOkGgv3C.lottie" class="animation-item slide-to-left "  autoplay loop></dotlottie-wc>
-      <!-- <dotlottie-wc src="./lottie animation/THNOkGgv3C.lottie" class="animation-item slide-to-left "  autoplay loop></dotlottie-wc>
-      <dotlottie-wc src="./lottie animation/THNOkGgv3C.lottie" class="animation-item slide-to-left "  autoplay loop></dotlottie-wc>
-      <dotlottie-wc src="./lottie animation/THNOkGgv3C.lottie" class="animation-item slide-to-left "  autoplay loop></dotlottie-wc> -->
-    </div>
-  
   </section>
 
   <!-- Team Section -->
@@ -123,15 +76,29 @@
   <!-- Events Section -->
   <section id="events" class="section" tabindex="0" aria-label="Events Timeline and Details">
     <h2 class="section-heading ">Events</h2>
-    <div class="events-grid" id="events-grid" aria-live="polite" aria-atomic="true">
-      <!-- Event cards inserted by JS -->
-    </div>
     <div class="event-grid-container event-section main-container" aria-live="polite" aria-atomic="true">
       <!-- Event cards will be inserted by JS -->
     </div>
   </section>
 
+   <!-- Join Community -->
+  <section id="join-community" class="section" tabindex="0" aria-label="Join Our Community">
+    <h2 class="section-heading">Join Our Community</h2>
+    <div class="join-community-container">
+      <p class="community-description">
+        Have questions or want to be part of ENR? <br>
+        Join our WhatsApp group for updates, events, and coding discussions!
+      </p>
+      <div class="glass-button">Join Community</div>
+    </div>
 
+    <div class="footer-social">
+      <a href="https://www.instagram.com/gomyno_iitgoa?igsh=NGdsODg0a2NlNmR6" aria-label="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/company/go-myno/" aria-label="LinkedIn" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      <a href="mailto:club.gomyno@iitgoa.ac.in" target="_blank" aria-label="Email"><i class="fas fa-envelope"></i></a>
+    </div>
+    <p class="copyright">&copy; 2025 ArchiTechs-IIT GOA - All Rights Reserved</p>
+  </section>
 
   <style>
     /* Screen reader only */

@@ -247,6 +247,7 @@
   border : 1px solid var(--electric-border-color);
   box-shadow: 0 0 2px #00ffff85,
               0 0 5px #00ffff8d;
+    
   transition: all 0.5s ease;
 }
 

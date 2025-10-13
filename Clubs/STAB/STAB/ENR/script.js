@@ -36,14 +36,14 @@ for (let i = 0; i < lineCount; i++) {
 
 // Team members data
 const members = [
-  { name: "Ananya Singh", role: "Junior Core", photo: "https://i.pravatar.cc/100?img=12" },
-  { name: "Rohan Mehta", role: "Junior Core", photo: "https://i.pravatar.cc/100?img=5" },
-  { name: "Sanya Kapoor", role: "Club Head", photo: "https://i.pravatar.cc/100?img=15" },
-  { name: "Aditya Sharma", role: "Club Head", photo: "https://i.pravatar.cc/100?img=9" },
-  { name: "Meera Joshi", role: "Senior Core", photo: "https://i.pravatar.cc/100?img=20" },
-  { name: "Arjun Verma", role: "Senior Core", photo: "https://i.pravatar.cc/100?img=2" },
-  { name: "Priya Nair", role: "Junior Core", photo: "https://i.pravatar.cc/100?img=8" },
-  { name: "Karan Gill", role: "Senior Core", photo: "https://i.pravatar.cc/100?img=18" },
+  { name: "Sanya Kapoor", role: "Club Head", image: "https://i.pravatar.cc/100?img=15" , phNo:"+91 XXXXXXXXXX", email:"enrmember.xyz@iitgoa.ac.in"},
+  { name: "Aditya Sharma", role: "Senior Core", image: "https://i.pravatar.cc/100?img=9" , phNo:"+91 XXXXXXXXXX", email:"enrmember.xyz@iitgoa.ac.in"},
+  { name: "Meera Joshi", role: "Senior Core", image: "https://i.pravatar.cc/100?img=20" , phNo:"+91 XXXXXXXXXX", email:"enrmember.xyz@iitgoa.ac.in"},
+  { name: "Arjun Verma", role: "Senior Core", image: "https://i.pravatar.cc/100?img=2" , phNo:"+91 XXXXXXXXXX", email:"enrmember.xyz@iitgoa.ac.in"},
+  { name: "Karan Gill", role: "Senior Core", image: "https://i.pravatar.cc/100?img=18" , phNo:"+91 XXXXXXXXXX", email:"enrmember.xyz@iitgoa.ac.in"},
+  { name: "Ananya Singh", role: "Junior Core", image: "https://i.pravatar.cc/100?img=12", phNo:"+91 XXXXXXXXXX", email:"enrmember.xyz@iitgoa.ac.in"}, 
+  { name: "Rohan Mehta", role: "Junior Core", image: "https://i.pravatar.cc/100?img=5" , phNo:"+91 XXXXXXXXXX", email:"enrmember.xyz@iitgoa.ac.in"},
+  { name: "Priya Nair", role: "Junior Core", image: "https://i.pravatar.cc/100?img=8" , phNo:"+91 XXXXXXXXXX", email:"enrmember.xyz@iitgoa.ac.in"},
 ];
 
 const membersGrid = document.querySelector('.members-grid-container');
@@ -82,7 +82,7 @@ const getElectricCardSvg = ()=>{
         </svg>`;
 }
 
-const getElectricCardCardContainer = (name , role, photo)=>{
+const getElectricCardCardContainer = (member)=>{
   return `<div class="card-container">
           <div class="inner-container">
             <div class="border-outer">
@@ -96,13 +96,20 @@ const getElectricCardCardContainer = (name , role, photo)=>{
   
           <div class="content-container">
             <div class="content-top">
-              <p class="title">${name}</p>
+              <img class="member-image" src=${member.image}>
+              <p class="title">${member.name}</p>
             </div>
             <hr class="divider" />
             <div class="content-bottom">
               <p class="description">
-                ${role}
+                ${member.role} <br>
+                ${member.phNo}
               </p>
+              <div class="social-links">
+                  <a href="mailto:karmanya.gupta.22033@iitgoa.ac.in" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                  <a href="https://www.linkedin.com/in/karmanya-gupta/" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="https://github.com/KarmanyaGupta1421" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              </div>
             </div>
           </div>
         </div>`;
@@ -117,7 +124,7 @@ function renderMembers(filter = "all") {
     electricCard.classList.add('electric-card');
 
     electricCard.innerHTML += getElectricCardSvg();
-    electricCard.innerHTML += getElectricCardCardContainer(member.name,member.role,member.photo);
+    electricCard.innerHTML += getElectricCardCardContainer(member);
     membersGrid.appendChild(electricCard);
   });
 }
@@ -207,6 +214,7 @@ function addEventCard(event) {
 
 events.forEach(event => {
   addEventCard(event);
+  eventsGrid.style.height = "max-content";
 });
 
 // IntersectionObserver for fade-in animation on scroll

@@ -142,29 +142,79 @@
 }
 
 /* Content sections */
-.content-top {
+.electric-border-section .content-top {
   display: flex;
   flex-direction: column;
   padding: 48px;
+  align-items: center;
+  justify-content: space-between;
   padding-bottom: 16px;
   height: 100%;
+}
+/* 
+.member-image-wrapper {
+  border: 2px solid var(--electric-border-color);
+  filter: url(#turbulent-displace);
+  height: max-content;
+  width: max-content;
+} */
+
+.member-image {
+  height: 70%;
+  width: fit-content;
+  border: 2px solid var(--electric-border-color);
+  border-radius: 50%;
+  box-shadow:  0 0 2px var(--electric-border-color),
+                0 0 4px var(--electric-border-color),
+                0 0 10px var(--electric-border-color);
 }
 
 .content-bottom {
   display: flex;
   flex-direction: column;
+  align-items:  center;
   padding: 48px;
   padding-top: 16px;
 }
 
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap:5px;
+    margin-top: 10px;
+}
+
+.social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    color: white;
+    border-radius: 50%;
+    margin: 0 5px;
+    transition: all 0.5s ease-in-out;
+}
+
+.social-links a:hover {
+  box-shadow:  0 0 2px var(--electric-border-color),
+                0 0 4px var(--electric-border-color),
+                0 0 10px var(--electric-border-color);
+    transform: translateY(-2px);
+}
+
+
 /* Typography */
 .title {
-  font-size: 36px;
+  font-size: 2rem;
   font-weight: 500;
-  margin-top: auto;
+  text-align: center;
 }
 
 .description {
+  text-align: center;
+  line-height: 20px;
   opacity: 0.5;
 }
 

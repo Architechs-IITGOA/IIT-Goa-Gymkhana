@@ -240,7 +240,7 @@ const sections = document.querySelectorAll('.section');
 const observerOptions = {
   root: null,
   rootMargin: "0px",
-  threshold: 0.15
+  threshold: 0.01
 };
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {

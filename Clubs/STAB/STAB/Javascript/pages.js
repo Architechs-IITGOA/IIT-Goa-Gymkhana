@@ -21,6 +21,8 @@ const makeSectionVisible = (section)=>{
     localStorage.setItem('currentSection',section);
     localStorage.setItem('expiryTime',Date.now()+15*60*1000); // currentTime + 30min = expiryTime
 
+    document.getElementById("mySidenav").style.left = "-100vw";
+    document.getElementById("navicon").style.display= "inline";
 }
 
 let current_Section = localStorage.getItem('currentSection');

@@ -1,3 +1,24 @@
+
+// Background circuit lines animation setup
+const heroBg = document.getElementById('hero-bg');
+const linesColor = ["red", "orange","blue","green","yellow","white","purple","violet","cyan"];
+const animationType = ["flowLineToRight","flowLineToLeft"];
+const lineCount = 30;
+for (let i = 0; i < lineCount; i++) {
+  const line = document.createElement('div');
+  const color = linesColor[Math.floor(Math.random()*linesColor.length)];
+  line.classList.add('glow-line');
+  line.style.top = `${i*(100/lineCount) + 3}vh`;
+  line.style.width = `${20 + Math.random() * 60}vw`;
+  line.style.left = `0vw`;
+  line.style.animationName = animationType[Math.floor(Math.random()*animationType.length)];
+  line.style.animationDuration = `${5 + Math.random() * 5}s`;
+  line.style.animationDelay = `${Math.random() * 10}s`;
+  line.style.borderColor = color;
+  line.style.filter = `drop-shadow(0 0 ${Math.floor(Math.random()*7) + 3}px ${color})`;
+  heroBg.appendChild(line);
+}
+
 // Responsive show/hide for cards — replaces previous function
 const vh = window.innerHeight;
 

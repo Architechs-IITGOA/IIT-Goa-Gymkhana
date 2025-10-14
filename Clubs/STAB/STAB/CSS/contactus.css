@@ -29,17 +29,49 @@
 }
 
 #page5 {
-  background-image: url("./../images/background/contactus-bg.jpg");
-  background-size: cover;
+  background: #000000;
 }
 
 #page5 {
   overflow-y: auto;
+  overflow-x: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 300vh;
 }
+
+#hero-bg {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  pointer-events: none;
+  z-index: 0;
+  background: black;
+  overflow: hidden;
+}
+
+
+.glow-line {
+  position: absolute;
+  border: 1.5px solid #007BFF;
+  opacity: 0;
+  border-radius: 2px;
+  animation: flowLineToRight 6s linear infinite;
+  filter: drop-shadow(0 0 6px #007BFF);
+  mix-blend-mode: screen;
+}
+
+@keyframes flowLineToLeft {
+  0% { transform: translateX(100vw) translateY(0); opacity: 1; }
+  50% { transform: translateX(0vw) translateY(0); opacity: 0.2; }
+  100% { transform: translateX(-100vw) translateY(0); opacity: 1; }
+}
+@keyframes flowLineToRight {
+  0% { transform: translateX(-100vw) translateY(0); opacity: 1; }
+  50% { transform: translateX(0vw) translateY(0); opacity: 0.2; }
+  100% { transform: translateX(100vw) translateY(0); opacity: 1; }
+}
+
 
 ::-webkit-scrollbar {
   display: none;

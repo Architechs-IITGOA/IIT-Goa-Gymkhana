@@ -111,6 +111,9 @@
 .card-3d {
     background-image: linear-gradient(to bottom right, #4c1d95, #4338ca, #1e3a8a);
     border-radius: 0.75em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 2em;
     cursor: pointer;
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),

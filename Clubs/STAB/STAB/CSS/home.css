@@ -2,11 +2,16 @@
   margin: 0%;
   padding: 0%;
   box-sizing: border-box;
+  font-family: "Exo 2","Noto Sans","Mozila Text", sans-serif;
   scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {
   display: none;
+}
+
+html {
+  background-color: black;
 }
 
 .bg {

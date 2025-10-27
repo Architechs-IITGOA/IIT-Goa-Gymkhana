@@ -36,18 +36,36 @@ typeTagline();
 // Background circuit lines animation setup
 const heroBg = document.getElementById('hero-bg');
 const linesColor = ["red", "blue","green","yellow","white","purple","#8dc4ff"];
-const lineCount = 25;
+let lineCount = 25;
 for (let i = 0; i < lineCount; i++) {
   const line = document.createElement('div');
   const color = linesColor[Math.floor(Math.random()*linesColor.length)];
   line.classList.add('circuit-line');
   line.style.top = `${i*(100/lineCount) + 3}vh`;
   line.style.width = `${20 + Math.random() * 60}vw`;
-  // line.style.left = `${-80 - Math.random() * 100}vw`;
+  line.style.animationName = (Math.floor(Math.random()*2) == 0) ? 'move-horizontal-from-left' : 'move-horizontal-from-right';
   line.style.left = `0vw`;
-  line.style.animationDuration = `${5 + Math.random() * 5}s`;
+  line.style.animationDuration = `${1 + Math.random() * 5}s`;
   line.style.animationDelay = `${Math.random() * 10}s`;
   line.style.borderColor = color;
+  line.style.filter = `drop-shadow(0 0 ${Math.floor(Math.random()*7) + 3}px ${color})`;
+  heroBg.appendChild(line);
+}
+
+lineCount = 0; // now add this from vertical lines
+
+for (let i = 0; i < lineCount; i++) {
+  const line = document.createElement('div');
+  const color = linesColor[Math.floor(Math.random()*linesColor.length)];
+  line.classList.add('circuit-line');
+  line.style.left = `${i*(100/lineCount) + 3}vw`;
+  line.style.height = `${50 + Math.random() * 60}vh`;
+  line.style.top = `0vw`;
+  line.style.animationName = (Math.floor(Math.random()*2) == 0) ? 'move-vertical-from-up' : 'move-vertical-from-down';
+  line.style.animationDuration = `${1 + Math.random() * 5}s`;
+  line.style.animationDelay = `${Math.random() * 10}s`;
+  line.style.borderColor = color;
+  line.style.filter = `blur(2px)`;
   line.style.filter = `drop-shadow(0 0 ${Math.floor(Math.random()*7) + 3}px ${color})`;
   heroBg.appendChild(line);
 }

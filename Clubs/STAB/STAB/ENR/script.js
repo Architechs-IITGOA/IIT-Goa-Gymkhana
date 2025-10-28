@@ -70,16 +70,22 @@ for (let i = 0; i < lineCount; i++) {
   heroBg.appendChild(line);
 }
 
-// Team members data
+// Team members dataconst 
 const members = [
-  { name: "Sanya Kapoor", role: "Club Head", image: "https://i.pravatar.cc/100?img=15" , phNo:"+91 XXXXXXXXXX", email:"enrmember.xyz@iitgoa.ac.in"},
-  { name: "Aditya Sharma", role: "Senior Core", image: "https://i.pravatar.cc/100?img=9" , phNo:"+91 XXXXXXXXXX", email:"enrmember.xyz@iitgoa.ac.in"},
-  { name: "Meera Joshi", role: "Senior Core", image: "https://i.pravatar.cc/100?img=20" , phNo:"+91 XXXXXXXXXX", email:"enrmember.xyz@iitgoa.ac.in"},
-  { name: "Arjun Verma", role: "Senior Core", image: "https://i.pravatar.cc/100?img=2" , phNo:"+91 XXXXXXXXXX", email:"enrmember.xyz@iitgoa.ac.in"},
-  { name: "Karan Gill", role: "Senior Core", image: "https://i.pravatar.cc/100?img=18" , phNo:"+91 XXXXXXXXXX", email:"enrmember.xyz@iitgoa.ac.in"},
-  { name: "Ananya Singh", role: "Junior Core", image: "https://i.pravatar.cc/100?img=12", phNo:"+91 XXXXXXXXXX", email:"enrmember.xyz@iitgoa.ac.in"}, 
-  { name: "Rohan Mehta", role: "Junior Core", image: "https://i.pravatar.cc/100?img=5" , phNo:"+91 XXXXXXXXXX", email:"enrmember.xyz@iitgoa.ac.in"},
-  { name: "Priya Nair", role: "Junior Core", image: "https://i.pravatar.cc/100?img=8" , phNo:"+91 XXXXXXXXXX", email:"enrmember.xyz@iitgoa.ac.in"},
+  { name: "Ameya Bhagwat", role: "Club Head", image: "./images/members/AmeyaBhagwat_EnR_club_head.jpg", phNo: "+91 9820456950", email: "ameya.sunil.23063@iitgoa.ac.in" ,linkedin: "https://www.linkedin.com/in/bhagwatameya/"},
+  { name: "Swathi Lakkoju", role: "Advisory Core", image: "./images/members/Sai_Swathi_Lakkoju_EnR_Advisory_Core.jpg", phNo: "+91 7674826862", email: "sai2414202@iitgoa.ac.in" ,linkedin: "https://www.linkedin.com/in/srilakkoju1/"},
+  { name: "Rahul Tilwani", role: "Advisory Core", image: "./images/members/Rahul_Tilwani_EnR_Advisory_Core.jpg", phNo: "+91 7567359995", email: "rahul.tilwani.22063@iitgoa.ac.in" ,linkedin: "https://www.linkedin.com/in/rahul-tilwani-26bb11256/"},
+  { name: "Roshan Sharma", role: "Advisory Core", image: "./images/members/Roshan_Sharma_EnR_Advisory_Core.jpg", phNo: "+91 8169043955", email: "Roshan.sharma.22042@iitgoa.ac.in" ,linkedin: "https://www.linkedin.com/in/roshan-sharma-547585235/" },
+  { name: "Kamal Assudani", role: "Core Member", image: "./images/members/Kamal_Assudani_Enr_Core.jpg", phNo: "+91 8799306073", email: "kamal.assudani.23063@iitgoa.ac.in" ,linkedin: "https://www.linkedin.com/in/kamal-assudani-3139b4292/" },
+  { name: "Y Veekshitha", role: "Core Member", image: "./images/members/Veekshita_EnR_Core.jpg", phNo: "+91 7993506087", email: "y.veekshitha.24042@iitgoa.ac.in" ,linkedin: "https://www.linkedin.com/in/y-veekshitha-985a60334/" },
+  { name: "Keerthi Enganti", role: "Core Member", image: "./images/members/Keerthi_ENR_Core.jpg", phNo: "+91 9392708931", email: "enganti.keerthi.24042@iitgoa.ac.in" ,linkedin: "https://www.linkedin.com/in/keerthi-enganti-b1ba61334/" },
+  { name: "Snigdha Naina", role: "Core Member", image: "./images/members/Snigdha_Naina_EnR_Core.jpg", phNo: "+91 7396426357", email: "beagari.snigdha.24063@iitgoa.ac.in" ,linkedin: "https://www.linkedin.com/in/beagari-snigdha-naina-514ab9330/" },
+  { name: "Parth Gupta", role: "Core Member", image: "./images/members/Parth_Gupta_EnR_Core.jpeg", phNo: "+91 8264622235", email: "parth.gupta.23031@iitgoa.ac.in" ,linkedin: "https://www.linkedin.com/in/parth-gupta-63a652308/" },
+  { name: "Tarique Bin Yusuf", role: "Core Member", image: "./images/members/Tarique_Bin_Yusuf_EnR_Core.jpg", phNo: "+91 9305006407", email: "tarique.bin.24042@iitgoa.ac.in" ,linkedin: "https://www.linkedin.com/in/tarique-bin-yusuf-6b701232b/" },
+  { name: "Ajinkya Tembhurne", role: "Core Member", image: "./images/members/Ajinkya_Tembhurne_EnR_Core.jpg", phNo: "+91 7028678916", email: "tembhurne.ajinkya.24042@iitgoa.ac.in" ,linkedin: "https://www.linkedin.com/in/ajinkya-tembhurne-1b59b3381/" },
+  { name: "Yuvraj Singh", role: "Core Member", image: "./images/members/Yuvraj_Singh_EnR_Core.jpg", phNo: "+91 9027366461", email: "yuvraj.singh.24042@iitgoa.ac.in" ,linkedin: "https://www.linkedin.com/in/yuvraj-singh-bb8625330/" },
+  { name: "Abhishek Mirchandani", role: "Core Member", image: "./images/members/Abhishek_Mirchandani_EnR_Core.jpg", phNo: "+91 9892046055", email: "abhishek.mirchandani.2404202@iitgoa.ac.in" ,linkedin: "https://www.linkedin.com/in/abhishek-mirchandani-8838b9333/" },
+  { name: "Saurav Baranwal", role: "Core Member", image: "./images/members/SauravBaranwal_ENR_CoreMember.jpg", phNo: "+91 8826849645", email: "saurav.baranwal.24033@iitgoa.ac.in" ,linkedin: "https://www.linkedin.com/in/saurav-baranwal-17941b329/" }
 ];
 
 const membersGrid = document.querySelector('.members-grid-container');
@@ -142,10 +148,9 @@ const getElectricCardCardContainer = (member)=>{
                 ${member.phNo}
               </p>
               <div class="social-links">
-                  <a href="mailto:karmanya.gupta.22033@iitgoa.ac.in" aria-label="Email"><i class="fas fa-envelope"></i></a>
-                  <a href="https://www.linkedin.com/in/karmanya-gupta/" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                  <a href="https://github.com/KarmanyaGupta1421" aria-label="GitHub"><i class="fab fa-github"></i></a>
-              </div>
+                  <a href="mailto:${member.email}" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                  <a href="${member.linkedin}" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                  </div>
             </div>
           </div>
         </div>`;

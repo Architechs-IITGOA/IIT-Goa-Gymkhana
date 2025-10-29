@@ -84,6 +84,7 @@ const members = [
   { name: "Y Veekshitha", role: "Core Member", image: "./images/members/Veekshita_EnR_Core.jpg", phNo: "+91 7993506087", email: "y.veekshitha.24042@iitgoa.ac.in" ,linkedin: "https://www.linkedin.com/in/y-veekshitha-985a60334/" },
   { name: "Ajinkya Tembhurne", role: "Core Member", image: "./images/members/Ajinkya_Tembhurne_EnR_Core.jpg", phNo: "+91 7028678916", email: "tembhurne.ajinkya.24042@iitgoa.ac.in" ,linkedin: "https://www.linkedin.com/in/ajinkya-tembhurne-1b59b3381/" },
   { name: "Snigdha Naina", role: "Core Member", image: "./images/members/Snigdha_Naina_EnR_Core.jpg", phNo: "+91 7396426357", email: "beagari.snigdha.24063@iitgoa.ac.in" ,linkedin: "https://www.linkedin.com/in/beagari-snigdha-naina-514ab9330/" },
+  { name: "Malhar Salunkhe", role: "Core Member", image: "./images/members/Malhar_Salunkhe_EnR_Core.jpg", phNo: "+91 8591213749", email: "malhar.pravin.24042@iitgoa.ac.in" ,linkedin: "https://www.linkedin.com/in/malhar-salunkhe/" },
   { name: "Yuvraj Singh", role: "Core Member", image: "./images/members/Yuvraj_Singh_EnR_Core.jpg", phNo: "+91 9027366461", email: "yuvraj.singh.24042@iitgoa.ac.in" ,linkedin: "https://www.linkedin.com/in/yuvraj-singh-bb8625330/" },
   { name: "Abhishek Mirchandani", role: "Core Member", image: "./images/members/Abhishek_Mirchandani_EnR_Core.jpg", phNo: "+91 9892046055", email: "abhishek.mirchandani.2404202@iitgoa.ac.in" ,linkedin: "https://www.linkedin.com/in/abhishek-mirchandani-8838b9333/" },
 ];

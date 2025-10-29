@@ -10,8 +10,12 @@
   display: none;
 }
 
-html {
-  background-color: black;
+html,body {
+  width: 100vw;
+  height:100vh;
+}
+
+.section {
   width: 100vw;
 }
 

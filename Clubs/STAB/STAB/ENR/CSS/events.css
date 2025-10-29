@@ -247,7 +247,6 @@
   border : 1px solid var(--electric-border-color);
   box-shadow: 0 0 2px #00ffff85,
               0 0 5px #00ffff8d;
-    
   transition: all 0.5s ease;
 }
 
@@ -299,14 +298,14 @@
   .event-section.main-container {
     grid-template-columns: 1fr;
     gap: 100px;
-    --card-width : 600px;
+    --card-width : 700px;
+    --card-height :  800px;
   }
 
   .event-image {
     height: 70%;
     object-fit: cover;
   }
-  
 }
 
 @media (max-width: 768px) {
@@ -334,12 +333,11 @@
     padding : 0;
     gap: 100px;
     --card-width : 70vw;
-    --card-height : 50vh;
+    --card-height : 400px;
   }
 
   .event-card-container .event-image{
     display: none;
   }
-
 
 }

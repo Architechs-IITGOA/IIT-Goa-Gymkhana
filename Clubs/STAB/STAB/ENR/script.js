@@ -189,29 +189,23 @@ filterButtons.forEach(btn => {
 // Events data
 const events = [
   {
-    title: "Robot Wars 2023",
-    date: "March 15, 2023",
-    shortDesc: "High-octane battle between autonomous robots built by club members.",
-    image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=600&q=80"
+    title: "School Outreach Program 2024",
+    date: "23 January 2025",
+    shortDesc: "Exposed Goa school students to the fascinating worlds of AI and robotics.",
+    image: "./images/events/school_outreach_program_2024.jpg",
   },
   {
-    title: "IoT Hackathon",
-    date: "July 10-12, 2023",
-    shortDesc: "48-hour hackathon focusing on innovative Internet of Things solutions.",
-    image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=600&q=80"
+    title: "PCB and soldering workshop 2025",
+    date: "19 March 2025",
+    shortDesc: "Engaging workshop featuring PCB design and hands-on soldering practice.",
+    image: "./images/events/pcb_soldering_workshop_2025.jpg",
   },
   {
-    title: "Embedded Systems Workshop",
-    date: "September 5, 2023",
-    shortDesc: "Hands-on workshop on microcontrollers and real-time systems.",
-    image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=600&q=80"
+    title: "Arduino Workshop 2025",
+    date: "23-25 August 2025",
+    shortDesc: "A hands-on session for beginners to learn Arduino programming, sensor interfacing and build working line-follower robots.",
+    image: "./images/events/arduino_workshop_2025.jpg",
   },
-  {
-    title: "AI Robotics Symposium",
-    date: "Upcoming - December 2023",
-    shortDesc: "A symposium featuring talks on AI integration in robotics.",
-    image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=600&q=80"
-  }
 ];
 
 const getElectricEventCardContainer = (event)=>{

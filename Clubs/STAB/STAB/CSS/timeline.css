@@ -178,7 +178,7 @@ a {
 .timeline-item {
   position: relative;
   width: 100%;
-  max-width: 35vw;
+  max-width: 35vw;  
   height: 40vh;
   background: var(--color-glass-bg);
   border: 1.5px solid var(--color-glass-border);
@@ -349,6 +349,7 @@ a {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+  justify-content: center;
 }
 .timeline-item h3 {
   margin-top: 0;
@@ -395,6 +396,11 @@ a {
   }
   .timeline-item.right .icon-wrapper {
     left: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .icon-wrapper {
+    display: none;
   }
 }
 

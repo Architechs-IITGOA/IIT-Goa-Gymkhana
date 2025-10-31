@@ -1,0 +1,43 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body, html {
+  background-color: black;
+  margin: 0; padding: 0;
+  background-size: cover;
+  color: #00FF99;
+  font-family: 'Rajdhani', sans-serif;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.neon-text {
+  color: #00FF99;
+  text-shadow:
+    0 0 5px #00FF99,
+    0 0 10px #00FF99,
+    0 0 20px #00FF99,
+    0 0 30px #00FF99;
+  text-align: center;
+}
+
+.neon-glow {
+  box-shadow:
+    0 0 5px #00FF99,
+    0 0 10px #00FF99,
+    0 0 20px #00FF99,
+    0 0 40px #00FF99;
+}
+
+@media (max-width: 1200px) {
+  .section{
+    padding: 10px 20px;
+  }
+}

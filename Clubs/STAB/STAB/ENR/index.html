@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ENR Club</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Rajdhani:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./CSS/navbar.css">
+  <link rel="stylesheet" href="./CSS/home.css">
+  <link rel="stylesheet" href="./CSS/hero.css">
+  <link rel="stylesheet" href="./CSS/aboutus.css">
+  <link rel="stylesheet" href="./CSS/team.css">
+  <link rel="stylesheet" href="./CSS/electricCard.css">
+  <link rel="stylesheet" href="./CSS/events.css">
+  <link rel="stylesheet" href="./CSS/footer.css">
+
+</head>
+<body>
+
+  <header>
+        <div class="container navbar">
+            <div class="logo">
+              <img src="./images/ENR Logo.jpg" alt="ENR Logo">
+              <h1>EnR CLUB</h1>
+              <!-- <h1>ELECTRONICS AND ROBOTICS CLUB</h1> -->
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#join-community">Join</a></li>
+                </ul>
+            </nav>
+            <button class="hamburger" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+  </header>
+
+  <!-- Background circuit lines animated -->
+  <div id="hero-bg" aria-hidden="true">
+    <!-- We'll create multiple horizontal circuit lines with JS -->
+  </div>
+
+  <!-- Home / Hero -->
+  <section id="hero" class="section" tabindex="0" aria-label="Home - Electronics and Robotics Club">
+    <div class="headings">
+      <h1 class="neon-text">Electronics and Robotics Club</h1>
+      <h2 class="neon-text">@IIT Goa</h2>
+    </div>
+    <div class="tagline" aria-live="polite" aria-atomic="true"></div>
+  </section>
+  
+  <!-- About Us -->
+  <section id="about" class="section" tabindex="0" aria-label="About Electronics and Robotics Club">
+    <h2 class="section-heading ">About Us</h2>
+    <div class="club-info">
+      <img class="club-logo" src="./images/ENR Logo.jpg"/>
+      <p class="club-description ">
+        The Electronics and Robotics Club is a vibrant community of tech enthusiasts passionate about AI, IoT, robotics, and embedded systems.
+        We innovate cutting-edge solutions, build autonomous robots, and explore futuristic technologies shaping tomorrow.
+      </p>
+    </div>  
+    <p class="list-heading">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="10"/>
+        <circle cx="12" cy="12" r="6"/>
+        <circle cx="12" cy="12" r="2"/>
+      </svg>
+
+      Our Vision : </p>
+    <ul>
+      <li>Provide students—whether beginners or those with experience—with a collaborative, hands-on platform to learn electronics, mechanical design, and robotics.</li>
+      <li>Bridge the gap between theory and practice by organising workshops, events, and competitions on different topics.</li>
+      <li>Supporting student ideas and projects, helping them convert concepts into working prototypes, encouraging creativity, teamwork, and problem-solving.</li>
+    </ul>
+  </section>
+
+  <!-- Team Section -->
+  <section id="team" class="section" tabindex="0" aria-label="Club Members and Teams">
+    <h2 class="section-heading ">Our Team</h2>
+    <div class="filters" role="group" aria-label="Filter team members by role">
+      <button class="filter-btn active" data-filter="all" aria-pressed="true">All</button>
+      <button class="filter-btn" data-filter="club head" aria-pressed="false">Club Head</button>
+      <button class="filter-btn" data-filter="advisory core" aria-pressed="false">Advisory Core Member</button>
+      <button class="filter-btn" data-filter="core member" aria-pressed="false">Core Member</button>
+    </div>
+    <div class="members-grid-container electric-border-section main-container" aria-live="polite" aria-atomic="true">
+      <!-- Member cards inserted by JS -->
+    </div>
+  </section>
+  <!-- Events Section -->
+  <section id="events" class="section" tabindex="0" aria-label="Events Timeline and Details">
+    <h2 class="section-heading ">Events</h2>
+    <div class="event-grid-container event-section main-container" aria-live="polite" aria-atomic="true">
+      <!-- Event cards will be inserted by JS -->
+    </div>
+  </section>
+
+   <!-- Join Community -->
+  <section id="join-community" class="section" tabindex="0" aria-label="Join Our Community">
+    <h2 class="section-heading">Join Community</h2>
+    <div class="join-community-container">
+      <p class="community-description">
+        Have questions or want to be part of EnR? <br>
+        Join our WhatsApp group for updates, events, and coding discussions!
+      </p>
+      <div class="glass-button" id="join-community-button">Join Community</div>
+    </div>
+
+    <div class="club-footer">
+      <div class="club-name">
+        Electronics and Robotics Club @IIT Goa
+      </div>
+      <div class="footer-social" id="contact">
+        <a href="https://www.instagram.com/enr_iitgoa?igsh=dzk3OWVvNDdvemFq" aria-label="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/company/electronics-and-robotics-club-iit-goa/" aria-label="LinkedIn" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="mailto:club.enr@iitgoa.ac.in" target="_blank" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+    <p class="copyright">&copy; 2025 ArchiTechs-IIT GOA - All Rights Reserved</p>
+  </section>
+
+  <style>
+    /* Screen reader only */
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0,0,0,0);
+      border: 0;
+    }
+  </style>
+
+  <script src="./script.js"></script>
+
+</body>
+</html>

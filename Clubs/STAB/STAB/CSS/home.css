@@ -2,12 +2,25 @@
   margin: 0%;
   padding: 0%;
   box-sizing: border-box;
+  font-family: "Exo 2","Noto Sans","Mozila Text", sans-serif;
   scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {
   display: none;
 }
+
+html,body {
+  background-color: black;
+  width: 100vw;
+  height:100vh;
+  padding : 0 !important;
+}
+
+.section {
+  width: 100vw;
+}
+
 .bg {
   position: absolute;
   top: 0%;
@@ -29,6 +42,7 @@
   position: relative;
   font-family: 'Montserrat', sans-serif;
   color: white;
+  user-select: none;
 }
 .animatedtwotext {
   display: inline;
@@ -36,6 +50,7 @@
   position: relative;
   font-family: 'Montserrat', sans-serif;
   color: white;
+  user-select: none;
 }
 
 .typed-cursor {

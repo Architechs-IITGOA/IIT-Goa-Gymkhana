@@ -2,6 +2,12 @@
   background-color: blue;
 } */
 
+#page5 {
+    background: linear-gradient(135deg, #0d0d0d,rgba(21, 8, 29,1), rgba(23, 0, 36, 1));
+    /* background: black; */
+}
+
+
 .GS-stab {
     display: flex;
     align-items: center;
@@ -207,13 +213,41 @@
 } */
 
 
+.bottomFooter{
 
+     background: linear-gradient(135deg, #000000, #1a001a);
+
+     display:flex;
+     flex-direction: column;
+
+     height:10rem;
+
+
+}
+
+.footer-right{
+    
+    
+    font-size: 4vh;text-align:center; color: rgb(154, 24, 74); position:static; 
+    left: 0; bottom: 0; width: 100%;
+     
+}
+
+
+.margin-left{
+    padding: none;
+}
+
+.margin-left p{
+    padding: 0;
+    margin: 0;
+}
 
 .footer-right a {
     display: inline-block;
     width: 4vh;
     height: 4vh;
-    background-color: #33383b;
+    background-color: rgb(59, 51, 54);
     border-radius: 1vh;
     font-size: 3vh;
     color: #ffffff;

@@ -3,6 +3,7 @@
   --primary-color: #ff9800;
   --secondary-color: #e0e0e0;
   --box-shadow-color: rgba(0, 0, 0, 0.3);
+  --box-photo-color: rgba(255, 255, 255, 0.146);
 }
 
 .head-info {
@@ -32,7 +33,9 @@
   text-align: center;
   justify-content: center;
   display: flex;
+  box-shadow: 0 0px 15px 10px var(--box-photo-color);
 }
+
 
 .head-name {
   font-size: 2.5rem;

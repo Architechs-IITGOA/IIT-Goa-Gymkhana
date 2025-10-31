@@ -2,10 +2,11 @@
   --primary-color: #ffffff9d;
   --secondary-color: #e0e0e0;
   --hover-color: #ffffff;
-  --background-color: rgba(18, 18, 18, 0.6);
+  --background-color: rgb(18, 18, 18,0.6);
   --shadow-color: rgba(0, 0, 0, 0.5);
   --text-shadow-color: rgb(0, 0, 0);
   --highlight-color: white;
+   
 }
 
 .header {
@@ -19,6 +20,7 @@
   letter-spacing: 3px;
   z-index: 9999;
   background: var(--background-color);
+  backdrop-filter: blur(9px);
   box-shadow: 0 4px 8px var(--shadow-color);
   padding: 0 2.5rem;
   animation: glowing-box-shadow 3s infinite ease-in-out;

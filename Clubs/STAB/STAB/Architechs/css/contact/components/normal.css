@@ -32,8 +32,12 @@
 .footer-logo {
   text-align: center;
   margin-bottom: 1.5rem;
+  display: flex;
+  gap: 20px;
 }
-
+.footer-logo img {
+  width: 90px;
+}
 .footer-logo h2 {
   font-size: 2.25rem;
   color: #c2c2c2;
@@ -72,11 +76,11 @@
   margin: 0.5rem 0;
   transition: color 0.3s ease;
 }
-.iitgoa{
+.iitgoa {
   justify-content: center;
   align-items: start;
 }
-.iitgoa p:hover{
+.iitgoa p:hover {
   color: #ff9800;
   transition: color 0.3s ease;
 }
@@ -116,7 +120,7 @@
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
-.social-contact{
+.social-contact {
   display: flex;
   justify-content: space-evenly;
 }
@@ -142,10 +146,10 @@
   aspect-ratio: 1;
   margin: 10px 0px;
 }
-.iitgoa-logo:hover{
+.iitgoa-logo:hover {
   transform: scale(1.1);
   transition: border 0.3s ease-in-out;
-  box-shadow: 0px 0px 15px  #000000;
+  box-shadow: 0px 0px 15px #000000;
 }
 .iitgoa {
   display: flex;
@@ -176,7 +180,15 @@
   .footer-social {
     margin-bottom: 1rem;
   }
-  .iitgoa{
+  .footer-logo {
+    gap: 10px;
+    
+  }
+  .footer-logo img {
+    /* width: 60px; */
+    display: none;
+  }
+  .iitgoa {
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -199,7 +211,9 @@
   .footer-logo h2 {
     font-size: 1.8rem;
   }
-
+  /* .footer-logo {
+    gap: 10px;
+  } */
   .footer-logo p {
     font-size: 0.9rem;
   }

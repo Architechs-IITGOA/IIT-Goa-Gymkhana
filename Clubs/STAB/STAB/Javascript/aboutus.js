@@ -153,8 +153,6 @@ function commonclubfunction(x) {
         cimage5.src = './images/clubs/motorsports/5.jpg';
         headpic.src = './images/clubhead/Rahul_Tilwani_Motorsports_club_head.jpg';
     }
-
-
 }
 $(document).ready(function() {
     $('.gallery-slider').slick({

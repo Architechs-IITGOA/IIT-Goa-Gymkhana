@@ -199,7 +199,8 @@ a {
   display: flex;
   flex-direction: column;
   gap: 18px;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .timeline-item.visible {

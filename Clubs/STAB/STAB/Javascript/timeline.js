@@ -127,9 +127,9 @@ timelineData.forEach((item, index) => {
   titleElem.textContent = item.title;
   contentWrapper.appendChild(titleElem);
   
-  // const descElem = document.createElement("p");
-  // descElem.textContent = item.description;
-  // contentWrapper.appendChild(descElem);
+  const descElem = document.createElement("p");
+  descElem.textContent = item.description;
+  contentWrapper.appendChild(descElem);
   
   card.appendChild(contentWrapper);
   

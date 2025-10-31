@@ -3,7 +3,7 @@
     background: linear-gradient(270deg, #1a0b26, #3d157f, #1a0b26, rgb(3, 0, 14), #3d157f, #1a0b26);
     background-size: 1000% 1000%;
     animation: gradientShift 25s ease infinite;
-    height: 100%;
+    height: fit-content;
     width: 100%;
     font-size: 16px;
 }

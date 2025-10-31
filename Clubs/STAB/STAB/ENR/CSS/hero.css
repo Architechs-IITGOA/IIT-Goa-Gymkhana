@@ -1,0 +1,190 @@
+.section {
+  min-height: 100vh;
+  scroll-margin-top: 75px;
+  outline: none;
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto 200px;
+  opacity: 0;
+  transform: translateY(50px) ;
+  transition: opacity 1.5s ease-in-out, transform 1.5s ease-in-out;
+}
+
+.section.visible {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+h2.section-heading {
+  text-align: center;
+  text-decoration: 5px underline;
+  font-size: 3rem;
+  font-weight: bolder;
+  word-spacing: 10px;
+  margin-bottom: 3rem;
+}
+
+#hero-bg {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  pointer-events: none;
+  z-index: 0;
+  background: black;
+  overflow: hidden;
+}
+
+/* Animated flowing circuit lines */
+
+.circuit-line {
+  position: absolute;
+  border: 1.5px solid #007BFF;
+  opacity: 0;
+  border-radius: 2px;
+  animation: flowLine 6s linear infinite;
+  filter: drop-shadow(0 0 6px #007BFF);
+  mix-blend-mode: screen;
+}
+
+@keyframes move-horizontal-from-left {
+  0% { transform: translateX(-100vw) translateY(0); opacity: 0.8; }
+  50% { transform: translateX(0vw) translateY(0); opacity: 0.2; }
+  100% { transform: translateX(100vw) translateY(0); opacity: 0.8; }
+}
+@keyframes move-horizontal-from-right {
+  0% { transform: translateX(100vw) translateY(0); opacity: 0.8; }
+  50% { transform: translateX(0vw) translateY(0); opacity: 0.2; }
+  100% { transform: translateX(-100vw) translateY(0); opacity: 0.8; }
+}
+@keyframes move-vertical-from-up {
+  0% { transform: translateY(-100vh) translateX(0); opacity: 0.4; }
+  50% { transform: translateY(0vh) translateX(0); opacity: 0.1; }
+  100% { transform: translateY(100vh) translateX(0); opacity: 0.4; }
+}
+@keyframes move-vertical-from-down {
+  0% { transform: translateY(100vh) translateX(0); opacity: 0.4; }
+  50% { transform: translateY(0vh) translateX(0); opacity: 0.1; }
+  100% { transform: translateY(-100vh) translateX(0); opacity: 0.4; }
+}
+
+#hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #00FF99;
+  text-align: center;
+  padding: 0 1rem;
+  font-family: 'Orbitron', sans-serif;
+  position: relative;
+  z-index: 1;
+}
+
+body::-webkit-scrollbar {
+    display : none;
+}
+
+#hero h1 {
+  font-size: 3.8rem;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.3rem;
+  color:#83daff;
+  text-transform: uppercase;
+  text-shadow:
+    0 0 10px #83daff,
+    0 0 20px #83daff,
+    0 0 30px #83daff;
+}
+
+@keyframes glowPulse {
+  0%, 100% {
+    text-shadow:
+      0 0 5px #FF0,
+      0 0 10px #FF0,
+      0 0 20px #FF0;
+    opacity: 1;
+  }
+  40%,50%,60% {
+    text-shadow:
+      0 0 5px #FF0,
+      0 0 10px #FF0,
+      0 0 20px #FF0;
+    opacity: 1;
+  }
+  45%,55% {
+    text-shadow: none;
+    opacity: 0.7;
+  }
+}
+
+#hero h2 {
+  font-size: 2em;
+  letter-spacing: 0.15em;
+  text-align: center;
+  color: rgb(225, 255, 0);
+  text-transform: uppercase;
+  text-shadow:
+    0 0 10px rgb(225, 255, 0),
+    0 0 20px rgb(225, 255, 0),
+    0 0 30px rgb(225, 255, 0);
+  animation : glowPulse 2s infinite;
+}
+
+#hero .headings {
+  margin-bottom: 2rem;
+}
+
+#hero .tagline {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  color: #FF2C2C;
+  text-shadow:
+    0 0 5px #FF2C2C,
+    0 0 10px #FF2C2C;
+  min-height: 2.2rem;
+}
+
+#join-btn {
+  background: transparent;
+  border: 2px solid #00FF99;
+  padding: 0.75rem 2rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #00FF99;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  box-shadow:
+    0 0 3px #00FF99,
+    0 0 10px #00FF99;
+  letter-spacing: 0.1em;
+}
+
+#join-btn:hover {
+  background: #00FF99;
+  color: #050505;
+  box-shadow:
+    0 0 10px #00FF99,
+    0 0 25px #00FF99,
+    0 0 40px #00FF99;
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  #hero h1 {
+    font-size: 2.6rem;
+  }
+  #hero .tagline {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #hero h1 {
+    font-size: 2rem;
+  }
+  #hero .tagline {
+    font-size: 1rem;
+  }
+}

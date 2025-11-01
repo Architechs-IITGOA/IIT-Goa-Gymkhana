@@ -40,6 +40,12 @@ body {
   cursor: pointer;
 }
 
+.nav-item.active {
+  color: #e400fb !important;
+  text-decoration: underline;
+  font-weight: 800;
+}
+
 .sidenav a:hover{
   text-decoration: none;
   color: #e400fb !important;

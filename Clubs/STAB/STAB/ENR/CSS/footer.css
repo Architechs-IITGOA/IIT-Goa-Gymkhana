@@ -82,6 +82,7 @@
   box-shadow: 0 0 2px rgb(201, 65, 201,0.4),
               0 0 4px rgb(201, 65, 201,0.3),
               0 0 5px rgb(201, 65, 201,0.2);
+  cursor: pointer;
 }
 
 .glass-button:hover {

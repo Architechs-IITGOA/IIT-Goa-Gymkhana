@@ -15,6 +15,7 @@
   opacity: 0;
   transform: translateY(60px);
   transition: opacity 0.6s ease-in-out, transform 0.9s ease-in-out;
+
 }
 .core-groups.visible {
   opacity: 1;
@@ -31,6 +32,11 @@
 
 .core-group {
   margin-bottom: 4rem; /* Slightly larger space for distinction */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  justify-content: center;
+  
 }
 
 .group-title {
@@ -42,12 +48,20 @@
   letter-spacing: 15px;
 }
 
-.team-grid {
+.team-grid-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: center; /* Centers items horizontally */
+  align-items: center; /* Centers items vertically */
+  gap: 3rem;
+}
+
+.team-grid-2 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-content: center; /* Centers items horizontally */
   align-items: center; /* Centers items vertically */
-  gap: 3rem;
+  gap: 2rem;
 }
 
 .team-member {

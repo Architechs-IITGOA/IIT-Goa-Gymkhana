@@ -239,13 +239,46 @@
                 // hide the separate featured area; we'll show all members in the grid (heads first)
                 if(featuredEl) featuredEl.style.display = 'none';
 
+                // Member data with contact information
+                const memberData = {
+                    'Yash Khobragade': { email: 'yash.khobragade.22063@iitgoa.ac.in', phone: '9284086791', role: 'Advisory council member, Rocketry team head' },
+                    'Sneh Desai': { email: 'desai.sneh.23063@iitgoa.ac.in', phone: '9724203250', role: 'Core member' },
+                    'Shreekant Lolage': { email: '', phone: '7385422214', role: 'Club head, Simulation team head' },
+                    'Rishav Kanu': { email: 'kanu.rishav.24063@iitgoa.ac.in', phone: '8097935319', role: 'Core member' },
+                    'Janhavi Patil': { email: 'patil.janhavi.24063@iitgoa.ac.in', phone: '9272776563', role: 'Core member' },
+                    'Atharva Pargaonkar': { email: 'pargaonkar.atharva.24063@iitgoa.ac.in', phone: '9370643557', role: 'Core Member' },
+                    'Harsh': { email: 'harsh.23063@iitgoa.ac.in', phone: '9053809764', role: 'Core member' },
+                    'Nitin Nishikanta Das': { email: 'nitin.nishikanta.23063@iitgoa.ac.in', phone: '7976841096', role: 'Vice Club head' },
+                    'Tanmay Sarvaiya': { email: 'tanmay.sarvaiya.24063@iitgoa.ac.in', phone: '9755721458', role: 'Core Member' },
+                    'Gaurika Agarwal': { email: 'gaurika.agarwal.24063@iitgoa.ac.in', phone: '9810608508', role: 'Club Member' }
+                };
+
                 const ordered = heads.concat(cores);
 
                 // populate the grid with heads first, insert a full-width divider, then add cores
                 ordered.forEach((m, idx)=>{
                     const div = document.createElement('div');
                     div.className = 'member';
-                    div.innerHTML = `<img src="src/members/${m.file}" alt="${m.name}"><h4>${m.name}</h4><p>${m.role}</p>`;
+                    
+                    const contactInfo = memberData[m.name] || { email: '', phone: '', role: m.role };
+                    
+                    div.innerHTML = `
+                        <div class="member-inner">
+                            <div class="member-front">
+                                <img src="src/members/${m.file}" alt="${m.name}">
+                                <h4>${m.name}</h4>
+                                <p>${m.role}</p>
+                            </div>
+                            <div class="member-back">
+                                <h4>${m.name}</h4>
+                                <div class="contact-info">
+                                    ${contactInfo.email ? `<p><i class="fas fa-envelope"></i>${contactInfo.email}</p>` : ''}
+                                    ${contactInfo.phone ? `<p><i class="fas fa-phone"></i>${contactInfo.phone}</p>` : ''}
+                                    <p class="role"><i class="fas fa-user-tag"></i>${contactInfo.role}</p>
+                                </div>
+                            </div>
+                        </div>
+                    `;
                     gridEl.appendChild(div);
 
                     // after appending the last head, insert a full-width orange divider

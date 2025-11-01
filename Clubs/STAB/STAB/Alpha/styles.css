@@ -967,3 +967,146 @@ footer p,
         height: 250px;
     }
 }
+
+
+
+/* === TEAM SECTION STYLES === */
+.team-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 20px;
+  background: #0a0a0a;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Head Title */
+.team-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #f7d708;
+  letter-spacing: 1px;
+}
+
+/* Container Groups */
+.team-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 50px;
+}
+
+/* Each Card */
+.team-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(8px);
+  width: 250px;
+  height: 320px;
+  perspective: 1000px;
+  border-radius: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+.team-card:hover {
+  transform: scale(1.03);
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.7s;
+  transform-style: preserve-3d;
+  border-radius: 20px;
+}
+
+.team-card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  backface-visibility: hidden;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(255, 140, 0, 0.4);
+}
+
+.card-front {
+  background: #111;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  border: 2px solid #f7d708;
+}
+
+.card-front img {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+  border-bottom: 2px solid #f7d708;
+  border-radius: 20px 20px 0 0;
+  filter: brightness(0.9);
+}
+
+.member-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: 10px;
+  color: #f7d708;
+  text-align: center;
+}
+
+.member-role {
+  font-size: 0.9rem;
+  color: #ccc;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.card-back {
+  background: rgba(0, 0, 0, 0.8);
+  color: darkorange;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2px 20px;
+  text-align: center;
+}
+
+.card-back p {
+  margin: 2px 0;
+  font-size: 0.7rem;
+ 
+  word-wrap: break-word;
+}
+
+.card-back a {
+  color: darkorange;
+  text-decoration: none;
+  font-weight: bold;
+  word-break: break-all;
+}
+
+@media (max-width: 768px) {
+  .team-group {
+    gap: 15px;
+  }
+  .team-card {
+    width: 200px;
+    height: 280px;
+  }
+}
+
+
+.member-name-1{
+    font-size: 1.2rem !important;
+}

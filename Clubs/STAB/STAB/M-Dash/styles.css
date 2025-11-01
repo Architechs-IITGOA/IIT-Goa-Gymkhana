@@ -10,6 +10,140 @@
     --transition: all 0.3s ease;
 }
 
+/* Flip Card Styles */
+.member {
+    perspective: 1000px;
+    width: 270px;
+    height: 350px;
+    
+    position: relative;
+}
+
+.member-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+
+.member:hover .member-inner {
+    transform: rotateY(180deg);
+}
+
+.member-front, .member-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: var(--card-bg);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.member-front {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.member-front img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-bottom: 3px solid var(--primary-color);
+}
+
+.member-front h4 {
+    margin-top: 15px;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    padding: 0 10px;
+}
+
+.member-front p {
+    color: var(--text-muted);
+    margin-top: 5px;
+    padding: 0 10px;
+}
+
+.member-back {
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(135deg, var(--card-bg) 0%, #2a2a2a 100%);
+    border: 2px solid var(--primary-color);
+}
+
+.member-back h4 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.member-back .contact-info {
+    text-align: center;
+    width: 100%;
+}
+
+.member-back .contact-info p {
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+    word-break: break-word;
+}
+
+.member-back .contact-info i {
+    color: var(--primary-color);
+    margin-right: 10px;
+    min-width: 20px;
+}
+
+.member-back .role {
+    margin-top: 15px;
+    color: var(--primary-color);
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Team Section Grid Layout */
+#team {
+    background-color: var(--bg-color);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#team .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 1300px;
+    width: 95%;
+}
+
+.member-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px;
+    justify-items: center;
+    align-items: start;
+    width: 100%;
+    padding: 20px;
+    margin: 0 auto;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -1047,4 +1181,6 @@ footer {
     display: none;
   }
 }
+
+
 

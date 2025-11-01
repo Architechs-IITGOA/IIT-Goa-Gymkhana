@@ -11,7 +11,7 @@ hamburger.addEventListener('click', () => {
 
 
 document.getElementById("join-community-button").addEventListener("click",()=>{
-  window.location.href = "https://chat.whatsapp.com/L8Ul44IyCsd64UKLJC6Jky";
+  window.open("https://chat.whatsapp.com/L8Ul44IyCsd64UKLJC6Jky",'_blank');
 });
 
 

@@ -4,9 +4,27 @@ let clubs = document.querySelector('#clubs');
 let timeline = document.querySelector('#timeline');
 let contactus = document.querySelector('#contactus');
 
+const makeActive = (elem) => {
+    list = document.querySelectorAll('.nav-item');
+
+    list.forEach((item) => {
+        item.classList.remove('active');
+    });
+    elem.classList.add('active');
+}
+
 const makeSectionVisible = (section)=>{
+    const listItems = {
+        "0": home,
+        "1": clubs,
+        "2": timeline,
+        "3": contactus,
+        "4": aboutus
+    };
+    makeActive(listItems[section]);
+
     window.scrollTo(0,0);
-    
+
     let list = document.querySelectorAll('.section');
     list.forEach((elem)=>{
         elem.style.display = "none";
@@ -19,7 +37,7 @@ const makeSectionVisible = (section)=>{
     }, 50);
     }
     localStorage.setItem('currentSection',section);
-    localStorage.setItem('expiryTime',Date.now()+15*60*1000); // currentTime + 30min = expiryTime
+    localStorage.setItem('expiryTime',Date.now()+15*60*1000); // currentTime + 15min = expiryTime
 
     document.getElementById("mySidenav").style.left = "-100vw";
     document.getElementById("navicon").style.display= "inline";
@@ -33,14 +51,22 @@ if(current_Section && expiryTime && expiryTime > Date.now()){
     makeSectionVisible("0");
 }
 
-home.addEventListener("click", ()=>makeSectionVisible("0"));
+home.addEventListener("click", ()=>{
+    makeSectionVisible("0");
+});
 
-clubs.addEventListener("click", ()=>makeSectionVisible("1"));
+clubs.addEventListener("click", ()=>{
+    makeSectionVisible("1");
+});
 
-timeline.addEventListener("click",()=> makeSectionVisible("2"));
+timeline.addEventListener("click", ()=>{
+    makeSectionVisible("2");
+});
 
-contactus.addEventListener("click",()=>{ 
+contactus.addEventListener("click", ()=>{
     makeSectionVisible("3");
 });
 
-aboutus.addEventListener("click",()=>makeSectionVisible("4"));
+aboutus.addEventListener("click", ()=>{
+    makeSectionVisible("4");
+})

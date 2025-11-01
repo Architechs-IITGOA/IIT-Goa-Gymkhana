@@ -38,7 +38,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 300vh;
+  height: 350vh;
+}
+
+#page5::-webkit-scrollbar {
+  display: block !important;
 }
 
 #hero-bg {

@@ -1,457 +1,679 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GoMyno - Coding Club of IIT Goa</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
     <!-- Header & Navbar -->
     <header>
-        <div class="container navbar">
-            <div class="logo">
-                <img src="src/GoMyno-logo.png" alt="GoMyno Logo">
-                <h1>GoMyno</h1>
-            </div>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="#home" class="active">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#events">Events</a></li>
-                    <li><a href="#team">Core Team</a></li>
-                    <li><a href="#contact">Contact Us</a></li>
-                </ul>
-            </nav>
-            <button class="hamburger" aria-label="Toggle navigation">
-                <i class="fas fa-bars"></i>
-            </button>
+      <div class="container navbar">
+        <div class="logo">
+          <img src="src/GoMyno-logo.png" alt="GoMyno Logo" />
+          <h1>GoMyno</h1>
         </div>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#team">Core Team</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </nav>
+        <button class="hamburger" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
     </header>
 
     <div class="overlay"></div>
 
     <!-- Home Section -->
     <section id="home">
-        <div class="container home-content">
-            <h1>GoMyno - IIT GOA</h1>
-            <p class="motto">Building a strong coding culture at IIT Goa</p>
-            <a href="#about" class="btn">
-                <span>Explore More</span>
-              </a>
-        </div>
+      <div class="container home-content">
+        <h1>GoMyno - IIT GOA</h1>
+        <p class="motto">Building a strong coding culture at IIT Goa</p>
+        <a href="#about" class="btn">
+          <span>Explore More</span>
+        </a>
+      </div>
     </section>
 
     <!-- About Section -->
     <section id="about">
-        <div class="container">
-            <h2 class="section-title">About Us</h2>
-            <div class="about-content">
-                <div class="about-img">
-                    <img src="src/GoMyno-logo.png" alt="GoMyno Club">
-                </div>
-                <div class="about-text">
-                    <h2>Cultivating Coding Excellence</h2>
-                    <p>As a part of Student Technical Activities Body, GoMyno, the coding club of IIT Goa has always encouraged students to join the coding community. Along with various events and workshops held regularly, many hackathons and coding competitions like Game of Codes, etc are organised by the club.</p>
-                    <p>The aim of the club is to build a strong coding culture among the passionate students of the institute so that they can get assistance and enhance their coding ability.</p>
-                    <p>We believe in learning through collaboration, challenges, and practical applications. Our regular meetups, coding sessions, and competitions create an environment where creativity and technical skills flourish.</p>
-                    <a href="#events" class="btn">
-                        <span>Our Events</span>
-                      </a>
-                </div>
-            </div>
+      <div class="container">
+        <h2 class="section-title">About Us</h2>
+        <div class="about-content">
+          <div class="about-img">
+            <img src="src/GoMyno-logo.png" alt="GoMyno Club" />
+          </div>
+          <div class="about-text">
+            <h2>Cultivating Coding Excellence</h2>
+            <p>
+              As a part of Student Technical Activities Body, GoMyno, the coding
+              club of IIT Goa has always encouraged students to join the coding
+              community. Along with various events and workshops held regularly,
+              many hackathons and coding competitions like Game of Codes, etc
+              are organised by the club.
+            </p>
+            <p>
+              The aim of the club is to build a strong coding culture among the
+              passionate students of the institute so that they can get
+              assistance and enhance their coding ability.
+            </p>
+            <p>
+              We believe in learning through collaboration, challenges, and
+              practical applications. Our regular meetups, coding sessions, and
+              competitions create an environment where creativity and technical
+              skills flourish.
+            </p>
+            <a href="#events" class="btn">
+              <span>Our Events</span>
+            </a>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Events Section -->
     <section id="events">
-        <div class="container">
-            <h2 class="section-title">Our Events</h2>
-            <div class="events-container">
-                <!-- Event Slides -->
-                <div class="event-slide active">
-                    <div class="event-gallery">
-                        <div class="event-images">
-                            <div class="event-image active">
-                                <img src="src/IMG20250202164638.jpg" alt="Game of Codes 1">
-                            </div>
-                            <div class="event-image">
-                                <img src="src/IMG20250202153056.jpg" alt="Game of Codes 2">
-                            </div>
-                            <div class="event-image">
-                                <img src="src/IMG20250202164719.jpg" alt="Game of Codes 3">
-                            </div>
-                        </div>
-                        <div class="event-image-nav">
-                            <button class="event-image-prev"><i class="fas fa-chevron-left"></i></button>
-                            <div class="event-image-indicators">
-                                <span class="event-image-indicator active" data-index="0"></span>
-                                <span class="event-image-indicator" data-index="1"></span>
-                                <span class="event-image-indicator" data-index="2"></span>
-                            </div>
-                            <button class="event-image-next"><i class="fas fa-chevron-right"></i></button>
-                        </div>
-                    </div>
-                    <div class="event-content">
-                        <h3>Code Rush</h3>
-                        <p>CodeRush is the ultimate test of speed, skill, and precision in a high-stakes 1v1 coding battle. Each round is a knockout, where participants face off against a single opponent to solve a Codeforces-style problem rated between 800-1200. The first to crack the problem and pass all test cases moves forward—hesitate for even a moment, and you're out. No second chances, no lifelines—just raw coding prowess. Do you have what it takes to outthink, outcode, and outlast the competition?</p>
-                    </div>
+      <div class="container">
+        <h2 class="section-title">Our Events</h2>
+        <div class="events-container">
+          <!-- Event Slides -->
+          <div class="event-slide active">
+            <div class="event-gallery">
+              <div class="event-images">
+                <div class="event-image active">
+                  <img src="src/IMG20250202164638.jpg" alt="Game of Codes 1" />
                 </div>
-                <div class="event-slide active">
-                    <div class="event-gallery">
-                        <div class="event-images">
-                            <div class="event-image active">
-                                <img src="src/IMG_0102.JPG" alt="Game of Codes 1">
-                            </div>
-                            <div class="event-image">
-                                <img src="src/IMG_0132.JPG" alt="Game of Codes 2">
-                            </div>
-                            <div class="event-image">
-                                <img src="src/IMG_0072.jpg" alt="Game of Codes 3">
-                            </div>
-                        </div>
-                        <div class="event-image-nav">
-                            <button class="event-image-prev"><i class="fas fa-chevron-left"></i></button>
-                            <div class="event-image-indicators">
-                                <span class="event-image-indicator active" data-index="0"></span>
-                                <span class="event-image-indicator" data-index="1"></span>
-                                <span class="event-image-indicator" data-index="2"></span>
-                            </div>
-                            <button class="event-image-next"><i class="fas fa-chevron-right"></i></button>
-                        </div>
-                    </div>
-                    <div class="event-content">
-                        <h3>Orientation</h3>
-                        <p>GoMyno conducted its orientation, introducing students to the world of algorithmic problem-solving and competitive programming. The session covered the club's activities, coding contests, and roadmap for mastering competitive coding. New members got insights into strategies, platforms like Codeforces and CodeChef, and how to level up their skills. The event set the stage for an exciting journey into the world of coding battles and problem-solving excellence.</p>
-                    </div>
+                <div class="event-image">
+                  <img src="src/IMG20250202153056.jpg" alt="Game of Codes 2" />
                 </div>
-
-                <!-- Event Navigation -->
-                <div class="event-nav">
-                    <button class="event-nav-btn prev">
-                        <i class="fas fa-chevron-left"></i>
-                    </button>
-                    <button class="event-nav-btn next">
-                        <i class="fas fa-chevron-right"></i>
-                    </button>
+                <div class="event-image">
+                  <img src="src/IMG20250202164719.jpg" alt="Game of Codes 3" />
                 </div>
-
-                <!-- Event Indicators -->
-                <div class="event-indicators">
-                    <div class="indicator active" data-index="0"></div>
-                    <div class="indicator" data-index="1"></div>
+              </div>
+              <div class="event-image-nav">
+                <button class="event-image-prev">
+                  <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="event-image-indicators">
+                  <span
+                    class="event-image-indicator active"
+                    data-index="0"
+                  ></span>
+                  <span class="event-image-indicator" data-index="1"></span>
+                  <span class="event-image-indicator" data-index="2"></span>
                 </div>
+                <button class="event-image-next">
+                  <i class="fas fa-chevron-right"></i>
+                </button>
+              </div>
             </div>
+            <div class="event-content">
+              <h3>Code Rush</h3>
+              <p>
+                CodeRush is the ultimate test of speed, skill, and precision in
+                a high-stakes 1v1 coding battle. Each round is a knockout, where
+                participants face off against a single opponent to solve a
+                Codeforces-style problem rated between 800-1200. The first to
+                crack the problem and pass all test cases moves forward—hesitate
+                for even a moment, and you're out. No second chances, no
+                lifelines—just raw coding prowess. Do you have what it takes to
+                outthink, outcode, and outlast the competition?
+              </p>
+            </div>
+          </div>
+          <div class="event-slide active">
+            <div class="event-gallery">
+              <div class="event-images">
+                <div class="event-image active">
+                  <img src="src/IMG_0102.JPG" alt="Game of Codes 1" />
+                </div>
+                <div class="event-image">
+                  <img src="src/IMG_0132.JPG" alt="Game of Codes 2" />
+                </div>
+                <div class="event-image">
+                  <img src="src/IMG_0072.jpg" alt="Game of Codes 3" />
+                </div>
+              </div>
+              <div class="event-image-nav">
+                <button class="event-image-prev">
+                  <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="event-image-indicators">
+                  <span
+                    class="event-image-indicator active"
+                    data-index="0"
+                  ></span>
+                  <span class="event-image-indicator" data-index="1"></span>
+                  <span class="event-image-indicator" data-index="2"></span>
+                </div>
+                <button class="event-image-next">
+                  <i class="fas fa-chevron-right"></i>
+                </button>
+              </div>
+            </div>
+            <div class="event-content">
+              <h3>Orientation</h3>
+              <p>
+                GoMyno conducted its orientation, introducing students to the
+                world of algorithmic problem-solving and competitive
+                programming. The session covered the club's activities, coding
+                contests, and roadmap for mastering competitive coding. New
+                members got insights into strategies, platforms like Codeforces
+                and CodeChef, and how to level up their skills. The event set
+                the stage for an exciting journey into the world of coding
+                battles and problem-solving excellence.
+              </p>
+            </div>
+          </div>
+
+          <!-- Event Navigation -->
+          <div class="event-nav">
+            <button class="event-nav-btn prev">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="event-nav-btn next">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+
+          <!-- Event Indicators -->
+          <div class="event-indicators">
+            <div class="indicator active" data-index="0"></div>
+            <div class="indicator" data-index="1"></div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Team Section -->
     <section id="team">
-        <div class="container">
-            <h2 class="section-title">Our Core Team</h2>
-            
-            <!-- Team Categories -->
-            <div class="team-categories">
-                <button class="team-category-btn active" data-category="club-head">Club Head</button>
-                <button class="team-category-btn" data-category="senior-core">Senior Core</button>
-                <button class="team-category-btn" data-category="junior-core">Junior Core</button>
-            </div>
-            
-            <!-- Team Members -->
-            <div class="team-members-container">
-                <!-- Club Head -->
-                <div class="team-group active" id="club-head">
-                    <div class="team-card">
-                        <div class="card-inner">
-                            <div class="card-front">
-                                <div class="member-img">
-                                    <img src="src/Karmanya_Gupta_GoMyno_Head.jpg" alt="Club Head">
-                                </div>
-                                <div class="member-info">
-                                    <h3>Karmanya Gupta</h3>
-                                    <p>Club Head</p>
-                                </div>
-                            </div>
-                            <div class="card-back">
-                                <h3>Karmanya Gupta</h3>
-                                <p>B.Tech Mathematics and Computing</p>
-                                <p>Leading GoMyno since 2024</p>
-                                <div class="social-links">
-                                    <a href="mailto:karmanya.gupta.22033@iitgoa.ac.in" aria-label="Email"><i class="fas fa-envelope"></i></a>
-                                    <a href="https://www.linkedin.com/in/karmanya-gupta/" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                                    <a href="https://github.com/KarmanyaGupta1421" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      <div class="container">
+        <h2 class="section-title">Our Core Team</h2>
 
-                <!-- Senior Core -->
-                <div class="team-group" id="senior-core">
-                    <div class="team-card">
-                        <div class="card-inner">
-                            <div class="card-front">
-                                <div class="member-img">
-                                    <img src="src/Anshit_Gupta.jpg" alt="Senior Core">
-                                </div>
-                                <div class="member-info">
-                                    <h3>Anshit Gupta</h3>
-                                </div>
-                            </div>
-                            <div class="card-back">
-                                <h3>Anshit Gupta</h3>
-                                <div class="social-links">
-                                    <a href="mailto:anshit.gupta.22033@iitgoa.ac.in" aria-label="Email"><i class="fas fa-envelope"></i></a>
-                                    <a href="https://www.linkedin.com/in/anshit-gupta-303158256/" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                                    <a href="https://github.com/anshitgupta007" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="team-card">
-                        <div class="card-inner">
-                            <div class="card-front">
-                                <div class="member-img">
-                                    <img src="src/Tanmay_Patil.jpg" alt="Senior Core">
-                                </div>
-                                <div class="member-info">
-                                    <h3>Tanmay Patil</h3>
-                                </div>
-                            </div>
-                            <div class="card-back">
-                                <h3>Tanmay Patil</h3>
-                                <div class="social-links">
-                                    <a href="mailto:tanmay.patil.22031@iitgoa.ac.in" aria-label="Email"><i class="fas fa-envelope"></i></a>
-                                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                                    <a href="https://github.com/Tanmay0Patil" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="team-card">
-                        <div class="card-inner">
-                            <div class="card-front">
-                                <div class="member-img">
-                                    <img src="src/Hamza_Sabugar_Senior_Core.jpg" alt="Senior Core">
-                                </div>
-                                <div class="member-info">
-                                    <h3>Hamza  Sabugar</h3>
-                                </div>
-                            </div>
-                            <div class="card-back">
-                                <h3>Hamza Sabugar</h3>
-                                <div class="social-links">
-                                    <a href="mailto:sabugar.hamza.22031@iitgoa.ac.in" aria-label="Email"><i class="fas fa-envelope"></i></a>
-                                    <a href="https://www.linkedin.com/in/md-hamza-sabugar-a84128256" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                                    <a href="https://github.com/md-hzs-22" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="team-card">
-                        <div class="card-inner">
-                            <div class="card-front">
-                                <div class="member-img">
-                                    <img src="src/Utsav_Shah_Core.jpg" alt="Senior Core">
-                                </div>
-                                <div class="member-info">
-                                    <h3>Utsav Shah</h3>
-                                </div>
-                            </div>
-                            <div class="card-back">
-                                <h3>Utsav Shah</h3>
-                                <div class="social-links">
-                                    <a href="mailto:shah.manojbhai.22031@iitgoa.ac.in" aria-label="Email"><i class="fas fa-envelope"></i></a>
-                                    <a href="https://www.linkedin.com/in/shahutsavm" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                                    <a href="https://github.com/utsavshahm" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="team-card">
-                        <div class="card-inner">
-                            <div class="card-front">
-                                <div class="member-img">
-                                    <img src="src/shreya_agarwal_core.jpg" alt="Senior Core">
-                                </div>
-                                <div class="member-info">
-                                    <h3>Shreya Agarwal</h3>
-                                </div>
-                            </div>
-                            <div class="card-back">
-                                <h3>Shreya Agarwal</h3>
-                                <div class="social-links">
-                                    <a href="mailto:shreya.agarwal.22033@iitgoa.ac.in" aria-label="Email"><i class="fas fa-envelope"></i></a>
-                                    <a href="https://www.linkedin.com/in/shreya-agarwal2407/" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                                    <a href="https://github.com/Shreya-2407" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Junior Core -->
-                <div class="team-group" id="junior-core">
-                    <div class="team-card">
-                        <div class="card-inner">
-                            <div class="card-front">
-                                <div class="member-img">
-                                    <img src="src/Harshal_Maru_Core.jpg" alt="Senior Core">
-                                </div>
-                                <div class="member-info">
-                                    <h3>Harshal Maru</h3>
-                                </div>
-                            </div>
-                            <div class="card-back">
-                                <h3>Harshal Maru</h3>
-                                <div class="social-links">
-                                    <a href="mailto:harshal.rakeshbhai.23031@iitgoa.ac.in" aria-label="Email"><i class="fas fa-envelope"></i></a>
-                                    <a href="https://www.linkedin.com/in/harshal-maru-rakeshbhai/" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                                    <a href="https://github.com/Harshal-Maru-2303113" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="team-card">
-                        <div class="card-inner">
-                            <div class="card-front">
-                                <div class="member-img">
-                                    <img src="src/Kartik_Bhutra.jpg" alt="Senior Core">
-                                </div>
-                                <div class="member-info">
-                                    <h3>Kartik Bhutra</h3>
-                                </div>
-                            </div>
-                            <div class="card-back">
-                                <h3>Kartik Bhutra</h3>
-                                <div class="social-links">
-                                    <a href="mailto:kartik.bhutra.23033@iitgoa.ac.in" aria-label="Email"><i class="fas fa-envelope"></i></a>
-                                    <a href="https://www.linkedin.com/in/kartik-bhutra-a689b9345/" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                                    <a href="https://github.com/Kartik-Bhutra" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="team-card">
-                        <div class="card-inner">
-                            <div class="card-front">
-                                <div class="member-img">
-                                    <img src="src/mithil_surya.jpeg" alt="Senior Core">
-                                </div>
-                                <div class="member-info">
-                                    <h3>Mithil Surya Darisi</h3>
-                                </div>
-                            </div>
-                            <div class="card-back">
-                                <h3>Mithil Surya Darisi</h3>
-                                <div class="social-links">
-                                    <a href="mailto:mithil.surya.23031@iitgoa.ac.in" aria-label="Email"><i class="fas fa-envelope"></i></a>
-                                    <a href="https://www.linkedin.com/in/mithil-surya-darisi-287353285?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app " aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                                    <a href="https://github.com/mithilsurya10052005" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="team-card">
-                        <div class="card-inner">
-                            <div class="card-front">
-                                <div class="member-img">
-                                    <img src="src/Chirag_bansal.jpg" alt="Senior Core">
-                                </div>
-                                <div class="member-info">
-                                    <h3>Chirag Bansal</h3>
-                                </div>
-                            </div>
-                            <div class="card-back">
-                                <h3>Chirag Bansal</h3>
-                                <div class="social-links">
-                                    <a href="mailto:chirag.bansal.23063@iitgoa.ac.in" aria-label="Email"><i class="fas fa-envelope"></i></a>
-                                    <a href="https://www.linkedin.com/in/chirag-bansal-b790b3288?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                                    <a href="https://github.com/chirag-232" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="team-card">
-                        <div class="card-inner">
-                            <div class="card-front">
-                                <div class="member-img">
-                                    <img src="src/sahil.jpg" alt="Senior Core">
-                                </div>
-                                <div class="member-info">
-                                    <h3>Sahil Walunj</h3>
-                                </div>
-                            </div>
-                            <div class="card-back">
-                                <h3>Sahil Walunj</h3>
-                                <div class="social-links">
-                                    <a href="mailto:sahil.shivaji.23031@iitgoa.ac.in" aria-label="Email"><i class="fas fa-envelope"></i></a>
-                                    <a href="https://www.linkedin.com/in/sahil-walunj-954697288/" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                                    <a href="https://github.com/sahil-walunj" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="team-card">
-                        <div class="card-inner">
-                            <div class="card-front">
-                                <div class="member-img">
-                                    <img src="src/Nitin_Kansal_core.jpg" alt="Senior Core">
-                                </div>
-                                <div class="member-info">
-                                    <h3>Nitin Kansal</h3>
-                                </div>
-                            </div>
-                            <div class="card-back">
-                                <h3>Nitin Kansal</h3>
-                                <div class="social-links">
-                                    <a href="mailto:Nitin.kansal.23031@iitgoa.ac.in" aria-label="Email"><i class="fas fa-envelope"></i></a>
-                                    <a href="https://www.linkedin.com/in/nitin-kansal-iit" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                                    <a href="https://github.com/Initin0" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <!-- Team Categories -->
+        <div class="team-categories">
+          <button class="team-category-btn active" data-category="club-head">
+            Club Head
+          </button>
+          <button class="team-category-btn" data-category="senior-core">
+            Senior Core
+          </button>
+          <button class="team-category-btn" data-category="junior-core">
+            Junior Core
+          </button>
         </div>
+
+        <!-- Team Members -->
+        <div class="team-members-container">
+          <!-- Club Head -->
+          <div class="team-group active" id="club-head">
+            <div class="team-card">
+              <div class="card-inner">
+                <div class="card-front">
+                  <div class="member-img">
+                    <img
+                      src="src/Karmanya_Gupta_GoMyno_Head.jpg"
+                      alt="Club Head"
+                    />
+                  </div>
+                  <div class="member-info">
+                    <h3>Karmanya Gupta</h3>
+                    <p>Club Head</p>
+                  </div>
+                </div>
+                <div class="card-back">
+                  <h3>Karmanya Gupta</h3>
+                  <p>B.Tech Mathematics and Computing</p>
+                  <p>Leading GoMyno since 2024</p>
+                  <div class="social-links">
+                    <a
+                      href="mailto:karmanya.gupta.22033@iitgoa.ac.in"
+                      aria-label="Email"
+                      ><i class="fas fa-envelope"></i
+                    ></a>
+                    <a
+                      href="https://www.linkedin.com/in/karmanya-gupta/"
+                      aria-label="LinkedIn"
+                      ><i class="fab fa-linkedin-in"></i
+                    ></a>
+                    <a
+                      href="https://github.com/KarmanyaGupta1421"
+                      aria-label="GitHub"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Senior Core -->
+          <div class="team-group" id="senior-core">
+            <div class="team-card">
+              <div class="card-inner">
+                <div class="card-front">
+                  <div class="member-img">
+                    <img src="src/Anshit_Gupta.jpg" alt="Senior Core" />
+                  </div>
+                  <div class="member-info">
+                    <h3>Anshit Gupta</h3>
+                  </div>
+                </div>
+                <div class="card-back">
+                  <h3>Anshit Gupta</h3>
+                  <div class="social-links">
+                    <a
+                      href="mailto:anshit.gupta.22033@iitgoa.ac.in"
+                      aria-label="Email"
+                      ><i class="fas fa-envelope"></i
+                    ></a>
+                    <a
+                      href="https://www.linkedin.com/in/anshit-gupta-303158256/"
+                      aria-label="LinkedIn"
+                      ><i class="fab fa-linkedin-in"></i
+                    ></a>
+                    <a
+                      href="https://github.com/anshitgupta007"
+                      aria-label="GitHub"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="team-card">
+              <div class="card-inner">
+                <div class="card-front">
+                  <div class="member-img">
+                    <img src="src/Tanmay_Patil.jpg" alt="Senior Core" />
+                  </div>
+                  <div class="member-info">
+                    <h3>Tanmay Patil</h3>
+                  </div>
+                </div>
+                <div class="card-back">
+                  <h3>Tanmay Patil</h3>
+                  <div class="social-links">
+                    <a
+                      href="mailto:tanmay.patil.22031@iitgoa.ac.in"
+                      aria-label="Email"
+                      ><i class="fas fa-envelope"></i
+                    ></a>
+                    <a href="#" aria-label="LinkedIn"
+                      ><i class="fab fa-linkedin-in"></i
+                    ></a>
+                    <a
+                      href="https://github.com/Tanmay0Patil"
+                      aria-label="GitHub"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="team-card">
+              <div class="card-inner">
+                <div class="card-front">
+                  <div class="member-img">
+                    <img
+                      src="src/Hamza_Sabugar_Senior_Core.jpg"
+                      alt="Senior Core"
+                    />
+                  </div>
+                  <div class="member-info">
+                    <h3>Hamza Sabugar</h3>
+                  </div>
+                </div>
+                <div class="card-back">
+                  <h3>Hamza Sabugar</h3>
+                  <div class="social-links">
+                    <a
+                      href="mailto:sabugar.hamza.22031@iitgoa.ac.in"
+                      aria-label="Email"
+                      ><i class="fas fa-envelope"></i
+                    ></a>
+                    <a
+                      href="https://www.linkedin.com/in/md-hamza-sabugar-a84128256"
+                      aria-label="LinkedIn"
+                      ><i class="fab fa-linkedin-in"></i
+                    ></a>
+                    <a href="https://github.com/md-hzs-22" aria-label="GitHub"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="team-card">
+              <div class="card-inner">
+                <div class="card-front">
+                  <div class="member-img">
+                    <img src="src/Utsav_Shah_Core.jpg" alt="Senior Core" />
+                  </div>
+                  <div class="member-info">
+                    <h3>Utsav Shah</h3>
+                  </div>
+                </div>
+                <div class="card-back">
+                  <h3>Utsav Shah</h3>
+                  <div class="social-links">
+                    <a
+                      href="mailto:shah.manojbhai.22031@iitgoa.ac.in"
+                      aria-label="Email"
+                      ><i class="fas fa-envelope"></i
+                    ></a>
+                    <a
+                      href="https://www.linkedin.com/in/shahutsavm"
+                      aria-label="LinkedIn"
+                      ><i class="fab fa-linkedin-in"></i
+                    ></a>
+                    <a href="https://github.com/utsavshahm" aria-label="GitHub"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="team-card">
+              <div class="card-inner">
+                <div class="card-front">
+                  <div class="member-img">
+                    <img src="src/shreya_agarwal_core.jpg" alt="Senior Core" />
+                  </div>
+                  <div class="member-info">
+                    <h3>Shreya Agarwal</h3>
+                  </div>
+                </div>
+                <div class="card-back">
+                  <h3>Shreya Agarwal</h3>
+                  <div class="social-links">
+                    <a
+                      href="mailto:shreya.agarwal.22033@iitgoa.ac.in"
+                      aria-label="Email"
+                      ><i class="fas fa-envelope"></i
+                    ></a>
+                    <a
+                      href="https://www.linkedin.com/in/shreya-agarwal2407/"
+                      aria-label="LinkedIn"
+                      ><i class="fab fa-linkedin-in"></i
+                    ></a>
+                    <a href="https://github.com/Shreya-2407" aria-label="GitHub"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Junior Core -->
+          <div class="team-group" id="junior-core">
+            <div class="team-card">
+              <div class="card-inner">
+                <div class="card-front">
+                  <div class="member-img">
+                    <img src="src/Harshal_Maru_Core.jpg" alt="Senior Core" />
+                  </div>
+                  <div class="member-info">
+                    <h3>Harshal Maru</h3>
+                  </div>
+                </div>
+                <div class="card-back">
+                  <h3>Harshal Maru</h3>
+                  <div class="social-links">
+                    <a
+                      href="mailto:harshal.rakeshbhai.23031@iitgoa.ac.in"
+                      aria-label="Email"
+                      ><i class="fas fa-envelope"></i
+                    ></a>
+                    <a
+                      href="https://www.linkedin.com/in/harshal-maru-rakeshbhai/"
+                      aria-label="LinkedIn"
+                      ><i class="fab fa-linkedin-in"></i
+                    ></a>
+                    <a
+                      href="https://github.com/Harshal-Maru-2303113"
+                      aria-label="GitHub"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="team-card">
+              <div class="card-inner">
+                <div class="card-front">
+                  <div class="member-img">
+                    <img src="src/Kartik_Bhutra.jpg" alt="Senior Core" />
+                  </div>
+                  <div class="member-info">
+                    <h3>Kartik Bhutra</h3>
+                  </div>
+                </div>
+                <div class="card-back">
+                  <h3>Kartik Bhutra</h3>
+                  <div class="social-links">
+                    <a
+                      href="mailto:kartik.bhutra.23033@iitgoa.ac.in"
+                      aria-label="Email"
+                      ><i class="fas fa-envelope"></i
+                    ></a>
+                    <a
+                      href="https://www.linkedin.com/in/kartik-bhutra-a689b9345/"
+                      aria-label="LinkedIn"
+                      ><i class="fab fa-linkedin-in"></i
+                    ></a>
+                    <a
+                      href="https://github.com/Kartik-Bhutra"
+                      aria-label="GitHub"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="team-card">
+              <div class="card-inner">
+                <div class="card-front">
+                  <div class="member-img">
+                    <img src="src/mithil_surya.jpeg" alt="Senior Core" />
+                  </div>
+                  <div class="member-info">
+                    <h3>Mithil Surya Darisi</h3>
+                  </div>
+                </div>
+                <div class="card-back">
+                  <h3>Mithil Surya Darisi</h3>
+                  <div class="social-links">
+                    <a
+                      href="mailto:mithil.surya.23031@iitgoa.ac.in"
+                      aria-label="Email"
+                      ><i class="fas fa-envelope"></i
+                    ></a>
+                    <a
+                      href="https://www.linkedin.com/in/mithil-surya-darisi-287353285?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app "
+                      aria-label="LinkedIn"
+                      ><i class="fab fa-linkedin-in"></i
+                    ></a>
+                    <a
+                      href="https://github.com/mithilsurya10052005"
+                      aria-label="GitHub"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="team-card">
+              <div class="card-inner">
+                <div class="card-front">
+                  <div class="member-img">
+                    <img src="src/Chirag_bansal.jpg" alt="Senior Core" />
+                  </div>
+                  <div class="member-info">
+                    <h3>Chirag Bansal</h3>
+                  </div>
+                </div>
+                <div class="card-back">
+                  <h3>Chirag Bansal</h3>
+                  <div class="social-links">
+                    <a
+                      href="mailto:chirag.bansal.23063@iitgoa.ac.in"
+                      aria-label="Email"
+                      ><i class="fas fa-envelope"></i
+                    ></a>
+                    <a
+                      href="https://www.linkedin.com/in/chirag-bansal-b790b3288?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                      aria-label="LinkedIn"
+                      ><i class="fab fa-linkedin-in"></i
+                    ></a>
+                    <a href="https://github.com/chirag-232" aria-label="GitHub"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="team-card">
+              <div class="card-inner">
+                <div class="card-front">
+                  <div class="member-img">
+                    <img src="src/sahil.jpg" alt="Senior Core" />
+                  </div>
+                  <div class="member-info">
+                    <h3>Sahil Walunj</h3>
+                  </div>
+                </div>
+                <div class="card-back">
+                  <h3>Sahil Walunj</h3>
+                  <div class="social-links">
+                    <a
+                      href="mailto:sahil.shivaji.23031@iitgoa.ac.in"
+                      aria-label="Email"
+                      ><i class="fas fa-envelope"></i
+                    ></a>
+                    <a
+                      href="https://www.linkedin.com/in/sahil-walunj-954697288/"
+                      aria-label="LinkedIn"
+                      ><i class="fab fa-linkedin-in"></i
+                    ></a>
+                    <a
+                      href="https://github.com/sahil-walunj"
+                      aria-label="GitHub"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="team-card">
+              <div class="card-inner">
+                <div class="card-front">
+                  <div class="member-img">
+                    <img src="src/Nitin_Kansal_core.jpg" alt="Senior Core" />
+                  </div>
+                  <div class="member-info">
+                    <h3>Nitin Kansal</h3>
+                  </div>
+                </div>
+                <div class="card-back">
+                  <h3>Nitin Kansal</h3>
+                  <div class="social-links">
+                    <a
+                      href="mailto:Nitin.kansal.23031@iitgoa.ac.in"
+                      aria-label="Email"
+                      ><i class="fas fa-envelope"></i
+                    ></a>
+                    <a
+                      href="https://www.linkedin.com/in/nitin-kansal-iit"
+                      aria-label="LinkedIn"
+                      ><i class="fab fa-linkedin-in"></i
+                    ></a>
+                    <a href="https://github.com/Initin0" aria-label="GitHub"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact">
-        <div class="container contact-content">
-            <h2 class="section-title">Join Our Community</h2>
-            <p>Have questions or want to be part of GoMyno? Join our WhatsApp group for updates, events, and coding discussions!</p>
-            <a href="https://chat.whatsapp.com/HiLdNGBNvPq6Smq0XBPLeL" class="btn" target="_blank">
-                <span>Join WhatsApp Group</span>
-              </a>
-        </div>
+      <div class="container contact-content">
+        <h2 class="section-title">Join Our Community</h2>
+        <p>
+          Have questions or want to be part of GoMyno? Join our WhatsApp group
+          for updates, events, and coding discussions!
+        </p>
+        <a
+          href="https://chat.whatsapp.com/HiLdNGBNvPq6Smq0XBPLeL"
+          class="btn"
+          target="_blank"
+        >
+          <span>Join WhatsApp Group</span>
+        </a>
+      </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <div class="container footer-content">
-            <p>GoMyno - Coding Club of IIT Goa</p>
-            <div class="footer-links">
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#events">Events</a>
-                <a href="#team">Team</a>
-                <a href="#contact">Contact</a>
-            </div>
-            <div class="footer-social">
-                <a href="https://www.instagram.com/gomyno_iitgoa?igsh=NGdsODg0a2NlNmR6" aria-label="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.linkedin.com/company/go-myno/" aria-label="LinkedIn" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://github.com/GoMyno-IIT-Goa" aria-label="GitHub" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="mailto:club.gomyno@iitgoa.ac.in" target="_blank" aria-label="Email">
-                    <i class="fas fa-envelope"></i>
-                </a>
-            </div>
-            <p class="copyright">&copy; 2025 ArchiTechs-IIT GOA - All Rights Reserved</p>
+      <div class="container footer-content">
+        <p>GoMyno - Coding Club of IIT Goa</p>
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#events">Events</a>
+          <a href="#team">Team</a>
+          <a href="#contact">Contact</a>
         </div>
+        <div class="footer-social">
+          <a
+            href="https://www.instagram.com/gomyno_iitgoa?igsh=NGdsODg0a2NlNmR6"
+            aria-label="Instagram"
+            target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/company/go-myno/"
+            aria-label="LinkedIn"
+            target="_blank"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+          <a
+            href="https://github.com/GoMyno-IIT-Goa"
+            aria-label="GitHub"
+            target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a
+            href="mailto:club.gomyno@iitgoa.ac.in"
+            target="_blank"
+            aria-label="Email"
+          >
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+        <p class="copyright">
+          &copy; 2025 ArchiTechs-IIT GOA - All Rights Reserved
+        </p>
+      </div>
     </footer>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

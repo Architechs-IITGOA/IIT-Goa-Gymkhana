@@ -34,13 +34,21 @@ body {
   font-size: 18px;
   font-weight: bold;
   user-select: none;
-  color: #f1f1f1 !important;
+  color: #f1f1f1;
   transition: 0.3s;
   letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.nav-item.active {
+  color: #e400fb !important;
+  text-decoration: underline;
+  font-weight: 800;
 }
 
 .sidenav a:hover{
   text-decoration: none;
+  color: #e400fb !important;
 }
 
 .closebtn {

@@ -8,7 +8,8 @@ document.getElementById("gallery__btn2021").onclick = function () {
   document.getElementById("gallery__btn2023").style.backgroundColor = "white";
   document.getElementById("gallery__btn2024").style.color = "#505050";
   document.getElementById("gallery__btn2024").style.backgroundColor = "white";
-
+  document.getElementById("gallery__btn2025").style.color = "#505050";
+  document.getElementById("gallery__btn2025").style.backgroundColor = "white";
   //data change
   document.querySelector(".gallery__crs .gallery__crs__mnc h4").innerHTML =
     "ARNAV KAMAT";
@@ -40,6 +41,9 @@ document.getElementById("gallery__btn2022").onclick = function () {
   document.getElementById("gallery__btn2023").style.backgroundColor = "white";
   document.getElementById("gallery__btn2024").style.color = "#505050";
   document.getElementById("gallery__btn2024").style.backgroundColor = "white";
+  document.getElementById("gallery__btn2025").style.color = "#505050";
+  document.getElementById("gallery__btn2025").style.backgroundColor = "white";
+
 
   //data change
   document.querySelector(".gallery__crs .gallery__crs__mnc h4").innerHTML =
@@ -71,6 +75,9 @@ document.getElementById("gallery__btn2023").onclick = function () {
   document.getElementById("gallery__btn2022").style.backgroundColor = "white";
   document.getElementById("gallery__btn2024").style.color = "#505050";
   document.getElementById("gallery__btn2024").style.backgroundColor = "white";
+  document.getElementById("gallery__btn2025").style.color = "#505050";
+  document.getElementById("gallery__btn2025").style.backgroundColor = "white";
+
 
   //data change
   document.querySelector(".gallery__crs .gallery__crs__mnc h4").innerHTML =
@@ -85,7 +92,7 @@ document.getElementById("gallery__btn2023").onclick = function () {
   document.querySelector(".gallery__crs .gallery__crs__mnc img").src =
     "./gallery/photos/Ashwin_CR_MnC .jpg";
   document.querySelector(".gallery__crs .gallery__crs__cse img").src =
-    "./gallery/photos/Daggubelli_Abhinav_CSE'27_CR.png";
+    "./gallery/photos/Daggubelli_Abhinav_GS_Acads.jpg";
   document.querySelector(".gallery__crs .gallery__crs__ee img").src =
     "./gallery/photos/Bhukya_Madhu_CR_EE.jpg";
   document.querySelector(".gallery__crs .gallery__crs__me img").src =
@@ -102,6 +109,8 @@ document.getElementById("gallery__btn2024").onclick = function () {
   document.getElementById("gallery__btn2023").style.backgroundColor = "white";
   document.getElementById("gallery__btn2022").style.color = "#505050";
   document.getElementById("gallery__btn2022").style.backgroundColor = "white";
+  document.getElementById("gallery__btn2025").style.color = "#505050";
+  document.getElementById("gallery__btn2025").style.backgroundColor = "white";
 
   //data change
   document.querySelector(".gallery__crs .gallery__crs__mnc h4").innerHTML =
@@ -121,5 +130,40 @@ document.getElementById("gallery__btn2024").onclick = function () {
     "./gallery/photos/ARYAN-24CR-EE.jpg";
   document.querySelector(".gallery__crs .gallery__crs__me img").src =
     "./gallery/photos/Harshil-24CR-ME.jpg";
+
+};
+
+
+document.getElementById("gallery__btn2025").onclick = function () {
+  //color change
+  document.getElementById("gallery__btn2025").style.color = "white";
+  document.getElementById("gallery__btn2025").style.backgroundColor = "#505050";
+  document.getElementById("gallery__btn2021").style.color = "#505050";
+  document.getElementById("gallery__btn2021").style.backgroundColor = "white";
+  document.getElementById("gallery__btn2023").style.color = "#505050";
+  document.getElementById("gallery__btn2023").style.backgroundColor = "white";
+  document.getElementById("gallery__btn2022").style.color = "#505050";
+  document.getElementById("gallery__btn2022").style.backgroundColor = "white";
+  document.getElementById("gallery__btn2024").style.color = "#505050";
+  document.getElementById("gallery__btn2024").style.backgroundColor = "white";
+
+  //data change
+  document.querySelector(".gallery__crs .gallery__crs__mnc h4").innerHTML =
+    "AYUSH Kaushik";
+  document.querySelector(".gallery__crs .gallery__crs__cse h4").innerHTML =
+    "";
+  document.querySelector(".gallery__crs .gallery__crs__ee h4").innerHTML =
+    "";
+  document.querySelector(".gallery__crs .gallery__crs__me h4").innerHTML =
+    "Shaswat Thakur ";
+  //PHOTO CHANGE
+  document.querySelector(".gallery__crs .gallery__crs__mnc img").src =
+    "./gallery/photos/Ayush_Kaushik_CR_MnC_2025.jpg";
+  document.querySelector(".gallery__crs .gallery__crs__cse img").src =
+    "./gallery/photos/";
+  document.querySelector(".gallery__crs .gallery__crs__ee img").src =
+    "./gallery/photos/";
+  document.querySelector(".gallery__crs .gallery__crs__me img").src =
+    "./gallery/photos/Shaswat_Thakur_CR_Mech_2025.jpg";
 
 };

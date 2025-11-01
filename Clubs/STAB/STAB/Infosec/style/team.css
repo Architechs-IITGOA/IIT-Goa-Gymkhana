@@ -4,6 +4,18 @@
     background: radial-gradient(circle at top right, #222222 20%, #000000 80%);
     padding-top: 1rem;
 }
+.img-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-card img{
+    width: 120px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+
+}
 .team-content{
     display: flex;
     flex-direction: column;

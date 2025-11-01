@@ -38,21 +38,21 @@
 }
 @font-face {
   font-family: "Google Sans";
-  src: url("/fonts/GoogleSans-Regular.ttf") format("truetype");
+  src: url("./fonts/GoogleSans-Regular.ttf") format("truetype");
 
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Google Sans";
-  src: url("/fonts/GoogleSans-Medium.ttf") format("truetype");
+  src: url("./fonts/GoogleSans-Medium.ttf") format("truetype");
 
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Google Sans";
-  src: url("/fonts/GoogleSans-Bold.ttf") format("truetype");
+  src: url("./fonts/GoogleSans-Bold.ttf") format("truetype");
 
   font-weight: bold;
   font-style: normal;
@@ -188,7 +188,7 @@ a {
     transform: rotate(0deg);
   }
   100% {
-   transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 #home {

@@ -16,4 +16,3 @@ document.addEventListener("DOMContentLoaded", () => {
       loadingScreen.classList.add("hidden");
     }, 1500);
   });
-  

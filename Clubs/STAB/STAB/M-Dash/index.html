@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M-DASH - Mechanical & Design Club | IIT Goa</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header & Navbar -->
+    <header>
+        <div class="container navbar">
+            <div class="logo">
+                <img src="src/logo.png" alt="M-DASH Logo">
+                <h1>M-DASH</h1>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#team">Core Team</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+            <button class="hamburger" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <div class="overlay"></div>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="container home-content">
+                        <h1>M-DASH - IIT GOA</h1>
+                        <p class="motto">Design • Build • Learn — Empowering mechanical minds with design tools</p>
+                        <a href="#about" class="btn">
+                                <span>Learn More</span>
+                            </a>
+
+                            
+        </div>
+
+         <img src="src/wheel.png" class="wheel wheel2" alt="Wheel 2">
+         <img src="src/chocolate-wheel.png" class="wheel wheel1" alt="Wheel 1">
+
+        
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">About Us</h2>
+            <div class="about-content">
+                <div class="about-img">
+                    <img src="src/logo.png" alt="M-DASH Club">
+                </div>
+                <div class="about-text">
+                                        <h2>About M-DASH</h2>
+                                        <p>M-DASH club at IIT Goa aims to generate interest and impart knowledge among students, especially those with a mechanical engineering background. We run regular workshops and events to help students get comfortable with popular design software such as AutoCAD, SolidWorks, and more.</p>
+                                        <p>Lessons start from scratch — freshers are welcome. Our workshops cover fundamentals and practical, hands-on projects so members gain both knowledge and experience in design and manufacturing workflows.</p>
+                                        <p>Whether you're looking to prototype, design parts, or learn CAD tools from the ground up, M-DASH provides a supportive environment to build your skills.</p>
+                                        <a href="#events" class="btn">
+                                                <span>Our Workshops</span>
+                                            </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section (simple slideshow) -->
+    <section id="events">
+        <div class="container">
+            <h2 class="section-title">Glimpses</h2>
+
+            <style>
+            /* Simple slideshow styles scoped to this section */
+            #mdash-slider { position: relative; max-width: 900px; margin: 30px auto; }
+            /* each slide is a fixed rectangular viewport (16:9) so images don't change container size */
+            #mdash-slider .slide { display: none; position: relative; height: 0; padding-bottom: 56.25%; overflow: hidden; border-radius: 10px; }
+            #mdash-slider .slide.active { display: block; }
+            /* make images cover the slide area without distortion */
+            #mdash-slider img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; }
+            .mdash-controls { display:flex; justify-content:center; gap:10px; margin-top:10px; }
+            .mdash-btn { background: var(--primary-color); color:#000; border:none; padding:8px 12px; border-radius:6px; cursor:pointer; font-weight:700; }
+            .mdash-indicators { text-align:center; margin-top:10px; }
+            .mdash-indicators button { width:10px; height:10px; border-radius:50%; border:none; margin:0 6px; background:rgba(255,255,255,0.2); cursor:pointer; }
+            .mdash-indicators button.active { background:var(--primary-color); }
+            /* caption removed - slideshow will show only images and indicators */
+            </style>
+
+            <div id="mdash-slider">
+                <div class="slide">
+                    <img src="src/mdash/mdash1.JPG" alt="mdash1">
+                </div>
+                <div class="slide">
+                    <img src="src/mdash/mdash2.JPG" alt="mdash2">
+                </div>
+                <div class="slide">
+                    <img src="src/mdash/mdash3.JPG" alt="mdash3">
+                </div>
+                <div class="slide">
+                    <img src="src/mdash/mdash4.JPG" alt="mdash4">
+                </div>
+                <div class="slide">
+                    <img src="src/mdash/mdash5.JPG" alt="mdash5">
+                </div>
+
+                <div class="mdash-controls">
+                    <div class="mdash-indicators" id="mdash-dots"></div>
+                </div>
+
+                <!-- caption removed: only images and indicators are shown -->
+            </div>
+
+            <script>
+            (function(){
+                const slides = Array.from(document.querySelectorAll('#mdash-slider .slide'));
+                // captions removed - only dots and images are used
+                const dotsContainer = document.getElementById('mdash-dots');
+                let current = 0;
+
+                function render() {
+                    slides.forEach((s,i)=> s.classList.toggle('active', i===current));
+                    // const active = slides[current];
+                    // caption data attributes are intentionally unused
+                    Array.from(dotsContainer.children).forEach((d,i)=> d.classList.toggle('active', i===current));
+                }
+
+                // build dots
+                slides.forEach((_,i)=>{
+                    const b = document.createElement('button');
+                    b.addEventListener('click', ()=> { 
+                        current = i; 
+                        render(); 
+                        // restart autoplay so it continues after manual navigation
+                        clearInterval(autoplay);
+                        autoplay = setInterval(()=>{ current = (current+1)%slides.length; render(); }, autoplayInterval);
+                    });
+                    dotsContainer.appendChild(b);
+                });
+
+                // autoplay with pause on hover
+                let autoplayInterval = 2000; // 2 seconds
+                let autoplay = setInterval(()=>{ current = (current+1)%slides.length; render(); }, autoplayInterval);
+
+                const sliderEl = document.getElementById('mdash-slider');
+                sliderEl.addEventListener('mouseenter', ()=> clearInterval(autoplay));
+                sliderEl.addEventListener('mouseleave', ()=> { clearInterval(autoplay); autoplay = setInterval(()=>{ current = (current+1)%slides.length; render(); }, autoplayInterval); });
+
+                // initial render
+                render();
+            })();
+            </script>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team">
+        <div class="container">
+            <h2 class="section-title">Our Team</h2>
+
+            <style>
+            /* Scoped styles for simplified team layout */
+            .featured-head { display:flex; flex-direction:column; align-items:center; gap:12px; margin-bottom:30px; }
+            /* new: container that holds multiple featured persons side-by-side */
+            .featured-head .featured-row { display:flex; gap:20px; flex-wrap:wrap; justify-content:center; }
+            .featured-person { display:flex; flex-direction:column; align-items:center; gap:8px; }
+            /* make portraits vertical rectangles (3:4) */
+            .featured-person img { width:140px; aspect-ratio:3/4; object-fit:cover; border-radius:8px; border:3px solid rgba(255,255,255,0.04); box-shadow: 0 6px 18px rgba(0,0,0,0.45); }
+            .featured-person { padding:6px; border-radius:10px; border:2px solid transparent; transition: transform 0.25s ease, border-color 0.25s ease; }
+            .featured-person:hover { transform: translateY(-6px); border-color: var(--primary-color); }
+            .featured-person h3 { margin:6px 0 0; font-size:1.05rem; }
+            .featured-person p.role { margin:0; color:var(--primary-color); font-weight:700; }
+            .member-grid { display:grid; grid-template-columns: repeat(4, 1fr); gap:18px; margin-top:20px; }
+            /* divider that spans full grid width, used to separate heads row */
+            .heads-divider { grid-column: 1 / -1; height: 4px; background: var(--primary-color); border-radius:2px; margin: 6px 0 12px; }
+            .member { background:var(--card-bg); padding:10px; border-radius:8px; text-align:center; border:2px solid transparent; transition: transform 0.2s ease, border-color 0.2s ease; }
+            .member img { width:100%; aspect-ratio:3/4; object-fit:cover; border-radius:6px; max-height:220px; }
+            .member:hover { transform: translateY(-6px); border-color: var(--primary-color); box-shadow: 0 8px 20px rgba(0,0,0,0.45); }
+            .member h4 { margin:8px 0 4px; font-size:1rem; }
+            .member p { margin:0; font-size:0.85rem; color:var(--text-muted); }
+            .member .social { margin-top:8px; display:flex; justify-content:center; gap:8px; }
+            .member .social a { color:var(--text-color); }
+            @media (max-width:1100px){
+                .member-grid { grid-template-columns: repeat(3, 1fr); }
+            }
+            @media (max-width:700px){
+                .member-grid { grid-template-columns: repeat(2, 1fr); }
+                .featured-person img { width:110px; aspect-ratio:3/4; }
+                .member img { max-height:180px; }
+            }
+            </style>
+
+            <!-- Team will be populated from images in src/members -->
+            <div class="featured-head" id="featured-head-placeholder">
+                <!-- filled by script with Head and Vice Head -->
+            </div>
+
+            <div class="member-grid" id="member-grid-placeholder">
+                <!-- filled by script with core members -->
+            </div>
+
+            <script>
+            (function(){
+                // explicit member definitions (file, display name, role)
+                const members = [
+                    { file: 'DeveshBhotmange_M-Dash_Head_CADteam.jpg', name: 'Devesh Bhotmange', role: 'Head - CAD Team' },
+                    { file: 'Nitin Das_M-DASH_vice_club_head.jpg', name: 'Nitin Das', role: 'Vice Head' },
+                    { file: 'Shreekant Lolage_M-DASH_club_head_captain_SimulationTeam.jpg', name: 'Shreekant Lolage', role: 'Head - Simulation Team' },
+                    { file: 'Yashkhobragade_teamhead_rocketry& Advisorycouncilmember.jpg', name: 'Yash Khobragade', role: 'Head - Rocketry' },
+                    { file: 'AtharvaPargaonkar_M-Dash_CoreMember.jpg', name: 'Atharva Pargaonkar', role: 'Core Member' },
+                    { file: 'AvaniJain_M-Dash_CoreMember_MechanicalTeam.jpg', name: 'Avani Jain', role: 'Core Member' },
+                    { file: 'Harsh_M-DASH_Core-member.png', name: 'Harsh', role: 'Core Member' },
+                    { file: 'JanhaviPatil_M-Dash_CoreMember.jpg', name: 'Janhavi Patil', role: 'Core Member' },
+                    { file: 'Kunal_Jangid_M-Dash_CoreMember.jpg', name: 'Kunal Jangid', role: 'Core Member' },
+                    { file: 'RishavRajeshKanu_M-Dash_CoreMember.jpg', name: 'Rishav Rajesh Kanu', role: 'Core Member' },
+                    { file: 'Sneh Desai MDash Core member.jpg', name: 'Sneh Desai', role: 'Core Member' },
+                    { file: 'TanmaySarvaiya_M-Dash_CoreMember.png', name: 'Tanmay Sarvaiya', role: 'Core Member' }
+                ];
+
+                // pick the four specific heads to show at top (explicitly)
+                const headFiles = new Set([
+                    'DeveshBhotmange_M-Dash_Head_CADteam.jpg',
+                    'Nitin Das_M-DASH_vice_club_head.jpg',
+                    'Shreekant Lolage_M-DASH_club_head_captain_SimulationTeam.jpg',
+                    'Yashkhobragade_teamhead_rocketry& Advisorycouncilmember.jpg'
+                ]);
+
+                const heads = members.filter(m=> headFiles.has(m.file));
+                const cores = members.filter(m=> !headFiles.has(m.file));
+
+                const featuredEl = document.getElementById('featured-head-placeholder');
+                const gridEl = document.getElementById('member-grid-placeholder');
+
+                // hide the separate featured area; we'll show all members in the grid (heads first)
+                if(featuredEl) featuredEl.style.display = 'none';
+
+                const ordered = heads.concat(cores);
+
+                // populate the grid with heads first, insert a full-width divider, then add cores
+                ordered.forEach((m, idx)=>{
+                    const div = document.createElement('div');
+                    div.className = 'member';
+                    div.innerHTML = `<img src="src/members/${m.file}" alt="${m.name}"><h4>${m.name}</h4><p>${m.role}</p>`;
+                    gridEl.appendChild(div);
+
+                    // after appending the last head, insert a full-width orange divider
+                    if(idx === heads.length - 1){
+                        const divider = document.createElement('div');
+                        divider.className = 'heads-divider';
+                        gridEl.appendChild(divider);
+                    }
+                });
+            })();
+            </script>
+
+        </div>
+    </section>
+                   
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container contact-content">
+                        <h2 class="section-title">Join Our Community</h2>
+                        <p>Have questions or want to join M-DASH? Join our WhatsApp group for workshop updates, events, and design discussions!</p>
+                        <a href="#" class="btn" target="_blank">
+                                <span>Contact Us</span>
+                            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <p>M-DASH - Mechanical &amp; Design Club of IIT Goa</p>
+            <div class="footer-links">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Events</a>
+                <a href="#">Team</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="footer-social">
+                <a href="https://www.instagram.com/mdash_iitgoa?igsh=Y3FhbWFjeml5amZu" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                <a href="mailto:club.m-dash@iitgoa.ac.in" target="_blank" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+            <p class="copyright">&copy; 2025 ArchiTechs-IIT GOA - All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

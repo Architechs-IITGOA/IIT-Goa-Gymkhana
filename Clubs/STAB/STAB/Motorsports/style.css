@@ -679,7 +679,7 @@ footer {
   }
 }
 
-#contact {
+/* #contact {
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url("/api/placeholder/1920/1080") center/cover;
   min-height: 60vh;
@@ -688,8 +688,16 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
+} */
 
+#contact {
+  /* display: flex; */
+  min-height: auto;
+  min-width: 100%;
+  /* flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+}
 .contact-content {
   /* margin-top: 70px; */
   text-align: center;

@@ -1,1241 +1,191 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-/* #fp-nav ul li a span,
-.fp-slidesNav ul li a span {
-  background: white;
-} */
-
-.carone {
-  position: relative;
-}
-
-.border {
-  /* position: relative; */
-  padding-bottom: 50px;
-  display: flex;
-  justify-content: space-between;
-  min-width: 100%; 
-  display: flex;     
-  min-height: fit-content;          
-  /* justify-content: space-between;  */
-  align-items: flex-start;     
-  gap: 2rem;
-  margin: 40px auto;           /* Add some margin */
-  width: 90%;                  /* Prevent full-width stretching */
-}
-
-.club {
-  /* width: 60%; */
-  display: flex;
-  /* gap: 20px; */
-  position: absolute;
-  flex-direction: column;
-  top: 100px;
-  right: 150px;
-}
-
-.car {
-  width: 20em;
-}
-
-.cars {
-  /* position: relative; */
-  display: flex;
-  
-  justify-content: space-between;
-  flex-wrap: wrap;
-  cursor: pointer;
-  /* top: 20px; */
-  translate: 0 20px;
-}
-
-.centered {
-  position: absolute;
-  top: 30px;
-  left: 130px;
-  font-size: 1.5em;
-  color: #d790ff;
-  font-family: Lucida Console, Lucida Sans Typewriter, monaco,
-    Bitstream Vera Sans Mono, monospace;
-}
-.architechs-car-header {
-  position: absolute;
-  left: 34%;
-}
-.gomyno-car-header {
-  position: absolute;
-  left: 37%;
-}
-.googledsc-car-header {
-  position: absolute;
-  left: 34%;
-}
-.motorsports-car-header {
-  position: absolute;
-  left: 33%;
-}
-.mdash-car-header{
-  position: absolute;
-  margin-left: -240px;
-}
-.firstrow {
-  margin-top: 7em;
-}
-
-.secondrow {
-  position: relative;
-  top: 5vh;
-}
-
-.thirdrow {
-  position: relative;
-  top: 10vh;
-
-}
-
-.fourthrow {
-  position: relative;
-  top: 15vh;
-}
-
-.fifthrow{
-  position: relative;
-  top : 20vh;
-}
-
-.outline {
-  margin-top: 1vh;
-  height: 95vh;
-  width: 100vw;
-}
-
-.clubmainheader {
-  position: absolute;
-  left: 37%;
-  top: 10%;
-  margin-bottom: 10px;
-  font-size: 3em;
-  color: #d790ff;
-  font-family: Lucida Console, Lucida Sans Typewriter, monaco,
-    Bitstream Vera Sans Mono, monospace;
-}
-
-.clubsmobile {
-  display: none;
-}
-
-@media screen and (max-width: 1221px) {
-  .club {
-    display: none;
-  }
-
-  .clubsmobile {
-    display: block;
-    position: absolute;
-    bottom: 0;
-    width: 100vw;
-    height: 60vh;
-
-    z-index: 99;
-  }
-
-  .car {
-    width: 14em;
-    position: relative;
-    top: -2.1em;
-    left: 3em;
-  }
-
-  /* .firstrow {
-    margin-top: 6rem;
-  }
-  .secondrow {
-    margin-top: 2rem;
-  }
-
-  .thirdrow {
-    margin-top: 2rem;
-  } */
-  .firstrow {
-    margin-top: 7em;
-  }
-
-  .secondrow {
-    position: relative;
-    top: 4vh;
-  }
-
-  .thirdrow {
-    position: relative;
-    top: 8vh;
-  }
-  .fourthrow {
-    position: relative;
-    top: 12vh;
-  }
-
-  .centered {
-    position: absolute;
-    top: -10px;
-    left: 120px;
+/* 🌌 Section 4 Base Styles */
+#section4 {
+    background: linear-gradient(270deg, #1a0b26, #3d157f, #1a0b26, rgb(3, 0, 14), #3d157f, #1a0b26);
+    background-size: 1000% 1000%;
+    animation: gradientShift 25s ease infinite;
+    height: fit-content;
     width: 100%;
-    font-size: 1.3em;
-  }
+    font-size: 16px;
 }
 
-@media screen and (max-width: 608px) {
-  .car {
-    width: 13em;
-    position: relative;
-    top: -20px;
-    left: 19px;
-  }
-
-  .centered {
-    position: absolute;
-    top: 0px;
-    left: 90px;
-    font-size: 1em;
-  }
-
-  .clubmainheader {
-    position: absolute;
-    top: 60px;
-    left: 40%;
-
-    font-size: 2em;
-  }
-}
-
-@media screen and (max-width: 426px) {
-  .car {
-    width: 9em;
-    position: relative;
-    top: 10px;
-    left: -0.01em;
-  }
-
-  .centered {
-    position: absolute;
-    top: 23px;
-    left: 45px;
-    font-size: 0.8em;
-  }
-}
-
-/* INDIVIDUAL PAGES  */
-.individual-pages {
-  position: relative;
-  transition: all 1s ease;
-}
-
-.entire {
-  /* background-color: black; */
-  height: 100vh;
-  overflow: hidden;
-  /* background: linear-gradient(black, rgb(31, 0, 31)); */
-/* background: linear-gradient(135deg, #000000, #1a001a); // sudesh */
-/* background: radial-gradient(circle at center, #7209b7, #0d0d0d 80%); */
-/* background: linear-gradient(to bottom, #000000, black, #1a001a); */
-background: linear-gradient( 300deg,
-  #000000 0%,     
-  #12181B 50%,    
-  #352e5a 100%  );
-/* background: linear-gradient(to top left, #1a1a1a 70%, #6a0dad 100%); */
-
-
-
-  /* background-image: linear-gradient(
-    91.2deg,
-    rgba(22, 17, 17, 1) 2.4%,
-    rgba(151, 22, 129, 1) 50.3%,
-    rgba(22, 13, 21, 1) 100.9%
-  ) !important; */
-}
-
-.border {
-  /* position: relative; */
-  /* left: -100vw; */
-  /* top: -100vh !important; */
-}
-
-.header-individualpg {
-  display: none !important;
-}
-
-/*************** INDIVIDUAL ARCHITECHS  ****************/
-.individual-architechs {
-  height: 100vh;
-  width: 100%;
-  margin-left: 100vw;
-  position: relative;
-  /* left: 100vw; */
-  z-index: 9999999999999;
-  bottom: 0;
-  transition: all 1s ease;
-  background-image: linear-gradient(
-    91.2deg,
-    rgba(22, 17, 17, 1) 2.4%,
-    rgba(151, 22, 129, 1) 50.3%,
-    rgba(22, 13, 21, 1) 100.9%
-  );
-}
-
-.individual-architechs h1 {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  color: white !important;
-  font-size: 3em;
-}
-
-.individual-architechs .back i {
-  width: 100%;
-  font-size: 80px;
-  cursor: pointer;
-  color: white;
-}
-
-/* .individual-architechs p {
-  font-size: 1.5rem;
-  position: absolute;
-  top: 9rem;
-  width: 80%;
-  text-align: justify;
-  left: 50%;
-  transform: translate(-50%);
-  color: white !important;
-} */
-.individual-text-div {
-  background-image: radial-gradient(
-    circle farthest-corner at 14.5% 59%,
-    rgba(117, 0, 149, 1) 22%,
-    rgba(88, 0, 112, 0.76) 79.5%
-  );
-  width: 60%;
-  color: white;
-  position: absolute;
-  top: 20px;
-  left: 80px;
-  padding: 10px 50px 30px 50px;
-  border-radius: 70px;
-  text-align: center;
-}
-
-.one-contact {
-  position: absolute;
-  color: white;
-  right: 8%;
-  top: 10px;
-}
-.one-contact h2 {
-  width: 100% !important;
-}
-.one-contact img {
-  border-radius: 50%;
-}
-
-.one-contact h2,
-h3 {
-  position: relative;
-  display: flex;
-  justify-content: center;
-}
-
-.gallery h2 {
-  color: white;
-  position: relative;
-  left: 10%;
-  font-size: 3.5em;
-  margin-bottom: 50px;
-}
-
-/*************** INDIVIDUAL ER  *****************/
-
-.individual-er {
-  height: 100vh;
-  width: 100%;
-  margin-left: 100vw;
-  position: relative;
-  /* left: 100vw; */
-  z-index: 9999999999999;
-  /* bottom: 0; */
-  margin-top: -100vh;
-  /* left: 100vw; */
-  transition: all 1s ease;
-  background-image: linear-gradient(
-    91.2deg,
-    rgba(22, 17, 17, 1) 2.4%,
-    rgba(151, 22, 129, 1) 50.3%,
-    rgba(22, 13, 21, 1) 100.9%
-  );
-}
-
-.individual-er h1 {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  color: white !important;
-  font-size: 3em;
-}
-
-.individual-er .back i {
-  width: 100%;
-  font-size: 80px;
-  cursor: pointer;
-  color: white;
-}
-
-.individual-er p {
-  font-size: 1.5em;
-  position: absolute;
-  top: 9em;
-  width: 90%;
-  text-align: justify;
-  left: 50%;
-  transform: translate(-50%);
-  color: black;
-}
-
-/******** INDIVIDUAL GOMYNO  ***************/
-.individual-gomyno {
-  height: 100vh;
-  width: 100%;
-  margin-left: 100vw;
-  position: relative;
-  /* left: 100vw; */
-  z-index: 9999999999999;
-  /* bottom: 0; */
-  margin-top: -100vh;
-  /* left: 100vw; */
-  transition: all 1s ease;
-  background-image: linear-gradient(
-    91.2deg,
-    rgba(22, 17, 17, 1) 2.4%,
-    rgba(151, 22, 129, 1) 50.3%,
-    rgba(22, 13, 21, 1) 100.9%
-  );
-}
-
-.individual-gomyno h1 {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  color: white !important;
-  font-size: 3em;
-}
-
-.individual-gomyno .back i {
-  width: 100%;
-  font-size: 80px;
-  cursor: pointer;
-  color: white;
-}
-
-.individual-gomyno p {
-  font-size: 1.5em;
-  position: absolute;
-  top: 9em;
-  width: 90%;
-  text-align: justify;
-  left: 50%;
-  transform: translate(-50%);
-  color: black;
-}
-
-/******** INDIVIDUAL GOOGLE DSC  ***************/
-.individual-googledsc {
-  height: 100vh;
-  width: 100%;
-  margin-left: 100vw;
-  position: relative;
-  /* left: 100vw; */
-  z-index: 9999999999999;
-  /* bottom: 0; */
-  margin-top: -100vh;
-  /* left: 100vw; */
-  transition: all 1s ease;
-  background-image: linear-gradient(
-    91.2deg,
-    rgba(22, 17, 17, 1) 2.4%,
-    rgba(151, 22, 129, 1) 50.3%,
-    rgba(22, 13, 21, 1) 100.9%
-  );
-}
-
-.individual-googledsc h1 {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  color: white !important;
-  font-size: 3em;
-}
-
-.individual-googledsc .back i {
-  width: 100%;
-  font-size: 80px;
-  cursor: pointer;
-  color: white;
-}
-
-.individual-googledsc p {
-  font-size: 1.5rem;
-  position: absolute;
-  top: 9em;
-  width: 90%;
-  text-align: justify;
-  left: 50%;
-  transform: translate(-50%);
-  color: black;
-}
-
-/******** INDIVIDUAL MOTORSPORTS  ***************/
-.individual-motorsports {
-  height: 100vh;
-  width: 100%;
-  margin-left: 100vw;
-  position: relative;
-  /* left: 100vw; */
-  z-index: 9999999999999;
-  /* bottom: 0; */
-  margin-top: -100vh;
-  /* left: 100vw; */
-  transition: all 1s ease;
-  background-image: linear-gradient(
-    91.2deg,
-    rgba(22, 17, 17, 1) 2.4%,
-    rgba(151, 22, 129, 1) 50.3%,
-    rgba(22, 13, 21, 1) 100.9%
-  );
-}
-
-.individual-motorsports h1 {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  color: white !important;
-  font-size: 3em;
-}
-
-.individual-motorsports .back i {
-  width: 100%;
-  font-size: 80px;
-  cursor: pointer;
-  color: white;
-}
-
-.individual-motorsports p {
-  font-size: 1.5rem;
-  position: absolute;
-  top: 9em;
-  width: 90%;
-  text-align: justify;
-  left: 50%;
-  transform: translate(-50%);
-  color: black;
-}
-
-/******** INDIVIDUAL M-DASH  ***************/
-.individual-mdash {
-  height: 100vh;
-  width: 100%;
-  margin-left: 100vw;
-  position: relative;
-  /* left: 100vw; */
-  z-index: 9999999999999;
-  /* bottom: 0; */
-  margin-top: -100vh;
-  /* left: 100vw; */
-  transition: all 1s ease;
-  background-image: linear-gradient(
-    91.2deg,
-    rgba(22, 17, 17, 1) 2.4%,
-    rgba(151, 22, 129, 1) 50.3%,
-    rgba(22, 13, 21, 1) 100.9%
-  );
-}
-
-.individual-mdash h1 {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  color: white !important;
-  font-size: 3em;
-}
-
-.individual-mdash .back i {
-  width: 100%;
-  font-size: 80px;
-  cursor: pointer;
-  color: white;
-}
-
-.individual-mdash p {
-  font-size: 1.5em;
-  position: absolute;
-  top: 9em;
-  width: 90%;
-  text-align: justify;
-  left: 50%;
-  transform: translate(-50%);
-  color: black;
-}
-
-/* *********** */
-.gallery {
-  position: relative;
-  top: 40vh;
-}
-
-.gallery-slider {
-  /* position: relative; */
-  position: absolute;
-  width: 50%;
-  left: 50%;
-  transform: translate(-50%);
-  display: inline-block;
-  width: 80%;
-}
-
-/* .gallery-architechs {
-  position: relative;
-  position: absolute;
-
-  left: 12rem;
-  display: inline-block;
-  width: 80%;
-}
-.gallery-er {
-  position: relative;
-  position: absolute;
-
-  left: 12rem;
-  display: inline-block;
-  width: 80%;
-} */
-.gallery-slider img {
-  width: 80%;
-  display: inline-block;
-}
-
-/* .gallery-architechs img {
-  width: 15rem;
-  height: 10rem;
-  display: inline-block;
-}
-.gallery-er img {
-  width: 15rem;
-  height: 10rem;
-  display: inline-block;
-} */
-/* .next,
-.prev {
-  cursor: pointer;
-  font-size: 3em;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-.next {
-  position: absolute;
-  right: 1em;
-}
-.prev {
-  position: absolute;
-  left: 2em;
-} */
-
-/* KAKASHI CODE  */
-/* 
-.circle {
-  text-align: center;
-  position: relative;
-  width: 100%;
-} */
-
-.centeredkakashi {
-  /* position: absolute; */
-  /* top: 55%; */
-  /* left: 50%; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  /* transform: translate(-50%, -55%); */
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 15px;
-  color: #d790ff;
-}
-
-.circle img {
-  width: 70%;
-  height: 80%;
-}
-
-.contain {
-  width: 100%;
-  padding-inline: 5em;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  align-self: flex-start;
-  left:0;
-  height: 100vh;
-  position: absolute;
-  top: 0;
-}
-
-p {
-  text-align: center;
-}
-
-@media screen and (max-width: 1221px) {
-  .contain {
-    width: 100vw;
-    height: 30vh;
-
-    position: absolute;
-  }
-
-  .circle {
-    width: 100%;
-
-    position: relative;
-
-    height: 100%;
-  }
-
-  .circle-img {
-    width: 35% !important;
-    height: 80% !important;
-  }
-}
-
-@media screen and (max-width: 1220px) {
-  .contain {
-    width: 100vw;
-    height: 40vh;
-
-    position: absolute;
-    margin: 3em 0 5em 0;
-  }
-
-  .circle {
-    width: 100%;
-
-    position: relative;
-
-    height: 100%;
-  }
-
-  .circle-img {
-    width: 35% !important;
-    height: 110% !important;
-  }
-}
-
-@media screen and (max-width: 1010px) {
-  .contain {
-    width: 100vw;
-    height: 40vh;
-
-    position: absolute;
-  }
-
-  .circle {
-    width: 100%;
-
-    position: relative;
-
-    height: 100%;
-  }
-
-  .circle-img {
-    width: 40% !important;
-    height: 100% !important;
-  }
-
-  .centeredkakashi {
-    font-size: 13px;
-  }
-}
-
-@media screen and (max-width: 814px) {
-  .contain {
-    width: 100vw;
-    height: 40vh;
-
-    position: absolute;
-  }
-
-  .circle {
-    width: 100%;
-
-    position: relative;
-
-    height: 100%;
-  }
-
-  .circle-img {
-    width: 40% !important;
-    height: 100% !important;
-  }
-}
-
-@media screen and (max-width: 770px) {
-  .contain {
-    width: 100vw;
-    height: 40vh;
-
-    position: absolute;
-  }
-
-  .circle {
-    width: 100%;
-
-    position: relative;
-
-    height: 100%;
-  }
-
-  .circle-img {
-    width: 40% !important;
-    height: 100% !important;
-  }
-  .one-contact h2 {
-    margin-top: 20px;
-  }
-}
-
-@media screen and (max-width: 730px) {
-  .contain {
-    width: 100vw;
-    height: 40vh;
-
-    position: absolute;
-  }
-
-  .circle {
-    width: 100%;
-
-    position: relative;
-
-    height: 100%;
-  }
-
-  .circle-img {
-    width: 50% !important;
-    height: 100% !important;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .contain {
-    width: 100vw;
-    height: 40vh;
-
-    position: absolute;
-  }
-
-  .circle {
-    width: 100%;
-
-    position: relative;
-
-    height: 100%;
-  }
-
-  .circle-img {
-    width: 55% !important;
-    height: 100% !important;
-  }
-}
-
-@media screen and (max-width: 426px) {
-  .contain {
-    width: 100vw;
-    height: 40vh;
-
-    position: absolute;
-  }
-
-  .circle {
-    width: 100%;
-
-    position: relative;
-
-    height: 100%;
-  }
-
-  .circle-img {
-    width: 75% !important;
-    height: 100% !important;
-  }
-}
-
-@media screen and (max-width: 770px) {
-  .centeredkakashi {
-    font-size: 12px;
-  }
-}
-
-/* KAKASHI CODE  */
-.test {
-  height: 100vh;
-}
-
-@media screen and (max-width: 1037px) {
-  .individual-architechs p {
-    font-size: 120%;
-  }
-
-  .individual-er p {
-    font-size: 120%;
-  }
-
-  .individual-motorsports p {
-    font-size: 120%;
-  }
-
-  .individual-gomyno p {
-    font-size: 120%;
-  }
-
-  .individual-googledsc p {
-    font-size: 120%;
-  }
-
-  .individual-mdash p {
-    font-size: 120%;
-  }
-
-  .individual-architechs h1 {
-    font-size: 4em;
-  }
-
-  .individual-er h1 {
-    font-size: 4em;
-  }
-
-  .individual-gomyno h1 {
-    font-size: 3em;
-  }
-
-  .individual-googledsc h1 {
-    font-size: 3em;
-
-    margin-left: 10px;
-  }
-
-  .individual-motorsports h1 {
-    font-size: 2.7em;
-  }
-
-  .individual-mdash h1 {
-    font-size: 3em;
-  }
-
-  .individual-pages .back i {
-    font-size: 50px;
-    position: relative;
-    top: 10px;
-  }
-
-  .gallery {
-    position: relative;
-    top: 55vh;
-  }
-
-  .one-contact {
-    position: absolute;
-    right: 30%;
-    top: 50px;
-  }
-
-  .one-contact img {
-    width: 80%;
-  }
-
-  .one-contact h2,
-  h3 {
-    width: 80%;
-  }
-
-  .individual-text-div {
-    position: absolute;
-    left: 5%;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .individual-text-div h1 {
+/* Page Container */
+.page-container {
+    min-height: 100vh;
     display: flex;
-    font-size: xx-large;
-  }
-  .individual-text-div p {
-    display: flex;
-    font-size: smaller;
-  }
-
-  .header-individualpg {
-    display: inline-block !important;
-    position: absolute;
-    top: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  .one-contact img {
-    width: 90%;
+    flex-direction: column;
     align-items: center;
-    position: relative;
-  }
+    padding: 2em;
+    color: #e2e8f0;
+}
 
-  .one-contact {
-    position: absolute;
-    align-content: center;
-    top: 3%;
-  }
-
-  .one-contact h2,
-  h3 {
-    position: relative;
-    top: 18vh;
-  }
-
-  .one-contact h2 {
-    font-size: 20px;
+/* Main Content */
+.main-content {
+    max-width: 72em;
     width: 100%;
-  }
+}
 
-  .one-contact h3 {
-    font-size: 20px;
+/* Intro Section */
+.intro-section {
+    margin-bottom: 4em;
+    text-align: center;
+}
+
+.section-heading {
+    font-size: 3em;
+    font-weight: 800;
+    color: #c084fc;
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1em;
+    user-select: none;
+}
+
+.section-description {
+    font-size: 1.125em;
+    max-width: 48em;
+    margin-left: auto;
+    margin-right: auto;
+    letter-spacing: 0.05em;
+    color: #e9d5ff;
+}
+
+/* Card Text */
+.card-title {
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-bottom: 0.5em;
+    color: #fdffe8;
+    text-align: center;
+}
+
+.card-text {
+    color: #e9d5ff;
+    line-height: 1.625;
+}
+
+/* Icon */
+.icon {
+    width: 4em;
+    height: 4em;
+    margin-bottom: 1.5em;
+    margin-left: auto;
+    margin-right: auto;
+    color: #d8b4fe;
+}
+
+/* Grid Layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.5em;
+}
+
+/* Responsive grid for medium screens */
+@media (min-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Responsive grid for large screens */
+@media (min-width: 1024px) {
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Card Wrapper */
+.card-3d-wrapper {
     position: relative;
-    left: 10px;
-  }
-
-  .individual-text-div {
-    top: 45vh;
-    width: 90%;
-  }
-
-  .gallery {
-    position: relative;
-    top: 310px;
-  }
-
-  .gallery h2 {
-    margin-bottom: 20px;
-  }
+    opacity: 0;
+    filter: blur(5px);
+    left:-100vw;
+    border-radius: 1em;
+    padding: 4px;
+    background: linear-gradient(270deg, #6b46c1, #06b6d4);
+    background-size: 300% 300%;
+    animation: orbitBorder 6s linear infinite;
+    transition: all 1s ease;
 }
 
-@media screen and (max-width: 693px) {
-  .individual-architechs p {
-    font-size: 70%;
-  }
-
-  .individual-er p {
-    font-size: 70%;
-  }
-
-  .individual-gomyno p {
-    font-size: 70%;
-  }
-
-  .individual-googledsc p {
-    font-size: 70%;
-  }
-
-  .individual-motorsports p {
-    font-size: 70%;
-  }
-
-  .individual-mdash p {
-    font-size: 70%;
-  }
-
-  .individual-text-div {
-    padding: 10px 30px 30px 30px;
-  }
-  .header-individualpg {
-    display: inline-block !important;
-    position: absolute;
-    top: 10px;
-    left: 20%;
-    transform: translateX(-20%);
-  }
+/* Card */
+.card-3d {
+    background-image: linear-gradient(to bottom right, #4c1d95, #4338ca, #1e3a8a);
+    border-radius: 0.75em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+    cursor: pointer;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+                0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    transition: all 0.5s ease-in-out;
+    transform-style: preserve-3d;
+    height: 100%;
+    outline: none;
 }
 
-@media screen and (max-width: 647px) {
-  .gallery {
-    top: 46vh;
-  }
+.card-3d:hover,
+.card-3d:focus-within {
+    background-image: linear-gradient(to bottom right, #db2777, #9333ea, #06b6d4);
+    transform: rotateY(15deg) rotateX(10deg) scale(1.05);
+    box-shadow: 0 0 20px #9f7aea, 0 0 40px #6b46c1;
 }
 
-@media screen and (max-width: 600px) {
-  .individual-text-div {
-    padding: 10px 20px 30px 20px;
-  }
+/* Small phones */
+@media (max-width: 480px) {
+    .section-heading {
+        font-size: 2em;
+    }
 
-  .header-individualpg {
-    display: inline-block !important;
-    position: absolute;
-    top: 10px;
-    left: 20%;
-    transform: translateX(-20%);
-  }
+    .section-description {
+        font-size: 1em;
+        padding: 0 1em;
+    }
 
-  .gallery {
-    position: relative;
-    top: 50vh;
-  }
+    .card-title {
+        font-size: 1.25em;
+    }
+
+    .card-3d {
+        padding: 1.25em;
+    }
+
+    .icon {
+        width: 3em;
+        height: 3em;
+    }
 }
 
-@media screen and (max-width: 550px) {
-  .individual-text-div {
-    padding: 10px 10px 30px 10px;
-  }
-  .header-individualpg {
-    font-size: 3em !important;
-  }
+/* Tablets */
+@media (max-width: 768px) {
+    .section-heading {
+        font-size: 2.25em;
+    }
+
+    .section-description {
+        font-size: 1.05em;
+    }
+
+    .grid-container {
+        gap: 1.5em;
+    }
+
+    .card-3d {
+        padding: 1.5em;
+    }
 }
 
-@media screen and (max-width: 507px) {
-  .header-individualpg {
-    font-size: 2.5em !important;
-  }
+/* Big desktops */
+@media (min-width: 1440px) {
+    .section-heading {
+        font-size: 3.5em;
+    }
 
-  .individual-text-div {
-    padding: 5px 10px 10px 10px;
-  }
+    .section-description {
+        font-size: 1.25em;
+    }
 
-  .gallery h2 {
-    font-size: 2.4rem;
-  }
-
-  .gallery {
-    position: relative;
-    top: 55vh;
-  }
+    .grid-container {
+        gap: 3em;
+    }
 }
-
-@media screen and (max-width: 457px) {
-  .individual-architechs p {
-    font-size: 70%;
-  }
-
-  .individual-er p {
-    font-size: 70%;
-  }
-
-  .individual-gomyno p {
-    font-size: 70%;
-  }
-
-  .individual-googledsc p {
-    font-size: 70%;
-  }
-
-  .individual-motorsports p {
-    font-size: 70%;
-  }
-
-  .individual-mdash p {
-    font-size: 70%;
-  }
-}
-
-@media screen and (max-width: 402px) {
-  .header-individualpg {
-    font-size: 2.5em !important;
-  }
-
-  .gallery {
-    position: relative;
-    top: 59vh;
-  }
-
-  .individual-text-div {
-    padding: 0px 10px 10px 0px;
-    position: absolute;
-    top: 16rem;
-  }
-  .one-contact {
-    position: absolute;
-    top: 2rem;
-  }
-  .one-contact img {
-    width: 50%;
-    position: absolute;
-    left: 60%;
-    transform: translate(-60%);
-  }
-  .one-contact h2,
-  h3 {
-    position: relative;
-    top: 60px;
-    font-size: 2em;
-  }
-  .one-contact h3 {
-    font-size: large;
-    top: 43px;
-  }
-}
-
-@media screen and (max-width: 321px) {
-  /* .individual-architechs p {
-    font-size: 90%;
-  }
-  .individual-er p {
-    font-size: 90%;
-  }
-  .individual-gomyno p {
-    font-size: 90%;
-  }
-  .individual-googledsc p {
-    font-size: 90%;
-  }
-  .individual-motorsports p {
-    font-size: 90%;
-  }
-  .individual-mdash p {
-    font-size: 90%;
-  } */
-  .header-individualpg {
-    font-size: 2em !important;
-  }
-
-  /* .one-contact {
-    width: 30%;
-  } */
-
-  /* .one-contact h2 {
-    font-size: 15px;
-    width: 100%;
-    top: 90px;
-  }
-
-  .one-contact h3 {
-    font-size: 15px;
-    top: 90px;
-  } */
-
-  .individual-text-div {
-    top: 200px;
-  }
-}
-/* .mobile-car-architechs {
-  position: absolute;
-  left: 6em;
-}
-.mobile-car-googledsc {
-  position: absolute;
-  left: 6em;
-}
-.mobile-car-motorsports {
-  position: absolute;
-  left: 6em;
-} */

@@ -35,11 +35,12 @@
 
 #join-community h2.section-heading {
   font-family: 'Orbitron', sans-serif;
-  font-size: 2.8rem;
+  font-size: 1.5rem;
   color: #FF0;
   text-shadow:
     0 0 3px #FF0,
     0 0 7px #FF0;
+  margin: 0px auto 20px;
   text-align: center;
   animation: glowPulseCommunity 2s infinite ease-in-out;
 }
@@ -95,9 +96,9 @@
 
     transform: scale(1.01);
 
-    box-shadow: 0 0 3px rgb(201, 65, 201,0.7),
-                0 0 5px rgb(201, 65, 201,0.6),
-                0 0 10px rgb(201, 65, 201,0.4);
+    box-shadow: 0 0 3px #FF0,
+                0 0 5px #FF0,
+                0 0 10px #FF0;
 }
 
 .glass-button::before {
@@ -123,7 +124,6 @@
 }
 
 .club-footer {
-  margin: 40px 0 0 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -152,8 +152,8 @@
     justify-content: center;
     width: 40px;
     height: 40px;
-    border: 1px solid rgba(201, 65, 201,0.1);
-    color: rgb(201, 65, 201);
+    border: 1px solid rgba(199, 201, 65, 0.1);
+    color: #FF0;
     border-radius: 50%;
     margin: 0 10px;
     transition: all 0.5s ease-in-out;
@@ -161,9 +161,9 @@
 
 .footer-social a:hover {
     transform: translateY(-3px) scale(1.01);
-    box-shadow: 0 0 2px rgb(201, 65, 201),
-                0 0 4px rgb(201, 65, 201),
-                0 0 10px rgb(201, 65, 201);
+    box-shadow: 0 0 2px #FF0,
+                0 0 4px #FF0,
+                0 0 10px #FF0;
 }
 
 .copyright {
@@ -171,4 +171,10 @@
     color: white;
     font-size: 1rem;
     margin: 20px 0 0 10px;
+}
+
+@media (max-width: 400px) {
+  #join-community h2.section-heading {
+    font-size: 1rem;
+  }
 }

@@ -18,6 +18,7 @@
   display: flex;
   opacity: 1;
   pointer-events: all; /* Enable clicks when visible */
+  
 }
 
 .popup-content {
@@ -33,6 +34,7 @@
   transform: scale(0.8); /* Start smaller */
   opacity: 0;
   transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out; /* Smooth scaling and fade-in */
+  overflow-y: scroll;
 }
 
 .popup-overlay.show .popup-content {
@@ -129,7 +131,6 @@
     aspect-ratio: 1;
     border-radius: 50%;
     object-fit: cover;
-    border: 3px solid #ff9800;
     margin-bottom: 1rem;
   }
 
@@ -159,7 +160,8 @@
     color: #ff0000;
   }
   #popup-description{
-    font-size: .8rem;
+    font-size: 1.2rem;
   }
   
 }
+

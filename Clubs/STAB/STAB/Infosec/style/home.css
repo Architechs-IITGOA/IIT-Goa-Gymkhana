@@ -1,13 +1,41 @@
 /* Home style */
-.home-wrapper{
+.home-wrapper {
+    position: relative;
     margin: 0 auto;
-    background: url('../assets/images/hero-img.png') no-repeat bottom right;
-    background-size: cover; 
     height: 100vh;
     padding: 2rem;
+    overflow: hidden;
 }
 
-.home-container{
+/* Video background */
+.bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    object-fit: contain;
+    z-index: 0;
+    pointer-events: none;
+    background: black;     
+}
+
+/* Dark overlay for readability */
+.home-wrapper::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 1;
+}
+
+/* Home content */
+.home-container {
+    position: relative;
+    z-index: 2;
     margin-left: 20%;
     padding-top: 10%;
     font-size: 1.5rem;
@@ -20,61 +48,86 @@
     width: 60%;
     animation: slideFromLeft 2s ease forwards;
 }
-.home-container p{
+
+.home-container p {
     font-family: 'Manrope', sans-serif;
     padding: 0px;
 }
-.button-group{
+
+/* Buttons */
+.button-group {
     font-size: 1rem;
     display: flex;
     gap: 3rem;
 }
-.button-group a{
+
+.button-group a {
     padding: 1rem;
     border: 2px solid var(--bs-text-secondary-color);
     text-decoration: none;
     border-radius: 2px;
     transition: transform 0.3s ease;
 }
-.button1{
+
+.button1 {
     background-color: white;
     color: black;
 }
-.button2{
+
+.button2 {
     color: white;
 }
-.button1:hover,.button2:hover{
+
+.button1:hover,
+.button2:hover {
     transform: scale(1.2);
 }
-.button-group a:active{
+
+.button-group a:active {
     background-color: #727070;
 }
 
-@keyframes slideFromLeft{
-    0%{
+/* Animation */
+@keyframes slideFromLeft {
+    0% {
         opacity: 0;
         transform: translateX(-50%);
     }
-    100%{
+    100% {
         opacity: 1;
         transform: translateX(0);
     }
 }
 
-@media screen and (max-width:768px){
-    .button-group{
+/* Mobile fallback */
+@media screen and (max-width: 768px) {
+
+    .bg-video {
+        display: none;
+    }
+
+    .home-wrapper {
+        background: url("../assets/images/hero-img.jpg") no-repeat center;
+        background-size: cover;
+    }
+
+    .button-group {
         font-size: 0.6rem;
         gap: 2rem;
     }
-    .home-container{
+
+    .home-container {
         padding-top: 10vh;
         padding-left: 3vw;
         margin: 0px;
         width: 100%;
         font-size: 1rem;
     }
-    .button1:hover,.button2:hover{
+
+    .button1:hover,
+    .button2:hover {
         transform: scale(1.1);
     }
 }
+
 /* ---------------------------------------------------------------------- */

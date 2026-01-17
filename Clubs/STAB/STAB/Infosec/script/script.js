@@ -35,6 +35,21 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
+function scrollEvent(btn, direction) {
+    const track = btn.parentElement.querySelector(".event-track");
+    const images = track.children;
+    let index = track.dataset.index ? parseInt(track.dataset.index) : 0;
+
+    index += direction;
+
+    if (index < 0) index = images.length - 1;
+    if (index >= images.length) index = 0;
+
+    track.style.transform = `translateX(-${index * 100}%)`;
+    track.dataset.index = index;
+}
+
+
 // Making clicked menu active
 
 // document.addEventListener("DOMContentLoaded", () => {

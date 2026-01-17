@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="./style/style.css" />
     <link rel="stylesheet" href="./style/home.css" />
     <link rel="stylesheet" href="./style/about.css" />
+    <link rel="stylesheet" href="./style/events.css" />
     <link rel="stylesheet" href="./style/resources.css" />
     <link rel="stylesheet" href="./style/team.css" />
     <link rel="stylesheet" href="./style/contact.css" />
@@ -149,8 +150,64 @@
       </div>
     </section>
     <hr />
-    <!-- <section id="events">     
-    </section> -->
+   <section id="events">    
+       <div class="events-wrapper">
+    <h1 class="heading events-heading">Events</h1>
+
+    <div class="events-grid">
+
+      <!-- ================= CTF WORKSHOP ================= -->
+      <div class="event-card">
+        <span class="event-date">CTF Workshop</span>
+
+        <div class="event-carousel">
+          <button class="nav-btn left" onclick="scrollEvent(this, -1)">&#10094;</button>
+
+          <div class="event-track">
+            <img src="assets/images/events/ctf/poster.png" class="active">
+            <img src="assets/images/events/ctf/1.jpg">
+            <img src="assets/images/events/ctf/2.jpg">
+            <img src="assets/images/events/ctf/3.jpg">
+            <img src="assets/images/events/ctf/4.jpg">
+          </div>
+
+          <button class="nav-btn right" onclick="scrollEvent(this, 1)">&#10095;</button>
+        </div>
+
+        <h2>CTF Workshop</h2>
+        <p>
+          A hands-on Capture The Flag workshop introducing participants to
+          cybersecurity challenges and problem-solving.
+        </p>
+      </div>
+
+      <!-- ================= CRYPTOGRAPHY WORKSHOP ================= -->
+      <div class="event-card">
+        <span class="event-date">Cryptography Workshop</span>
+
+        <div class="event-carousel">
+          <button class="nav-btn left" onclick="scrollEvent(this, -1)">&#10094;</button>
+
+          <div class="event-track">
+            <img src="assets/images/events/crypto/poster.png" class="active">
+            <img src="assets/images/events/crypto/1.jpeg">
+            <img src="assets/images/events/crypto/2.jpeg">
+            <!-- <img src="assets/images/events/crypto/3.jpg"> -->
+          </div>
+
+          <button class="nav-btn right" onclick="scrollEvent(this, 1)">&#10095;</button>
+        </div>
+
+        <h2>Cryptography Workshop</h2>
+        <p>
+          An interactive workshop exploring classical and modern cryptography
+          with real-world applications.
+        </p>
+      </div>
+
+    </div>
+  </div>
+    </section> 
     <section id="resources">
       <div class="resource-wrapper">
         <div class="resource-content">

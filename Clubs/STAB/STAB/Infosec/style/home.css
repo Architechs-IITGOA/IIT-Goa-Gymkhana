@@ -5,6 +5,7 @@
     height: 100vh;
     padding: 2rem;
     overflow: hidden;
+    z-index: 0;
 }
 
 /* Video background */
@@ -18,7 +19,7 @@
     height: auto;
     transform: translate(-50%, -50%);
     object-fit: contain;
-    z-index: 0;
+    z-index: -1;
     pointer-events: none;
     background: black;     
 }

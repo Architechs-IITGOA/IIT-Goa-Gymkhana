@@ -1,0 +1,129 @@
+/* ================= EVENTS ================= */
+
+.events-wrapper {
+    padding: 5rem 2rem;
+    background: radial-gradient(circle at top, #101010 20%, #000 80%);
+}
+
+/* Heading */
+.events-heading {
+    box-shadow:
+        0px 4px 10px rgba(255, 255, 255, 0.3),
+        0px 0px 15px rgba(0, 255, 255, 0.5);
+    border-radius: 8px;
+    padding: 1rem 2.5rem;
+    width: fit-content;
+    margin: 0 auto 4rem auto;
+    position: relative;
+    z-index: 2;
+}
+
+/* Grid */
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* ================= EVENT CARD ================= */
+
+.event-card {
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 0 25px rgba(0, 255, 255, 0.25);
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    min-height: 520px;
+    width: 100%;
+}
+
+/* Tag */
+.event-date {
+    position: absolute;
+    top: 1.2rem;
+    left: 1.2rem;
+    font-size: 0.85rem;
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    background: rgba(0, 255, 255, 0.15);
+    color: #9ff;
+    z-index: 3;
+}
+
+/* ================= CAROUSEL ================= */
+
+.event-carousel {
+    position: relative;
+    width: 100%;
+    max-width: 520px;          
+    margin: 0 auto 1.5rem auto;
+
+    aspect-ratio: 4 / 3;       
+    overflow: hidden;
+    border-radius: 12px;
+    background: #000;
+}
+
+.event-track {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    transition: transform 0.4s ease;
+}
+
+.event-track img {
+    flex: 0 0 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background: #000;
+}
+
+/* Navigation buttons */
+.nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.6);
+    border: none;
+    color: #00ffff;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 0.3rem 0.8rem;
+    z-index: 5;
+    border-radius: 50%;
+}
+
+.nav-btn.left { left: 10px; }
+.nav-btn.right { right: 10px; }
+
+.nav-btn:hover {
+    background: rgba(0, 255, 255, 0.3);
+}
+
+/* Text */
+.event-card h2,
+.event-card p {
+    max-width: 520px;
+}
+
+.event-card p {
+    color: #bbb;
+    line-height: 1.6;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 900px) {
+    .events-grid {
+        grid-template-columns: 1fr;
+    }
+}
